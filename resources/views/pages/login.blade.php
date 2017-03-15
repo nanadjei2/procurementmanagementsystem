@@ -21,7 +21,14 @@
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
+<<<<<<< HEAD
                 </form>
+=======
+                    <div class="form-group">
+                        <label for="">Dont have an account? <a href="{{ route('signup')}}" title="">Sign up</a></label>
+                        
+                    </div>
+>>>>>>> 07157386ef068a9d73680cd1083c593a258a7b3d
                 </div>
             </div>
         </div>
