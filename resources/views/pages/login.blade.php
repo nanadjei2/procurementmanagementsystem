@@ -4,11 +4,11 @@
 @endsection
 
 @section("content")
-    <section>
+    <section class="login">
         <div class="container">
             <div class="col-md-4 col-md-offset-4 col-xs-12">
-                <div class="login-form">
-                <h3>Please Login</h3>
+                <div class="login-form form-inverse">
+                <div class="text-center login-heading"><h3>Please Login</h3></div>
                     <div class="form-group">
                         <label for="username"> Username:</label>
                         <input id="username" class="form-control" type="text" placeholder="Enter username" required/>
