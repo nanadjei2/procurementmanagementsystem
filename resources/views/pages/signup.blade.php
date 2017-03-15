@@ -8,7 +8,7 @@
         <div class="container">
             <div class="col-md-5 col-md-offset-3 col-xs-12">
                 <div class="login-form">
-                <h3>Please Sign-Up</h3>
+                <div class="text-center form-heading"><h3>Please Sign-Up</h3></div>
                     <div class="form-group">
                         <label for="username"> Username</label>
                         <input id="username" class="form-control" type="text" placeholder="Enter username" required="required"/>
