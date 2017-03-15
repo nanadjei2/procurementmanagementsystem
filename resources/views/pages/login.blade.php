@@ -9,6 +9,7 @@
             <div class="col-md-4 col-md-offset-4 col-xs-12">
                 <div class="login-form">
                 <div class="text-center form-heading"><h3>Please Login</h3></div>
+                <form action="" method="POST">
                     <div class="form-group">
                         <label for="username"> Username:</label>
                         <input id="username" class="form-control" type="text" placeholder="Enter username" required/>
@@ -20,6 +21,7 @@
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
+                </form>
                 </div>
             </div>
         </div>

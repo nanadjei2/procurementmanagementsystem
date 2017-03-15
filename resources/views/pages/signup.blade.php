@@ -1,6 +1,6 @@
 @extends("master")
 @section("title")
-    PMS | Login
+    PMS | signup
 @endsection
 
 @section("content")
@@ -9,6 +9,7 @@
             <div class="col-md-5 col-md-offset-3 col-xs-12">
                 <div class="login-form">
                 <div class="text-center form-heading"><h3>Please Sign-Up</h3></div>
+                <form action="" method="POST">
                     <div class="form-group">
                         <label for="username"> Username</label>
                         <input id="username" class="form-control" type="text" placeholder="Enter username" required="required"/>
@@ -33,8 +34,9 @@
                         <label for="">Already have an account? <a href="#" title="">Log in</a></label>
                         
                     </div>
-                </div>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 @endsection 
