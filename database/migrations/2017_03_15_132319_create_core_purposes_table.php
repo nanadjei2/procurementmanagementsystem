@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBusinesstypeTable extends Migration
+class CreateCorePurposesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,14 @@ class CreateBusinesstypeTable extends Migration
      */
     public function up()
     {
-        
-        // migration for business type
-        Schema::create('businesstype', function (Blueprint $table) {
+        //
+         Schema::create('core_purposes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('business_type');
+            $table->string('core_purposes');
         });
+
+
+
     }
 
     /**
@@ -27,6 +29,7 @@ class CreateBusinesstypeTable extends Migration
      */
     public function down()
     {
-        Schema::drop('businesstype');
+        //
+        Schema::drop('core_purposes');
     }
 }

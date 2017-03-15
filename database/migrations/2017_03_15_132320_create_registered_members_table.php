@@ -44,7 +44,7 @@ class CreateRegisteredMembersTable extends Migration
 
               $table->foreign('businesstype_id')
             ->references('id')
-            ->on('businesstype')
+            ->on('business_type')
             ->onDelete('cascade');
 
         });
