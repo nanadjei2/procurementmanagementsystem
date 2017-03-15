@@ -11,6 +11,31 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.login');
+
+
+Route::group(['middlewareGroups'], function(){
+
+	Route::get('/',['uses'=>'UserController@getLogin'])->name('login');
+
+	Route::get('signup',['uses'=>'UserController@Signup'])->name('signup');
+
+	// Route::post('postlogin',['uses'=>'UserController@postLogin'])->name('postlogin');
+
+	// Route::get('logout',['uses'=>'UserController@Logout','middleware'=>'auth'])->name('logout');
+
+	// Route::get('userdashboard',['middleware'=>'auth', function(){
+
+	// 	return view('pages.userdashboard');
+
+	// }])->name('userdashboard');
+
+
+	// Route::get('register-new-member',['uses'=>'MemberController@RegisterNewMember','middleware'=>'auth'])->name('register-new-member');
+
+	// Route::post('registerpost',['uses'=>'MemberController@PostRegisterMember','middleware'=>'auth'])->name('registerpost');
+
+	 	
+
+
+
 });
