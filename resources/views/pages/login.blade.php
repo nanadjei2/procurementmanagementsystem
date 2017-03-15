@@ -20,6 +20,10 @@
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
+                    <div class="form-group">
+                        <label for="">Dont have an account? <a href="{{ route('signup')}}" title="">Sign up</a></label>
+                        
+                    </div>
                 </div>
             </div>
         </div>
