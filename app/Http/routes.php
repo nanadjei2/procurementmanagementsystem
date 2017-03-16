@@ -21,6 +21,8 @@ Route::group(['middlewareGroups'], function(){
 
 	Route::get('get-admin', 'UserController@postAdmin');
 
+	Route::get('/dashboard', [ 'middleware' => 'admin', 'uses' => 'UserController@getDashboard'])->name('dashboard');
+
 	// Route::post('postlogin',['uses'=>'UserController@postLogin'])->name('postlogin');
 
 	// Route::get('logout',['uses'=>'UserController@Logout','middleware'=>'auth'])->name('logout');

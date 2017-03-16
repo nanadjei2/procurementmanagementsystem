@@ -16,6 +16,29 @@ class UserController extends Controller
     	return view('pages.login');
     }
 
+    public function getDashboard() {
+        return view('pages.dashboard');
+    }
+
+    public function postLogin(Request $request) {
+       $request = Request::all();
+       $rules = User::$rules;
+
+       $validator = Validator::make($request, $rules);
+       if($validator->fails()) {
+        return "sorry you failed to login";
+       } else {
+           $credentials = [
+            'username' => $request->get('username'),
+            'password' => $request-get('password')
+        ];
+
+        if(Auth::attempt($credentials)) {
+            return redirect('dashboard');
+        }
+       }
+        
+    }
 
     public function Signup(){
 

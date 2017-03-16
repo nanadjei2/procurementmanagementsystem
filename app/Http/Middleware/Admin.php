@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class Admin
 {
@@ -17,7 +17,9 @@ class Admin
      */
     public function handle($request, Closure $next)
     {   
-        if(Auth::user()->admin = 0) {
+        if(!Auth::check() || !Auth::user()->admin == 1) {
+            return redirect('/');
+        } else {
             return redirect('dashboard');
         }
         return $next($request);
