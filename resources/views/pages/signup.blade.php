@@ -28,7 +28,7 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-success">Sign Up</button>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i> Sign Up</button>
                     </div>
                     <div class="form-group">
                         <label for="">Already have an account? <a href="{{ route('login')}}" title="">Log in</a></label>

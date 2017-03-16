@@ -19,6 +19,8 @@ Route::group(['middlewareGroups'], function(){
 
 	Route::get('signup',['uses'=>'UserController@Signup'])->name('signup');
 
+	Route::get('get-admin', 'UserController@postAdmin');
+
 	// Route::post('postlogin',['uses'=>'UserController@postLogin'])->name('postlogin');
 
 	// Route::get('logout',['uses'=>'UserController@Logout','middleware'=>'auth'])->name('logout');

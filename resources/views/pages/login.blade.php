@@ -19,7 +19,7 @@
                         <input id="pwd" class="form-control" type="text" placeholder="Enter password" required/>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Login</button>
                     </div>
                 </form>
                     <div class="form-group">
