@@ -34,7 +34,7 @@ class UserController extends Controller
 
 
        if (Auth::attempt($credentials)) {
-         return redirect('dashboard');
+         return redirect('dashboard')->with('success', 'You have successfully logged in');
        } else {
          return 'Sorry looks like something went wrong. Please try again';
        }
