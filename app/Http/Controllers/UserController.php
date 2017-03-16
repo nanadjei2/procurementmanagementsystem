@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Validator;
 use App\User;
+use Auth;
 
 class UserController extends Controller
 {
@@ -20,22 +22,21 @@ class UserController extends Controller
         return view('pages.dashboard');
     }
 
-    public function postLogin(Request $request) {
-       $request = Request::all();
+    public function postLogin(Request $requset) {
        $rules = User::$rules;
-
-       $validator = Validator::make($request, $rules);
-       if($validator->fails()) {
-        return "sorry you failed to login";
-       } else {
-           $credentials = [
-            'username' => $request->get('username'),
-            'password' => $request-get('password')
+    //    
+        $credentials = [
+         'username'    => $requset->input('username'),
+         'password' => $requset->input('password')
         ];
 
-        if(Auth::attempt($credentials)) {
-            return redirect('dashboard');
-        }
+       $validator = Validator::make($credentials, $rules);
+
+
+       if (Auth::attempt($credentials)) {
+         return redirect('dashboard');
+       } else {
+         return 'Sorry looks like something went wrong. Please try again';
        }
         
     }

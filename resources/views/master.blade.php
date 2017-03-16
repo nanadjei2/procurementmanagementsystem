@@ -9,7 +9,7 @@
         <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css">
     </head>
     <body>
-<nav class="navbar navbar-default navbar-inverse">
+<nav class="navbar nav-fluid navbar-default navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">

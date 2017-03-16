@@ -19,11 +19,11 @@ Route::group(['middlewareGroups'], function(){
 
 	Route::get('signup',['uses'=>'UserController@Signup'])->name('signup');
 
-	Route::get('get-admin', 'UserController@postAdmin');
+	Route::get('get-admin', 'UserController@postAdmin');//This will actually hard-post a new admin to the database
 
-	Route::get('/dashboard', [ 'middleware' => 'admin', 'uses' => 'UserController@getDashboard'])->name('dashboard');
+	Route::get('dashboard', ['uses' => 'UserController@getDashboard'])->name('dashboard');
 
-	// Route::post('postlogin',['uses'=>'UserController@postLogin'])->name('postlogin');
+	 Route::post('post-login',['uses'=>'UserController@postLogin'])->name('post-login');
 
 	// Route::get('logout',['uses'=>'UserController@Logout','middleware'=>'auth'])->name('logout');
 
