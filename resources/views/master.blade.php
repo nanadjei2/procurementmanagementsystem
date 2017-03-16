@@ -30,16 +30,17 @@
         
       </ul>
 
+      @if(Auth::check())
       <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-fw"></i> Settings <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href=""><i class="fa fa-key fa-fw"></i> Change Password</a></li>
-                <li><a href=""><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                <li><a href="{{ route('logout') }}"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
               </ul>
             </li>
           </ul>
-      
+      @endif
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

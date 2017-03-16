@@ -62,4 +62,26 @@ class UserController extends Controller
             echo 'Sorry something happend';
         }
     }
+
+
+    public function logout() {
+        if(Auth::check()) {
+            Auth::logout();
+            return redirect('/')->with('success', 'You have successfully logged out');
+        } else {
+            return redirect('dashboard')->with('error', 'Sorry you have to login first.');
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -25,7 +25,7 @@ Route::group(['middlewareGroups'], function(){
 
 	 Route::post('post-login',['uses'=>'UserController@postLogin'])->name('post-login');
 
-	// Route::get('logout',['uses'=>'UserController@Logout','middleware'=>'auth'])->name('logout');
+	 Route::get('logout',['uses'=>'UserController@Logout','middleware'=>'auth'])->name('logout');
 
 	// Route::get('userdashboard',['middleware'=>'auth', function(){
 
