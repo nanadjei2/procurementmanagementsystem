@@ -46,12 +46,39 @@ class UserController extends Controller
     	return view('pages.signup');
     }
 
+
+    public function PostSignup(Request $request){
+
+    	$newSignup= new User;  // creates a new user object
+    	$newSignup->username=$request['username']; // accepts username from textbox
+    	$newSignup->email=$request['email'];// accepts email from textbox
+    	$newSignup->password=bcrypt($request['password']); // accepts password from textbox
+    	$password=$request['password'];// accepts password from textbox and compare with confirm password 
+    	$confirmpassword=$request['confirmpassword'];// accept confirm password from textbox
+    	$newSignup->admin=0;// set admin privilege to 0
+
+    	if($confirmpassword==$password){  // do comparision if two password matches
+
+    		$newSignup->save();// creates a new user entry
+    		return redirect('dashboard')->with('success', 'You have successfully signed up');//message after signup
+    	}
+
+    	else{
+
+    		return redirect()->back()->with('error','password mismatch found!');
+    	}
+
+    		
+    }
+
+
+
     public function postAdmin() {
 
-        $newAdmin = new User;
-        $newAdmin->username = 'nanadjei2';
+        $newAdmin = new User; 
+        $newAdmin->username = 'username';
         $newAdmin->email = 'nana.elvee@gmail.com';
-        $newAdmin->password = bcrypt('elvis0266266828');
+        $newAdmin->password = bcrypt('password');
         $newAdmin->admin = 1;
         $newAdmin->save();
 

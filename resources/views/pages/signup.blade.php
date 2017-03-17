@@ -8,23 +8,27 @@
         <div class="container">
             <div class="col-md-5 col-md-offset-3 col-xs-12">
                 <div class="login-form">
+                <div class="text-center">@include('common.notifications')</div>
                 <div class="text-center form-heading"><h3>Please Sign-Up</h3></div>
-                <form action="" method="POST">
+                <form action="{{ route('post-signup')}}" method="POST">
+
+                  {{csrf_field()}}
+
                     <div class="form-group">
                         <label for="username"> Username</label>
-                        <input id="username" class="form-control" type="text" placeholder="Enter username" required="required"/>
+                        <input id="username" name="username" class="form-control" type="text" placeholder="Enter username" required="required" value="{{old('username')}}" />
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input id="email" type="email" name="email" class="form-control" placeholder="Enter Email Address" required />
+                        <input id="email" name="email" type="email" name="email" class="form-control" placeholder="Enter Email Address" required value="{{old('email')}}" />
                     </div>
                     <div class="form-group">
-                        <label for="pwd"> Password</label>
-                        <input id="pwd" class="form-control" type="password" placeholder="Enter password" required/>
+                        <label for="password"> Password</label>
+                        <input name="password" id="password" class="form-control" type="password" placeholder="Enter password" required/>
                     </div>
                     <div class="form-group">
-                        <label for="confirmpwd">Confirm Password</label>
-                        <input id="confirmpwd" class="form-control" type="password" placeholder="Confirm password" required/>
+                        <label for="confirmpassword">Confirm Password</label>
+                        <input id="confirmpassword" name="confirmpassword" class="form-control" type="password" placeholder="Confirm password" required/>
                     </div>
 
                     <div class="form-group">
