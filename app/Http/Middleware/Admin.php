@@ -19,9 +19,7 @@ class Admin
     {   
         if(!Auth::check() || !Auth::user()->admin == 1) {
             return redirect('/');
-        } else {
-            return redirect('dashboard');
-        }
+        } 
         return $next($request);
     }
 }

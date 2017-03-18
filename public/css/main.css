@@ -1,4 +1,26 @@
 
+
+.notification {
+     padding-right: 265px;
+  padding-left: 265px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .notification {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .notification {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .notification {
+    width: 1170px;
+  }
+
 .login-form {
     border: 1px solid #e8e8e8;
     padding: 40px;
@@ -10,3 +32,4 @@
     padding-bottom: 30px;
 }
 
+}
