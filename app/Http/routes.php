@@ -27,7 +27,7 @@ Route::group(['middlewareGroups'], function(){
 
 	Route::post('post-signup',['uses'=>'UserController@PostSignup'])->name('post-signup');
 
-	Route::get('dashboard', ['uses' => 'UserController@getDashboard'])->name('dashboard');
+	Route::get('dashboard', ['uses' => 'UserController@getDashboard','middleware'=>'auth'])->name('dashboard');
 	Route::get('admin-dashboard', ['uses' => 'UserController@getAdminDashboard'])->name('admin-dashboard');
 
 	

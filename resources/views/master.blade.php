@@ -26,8 +26,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="{{ url('dashboard') }}"><i class="fa fa-tachometer fa-fw"></i> Dashboard <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        
+{{--         <li><a href="#">Link</a></li>
+ --}}        
       </ul>
 
       @if(Auth::check())
