@@ -26,8 +26,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="{{ url('dashboard') }}"><i class="fa fa-tachometer fa-fw"></i> Dashboard <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        
+        @if(Auth::check()) 
+          @if(Auth::user()->admin == 1)
+            <li><a href="{{route('admin-dashboard')}}">Admin Dashboard</a></li>
+          @endif
+        @endif
       </ul>
 
       @if(Auth::check())
