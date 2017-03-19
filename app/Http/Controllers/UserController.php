@@ -22,6 +22,10 @@ class UserController extends Controller
         return view('pages.dashboard');
     }
 
+    public function getAdminDashboard(){
+        return view('pages.admindashboard');
+    }
+
     public function postLogin(Request $requset) {
        $rules = User::$rules;
     //    
@@ -70,7 +74,7 @@ class UserController extends Controller
     	if($confirmpassword==$password){  // do comparision if two password matches
 
     		$newSignup->save();// creates a new user entry
-    		return redirect('/')->with('success', 'You have successfully signed up');//message after signup
+    		return redirect('admin-dashboard')->with('success', 'You have successfully signed up');//message after signup
     	}
 
     	else{
