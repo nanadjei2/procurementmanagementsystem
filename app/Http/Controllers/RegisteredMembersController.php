@@ -17,4 +17,31 @@ class RegisteredMembersController extends Controller
 
     	return view('pages.registration');
     }
+
+
+    public function PostRegisterNewMember(Request $request){
+
+
+    		$RegisteredMember= new RegisteredMember;
+    		$RegisteredMember->user_id=Auth::user()->id;
+    		$RegisteredMember->job_title=$request['jobtitile'];
+    		$RegisteredMember->directorname=$request['directorname'];
+    		$RegisteredMember->postaladdress=$request['postaladdress'];
+    		$RegisteredMember->businessaddress=$request['businessaddress'];
+    		$RegisteredMember->region=$request['region'];
+    		$RegisteredMember->email=$request['email'];
+    		$RegisteredMember->companywebsite=$request['companywebsite'];
+    		$RegisteredMember->activephone=$request['activephone'];
+    		$RegisteredMember->phonenumberone=$request['phonenumberone'];
+    		$RegisteredMember->phonenumbertwo=$request['phonenumbertwo'];
+    		$RegisteredMember->bankdraftnumber=$request['bankdraftnumber'];
+    		$RegisteredMember->companywebsite=$request['companymajoractivity'];
+    		$RegisteredMember->companywebsite=$request['companyotheractivities'];
+
+
+    		
+
+    }
+
+
 }

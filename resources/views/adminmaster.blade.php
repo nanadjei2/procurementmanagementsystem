@@ -31,7 +31,7 @@
                 </a>
             </li>
         </ul>
-        <a class="navbar-brand" href="{{ route('dashboard') }}">Procurement Mangement System</a> 
+        <a class="navbar-brand" href="index-2.html">Procurement Mangement System</a> 
         <ul class="nav navbar-nav pull-left toggle-fullscreen-mode">
             <li class="nav-item">
 
@@ -54,7 +54,7 @@
         </ul>
 
 
-
+        
     <ul class="nav navbar-nav pull-left toggle-search">
         <li class="nav-item">
 
@@ -113,7 +113,7 @@
 
 
 
-    <!--<ul class="nav navbar-nav pull-right hidden-lg-down navbar-notifications">
+    <ul class="nav navbar-nav pull-right hidden-lg-down navbar-notifications">
         <li class="nav-item">
 
             <a class="nav-link" data-click="toggle-right-sidebar">
@@ -121,7 +121,7 @@
                 <span class="label label-rounded label-primary label-xs">3</span> 
             </a>
         </li>
-    </ul>-->
+    </ul>
 
 
     <ul class="nav navbar-nav pull-right hidden-lg-down navbar-profile">
@@ -129,7 +129,7 @@
 
             <a class="nav-link dropdown-toggle no-after" data-toggle="dropdown">
 
-                <img class="img-circle img-fluid profile-image" src="{{ asset('images/avator.png') }}">
+                <img class="img-circle img-fluid profile-image" src="assets/faces/m1.png">
             </a>
             <div class="dropdown-menu dropdown-no-overflow animation-delay">
 
@@ -144,9 +144,12 @@
                     <span class="dropdown-text">Profile</span> 
                 </a>
 
-                
+                <a class="dropdown-item animated fadeIn" href="pages-lock-screen.html">
+                    <i class="zmdi zmdi-alarm"></i> 
+                    <span class="dropdown-text">Lock screen</span> 
+                </a>
 
-                <a class="dropdown-item animated fadeIn" href="{{ route('logout') }}">
+                <a class="dropdown-item animated fadeIn" href="pages-login.html">
                     <i class="zmdi zmdi-power"></i> 
                     <span class="dropdown-text">Logout</span> 
                 </a>
@@ -178,6 +181,42 @@
     </div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<ul class="nav navbar-nav pull-right hidden-lg-down navbar-toggle-theme-selector">
+            <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle no-after" data-toggle="dropdown">
+                    <span class="zmdi zmdi-settings"></span> 
+                </a>
+                <div class="dropdown-menu dropdown-menu-scale from-right dropdown-menu-right">
+                    <a href="{{ route('logout') }}" class="dropdown-item">
+                        <span class="title">
+                            Logout
+                        </span> 
+                    </a>
+
+                </div>
+            </li>
+        </ul>-->
 
 
 
@@ -230,7 +269,8 @@
   
 @yield('registration-content')
 
-  
+  <h2 class="text-center
+  " style="color: #fff;">sdfsdfsd;lfsl;dfk;</h2>
 
 <!-- Left Nav Begins -->
 @include('partials.side-nav')
@@ -243,6 +283,10 @@
         </div>
     </div>
 </div>
+
+<h2> Just for a test</h2>
+       
+
 
 
 <!-- implementing the JS files using laravel approach -->

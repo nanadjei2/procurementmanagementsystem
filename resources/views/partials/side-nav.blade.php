@@ -23,7 +23,7 @@
                                 <i class="fa fa-google"></i> 
                             </button>
                         </div>
-                        <div class="profile-title">{{ Auth::user()->firstname }} {{ Auth::user()->othername }}</div>
+                        <div class="profile-title">{{ Auth::user()->firstname }} {{ Auth::user()->othernames }}</div>
                         <!--<div class="profile-subtitle">lucas.smith@gmail.com</div>-->
                         <div class="profile-toggle">
                             <button data-click="toggle-profile" type="button" class="btn btn-white btn-outline no-border">
