@@ -64,6 +64,8 @@ class UserController extends Controller
     	  	]);
 
     	$newSignup= new User;  // creates a new user object
+        $newSignup->firstname=$request['firstname'];
+        $newSignup->othernames=$request['othernames'];
     	$newSignup->username=$request['username']; // accepts username from textbox
     	$newSignup->email=$request['email'];// accepts email from textbox
     	$newSignup->password=bcrypt($request['password']); // accepts password from textbox

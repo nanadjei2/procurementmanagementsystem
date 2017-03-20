@@ -14,10 +14,9 @@ class CreateRegisteredMembersTable extends Migration
     {
         //
         Schema::create('registered_members', function (Blueprint $table) {
-            // $table->integer('country_id')->unsigned();
-            // $table->integer('category_id')->unsigned();
-            // $table->integer('businesstype_id')->unsigned();
+            
             $table->increments('id');
+            $table->integer('user_id')->unsigned();
             $table->string('job_title');
             $table->string('name_of_director');
             $table->string('company_name');
@@ -28,25 +27,18 @@ class CreateRegisteredMembersTable extends Migration
             $table->string('company_active_phone');
             $table->string('company_phone_two');
             $table->string('company_phone_three');
+            $table->string('bank_draft_number');
             $table->string('company_website');
-            $table->string('company_description');
+            $table->string('company_major_activity');
+            $table->string('company_other_activity');
             $table->timestamps();
 
 
-            // $table->foreign('country_id')
-            // ->references('id')
-            // ->on('country')
-            // ->onDelete('cascade');
-
-            //   $table->foreign('category_id')
-            // ->references('id')
-            // ->on('categories')
-            // ->onDelete('cascade');
-
-            //   $table->foreign('businesstype_id')
-            // ->references('id')
-            // ->on('business_type')
-            // ->onDelete('cascade');
+           
+              $table->foreign('user_id')
+            ->references('id')
+            ->on('users')
+            ->onDelete('cascade');
 
         });
     }

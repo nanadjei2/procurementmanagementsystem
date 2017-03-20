@@ -34,6 +34,14 @@ PMS | signup
                 <form action="{{ route('post-signup')}}" method="POST">
 
                   {{csrf_field()}}
+                    <div class="form-group">
+                    <label for="firstname"> Firstname</label>
+                    <input id="firstname" name="firstname" class="form-control" type="text" placeholder="Enter firstname" required="required" value="{{old('firstname')}}" />
+                </div>
+                <div class="form-group">
+                    <label for="lastname"> Othernames</label>
+                    <input id="othernames" name="othernames" class="form-control" type="text" placeholder="Enter othernames" required="required" value="{{old('othernames')}}" />
+                </div>
 
                   <div class="form-group">
                     <label for="username"> Username</label>
