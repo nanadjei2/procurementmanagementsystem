@@ -223,10 +223,10 @@
                 </a>
             </li>
         </ul>
-
-        
-        
+   
     </nav>
+
+    @yield('content')
  
 <!-- Left Nav Begins -->
 @include('partials.side-nav')

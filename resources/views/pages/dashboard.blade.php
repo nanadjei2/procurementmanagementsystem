@@ -4,10 +4,10 @@
 @endsection
 @section("content")
 
-    <section class="login">
+    <section>
         
         <div class="container">
-            @include('common.notifications')
+            @include('common.sweet-notifications')
             <div>
                 
                 <h2>You Are On The Dashboard Page</h2>

@@ -1,14 +1,11 @@
-<<<<<<< HEAD
 @extends("user-dashboard-master")
-=======
-@extends("adminmaster")
->>>>>>> 92118fb6637f9c8477a1294d7728fba64f486262
+
 @section("title")
 PMS | Supplier-Registration
 @endsection
 
 
-@section('registration-content')
+@section('content')
 
 
 <div class="container-fluid">
