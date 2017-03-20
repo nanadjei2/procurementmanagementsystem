@@ -8,6 +8,8 @@
         <div class="container">
             <div class="col-md-4 col-md-offset-4 col-xs-12">
                 <div class="login-form">
+                 <div class="text-center">@include('common.notifications')</div>
+
                 <div class="text-center form-heading"><h3>Please Login</h3></div>
                 <form class="form-horizontal" action="{{ route('post-login') }}" method="POST" role="form">
                     <div class="form-group">

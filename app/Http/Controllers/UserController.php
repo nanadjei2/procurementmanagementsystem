@@ -22,6 +22,10 @@ class UserController extends Controller
         return view('pages.dashboard');
     }
 
+    public function getAdminDashboard(){
+        return view('pages.admindashboard');
+    }
+
     public function postLogin(Request $requset) {
        $rules = User::$rules;
     //    
@@ -57,6 +61,16 @@ class UserController extends Controller
 
     public function PostSignup(Request $request){
 
+    	  $this->validate($request, [
+
+    	  		'username'=>'required',
+    	  		'email'=>'email',
+    	  		'password'=>'required|min:8',
+    	  		'confirmpassword'=>'required|min:8'
+
+
+    	  	]);
+
     	$newSignup= new User;  // creates a new user object
     	$newSignup->username=$request['username']; // accepts username from textbox
     	$newSignup->email=$request['email'];// accepts email from textbox
@@ -68,7 +82,7 @@ class UserController extends Controller
     	if($confirmpassword==$password){  // do comparision if two password matches
 
     		$newSignup->save();// creates a new user entry
-    		return redirect('dashboard')->with('success', 'You have successfully signed up');//message after signup
+    		return redirect('admin-dashboard')->with('success', 'You have successfully signed up');//message after signup
     	}
 
     	else{
