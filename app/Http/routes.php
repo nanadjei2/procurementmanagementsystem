@@ -36,8 +36,11 @@ Route::group(['middlewareGroups'], function(){
 
 
 
+<<<<<<< HEAD
 		
 
 
+=======
+>>>>>>> d40defcb5690e9bf6aab57a4a5e5a7a2a874284e
 
 });

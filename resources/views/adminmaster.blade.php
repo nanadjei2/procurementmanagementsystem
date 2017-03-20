@@ -52,26 +52,156 @@
                 </mega-menu-1>
             </li>
         </ul>
-        <ul class="nav navbar-nav pull-left toggle-search">
-            <li class="nav-item">
 
-                <a class="nav-link" data-click="toggle-search">
-                    <i class="zmdi zmdi-search"></i> 
+
+        
+    <ul class="nav navbar-nav pull-left toggle-search">
+        <li class="nav-item">
+
+            <a class="nav-link" data-click="toggle-search">
+                <i class="zmdi zmdi-search"></i> 
+            </a>
+        </li>
+    </ul>
+    <div class="navbar-drawer pull-left hidden-lg-down">
+        <form class="form-inline navbar-form ">
+
+            <input class="form-control" type="text" placeholder="Search">
+        </form>
+    </div>
+    <ul class="nav navbar-nav pull-right hidden-lg-down navbar-toggle-theme-selector">
+        <li class="nav-item">
+
+            <a class="nav-link" data-click="toggle-theme-selector">
+                <i class="zmdi zmdi-settings"></i> 
+            </a>
+        </li>
+    </ul>
+
+
+
+    <ul class="nav navbar-nav pull-right hidden-lg-down navbar-flags">
+        <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle no-after" data-toggle="dropdown">
+                <span class="flag flag-icon flag-icon-gb"></span> 
+            </a>
+            <div class="dropdown-menu dropdown-menu-scale from-right dropdown-menu-right">
+
+                <a class="dropdown-item">
+                    <span class="flag flag-icon flag-icon-gb"></span> 
+                    <span class="title">English</span> 
                 </a>
-            </li>
-        </ul>
-        <div class="navbar-drawer pull-left hidden-lg-down">
-            <form class="form-inline navbar-form ">
 
-                <input class="form-control" type="text" placeholder="Search">
-            </form>
+                <a class="dropdown-item">
+                    <span class="flag flag-icon flag-icon-de"></span> 
+                    <span class="title">German</span> 
+                </a>
+
+                <a class="dropdown-item">
+                    <span class="flag flag-icon flag-icon-es"></span> 
+                    <span class="title">Spanish</span> 
+                </a>
+
+                <a class="dropdown-item">
+                    <span class="flag flag-icon flag-icon-fr"></span> 
+                    <span class="title">French</span> 
+                </a>
+            </div>
+        </li>
+    </ul>
+
+
+
+    <ul class="nav navbar-nav pull-right hidden-lg-down navbar-notifications">
+        <li class="nav-item">
+
+            <a class="nav-link" data-click="toggle-right-sidebar">
+                <i class="zmdi zmdi-notifications-active"></i> 
+                <span class="label label-rounded label-primary label-xs">3</span> 
+            </a>
+        </li>
+    </ul>
+
+
+    <ul class="nav navbar-nav pull-right hidden-lg-down navbar-profile">
+        <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle no-after" data-toggle="dropdown">
+
+                <img class="img-circle img-fluid profile-image" src="assets/faces/m1.png">
+            </a>
+            <div class="dropdown-menu dropdown-no-overflow animation-delay">
+
+                <a class="dropdown-item animated fadeIn" href="email-inbox.html">
+                    <i class="zmdi zmdi-email"></i> 
+                    <span class="label label-pill label-danger label-xs pull-right">New</span> 
+                    <span class="dropdown-text">Inbox</span> 
+                </a>
+
+                <a class="dropdown-item animated fadeIn" href="pages-profile.html">
+                    <i class="zmdi zmdi-settings-square"></i> 
+                    <span class="dropdown-text">Profile</span> 
+                </a>
+
+                <a class="dropdown-item animated fadeIn" href="pages-lock-screen.html">
+                    <i class="zmdi zmdi-alarm"></i> 
+                    <span class="dropdown-text">Lock screen</span> 
+                </a>
+
+                <a class="dropdown-item animated fadeIn" href="pages-login.html">
+                    <i class="zmdi zmdi-power"></i> 
+                    <span class="dropdown-text">Logout</span> 
+                </a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div class="theme-selector">
+    <p>Select theme</p>
+    <div class="select-palette">
+        <div class="color-palette" data-click="set-palette" data-id="palette-1"> <span class="color-block" style="background: #0283f1"></span>  <span class="color-block" style="background: #0267bf"></span>  <span class="color-block" style="background: #f0ad4e"></span> 
         </div>
+        <div class="color-palette" data-click="set-palette" data-id="palette-2"> <span class="color-block" style="background: #003b84"></span>  <span class="color-block" style="background: #002451"></span>  <span class="color-block" style="background: #f0ad4e"></span> 
+        </div>
+        <div class="color-palette" data-click="set-palette" data-id="palette-3"> <span class="color-block" style="background: #3c414f"></span>  <span class="color-block" style="background: #262932"></span>  <span class="color-block" style="background: #5cb85c"></span> 
+        </div>
+        <div class="color-palette" data-click="set-palette" data-id="palette-4"> <span class="color-block" style="background: #1a1a1a"></span>  <span class="color-block" style="background: #000000"></span>  <span class="color-block" style="background: #5cb85c"></span> 
+        </div>
+        <div class="color-palette" data-click="set-palette" data-id="palette-5"> <span class="color-block" style="background: #602697"></span>  <span class="color-block" style="background: #461C6E"></span>  <span class="color-block" style="background: #f0ad4e"></span> 
+        </div>
+        <div class="color-palette" data-click="set-palette" data-id="palette-6"> <span class="color-block" style="background: #0283f1"></span>  <span class="color-block" style="background: #ffffff"></span>  <span class="color-block" style="background: #d9534f"></span> 
+        </div>
+        <div class="color-palette" data-click="set-palette" data-id="palette-7"> <span class="color-block" style="background: #003b84"></span>  <span class="color-block" style="background: #ffffff"></span>  <span class="color-block" style="background: #d9534f"></span> 
+        </div>
+        <div class="color-palette" data-click="set-palette" data-id="palette-8"> <span class="color-block" style="background: #1a1a1a"></span>  <span class="color-block" style="background: #ffffff"></span>  <span class="color-block" style="background: #d9534f"></span> 
+        </div>
+        <div class="color-palette" data-click="set-palette" data-id="palette-9"> <span class="color-block" style="background: #602697"></span>  <span class="color-block" style="background: #ffffff"></span>  <span class="color-block" style="background: #d9534f"></span> 
+        </div>
+    </div>
+</div>
 
 
 
 
 
-        <ul class="nav navbar-nav pull-right hidden-lg-down navbar-toggle-theme-selector">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<ul class="nav navbar-nav pull-right hidden-lg-down navbar-toggle-theme-selector">
             <li class="nav-item dropdown">
 
                 <a class="nav-link dropdown-toggle no-after" data-toggle="dropdown">
@@ -86,7 +216,7 @@
 
                 </div>
             </li>
-        </ul>
+        </ul>-->
 
 
 
@@ -137,20 +267,26 @@
         
     </nav>
   
+<<<<<<< HEAD
 @yield('registration-content')
+=======
+  <h2 class="text-center
+  " style="color: #fff;">sdfsdfsd;lfsl;dfk;</h2>
+>>>>>>> d40defcb5690e9bf6aab57a4a5e5a7a2a874284e
 
 <!-- Left Nav Begins -->
 @include('partials.side-nav')
 <!-- Left Nav Ends -->
 
-        
-            <div class="footer">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <a href="http://www.batchthemes.com/" target="_blank">© 2016. Batch Themes Ltd. </a><a href="http://www.themeforest.com/" target="_blank">Buy Marino</a>
-                    </div>
-                </div>
-            </div>
+ <div class="footer">
+    <div class="row">
+        <div class="col-xs-12">
+            <a href="http://www.batchthemes.com/" target="_blank">© 2016. Batch Themes Ltd. </a><a href="http://www.themeforest.com/" target="_blank">Buy Marino</a>
+        </div>
+    </div>
+</div>
+
+<h2> Just for a test</h2>
        
 
 
