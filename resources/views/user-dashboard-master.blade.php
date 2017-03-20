@@ -17,6 +17,7 @@
 <link href="{{ asset('cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('cdnjs.cloudflare.com/ajax/libs/flag-icon-css/1.0.0/css/flag-icon.min.css') }}" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="{{ asset('styles/main.css') }}" />
+<link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/chartist/dist/chartist.min.css') }}" />
 
 
@@ -279,7 +280,7 @@
 <script type="text/javascript" src="{{ asset('scripts/dashboards.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/index.js') }}"></script>
 
-</body>
 
-<!-- Mirrored from marino-2.batchthemes.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Apr 2016 18:08:49 GMT -->
+
+</body>
 </html>

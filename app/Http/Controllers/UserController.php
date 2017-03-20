@@ -44,10 +44,10 @@ class UserController extends Controller
        if (Auth::attempt($credentials)) {
            if(!Auth::user()->admin == 1) {
             return redirect('dashboard')
-            ->with('icon-success', 'You have successfully logged in');
+            ->with('notify-success', 'You have successfully logged in');
            } else {
             return redirect('admin-dashboard')
-            ->with('success', 'Hi '. Auth::user()->username .', You are welcome');
+            ->with('notify-success', 'Hi '. Auth::user()->username .', You are welcome');
            }
          
        } else {

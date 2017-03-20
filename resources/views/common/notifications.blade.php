@@ -2,7 +2,7 @@
 <div class="notification text-center">
     @if(Session::has('icon-success'))
 
-    <div id="alert-success" style="border-radius: 0px; border-left-width: 7px; border-left-color: #3CB871 ;" class="alert alert-success alert-dismissible" role="alert">
+    <div id="alert-success" class="alert alert-success alert-dismissible" role="alert">
         <button id="close" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <strong><i class="fa fa-check-circle fa-lg fa-fw"></i>Great </strong> {{ Session::get('icon-success') }}
     </div>
@@ -20,7 +20,7 @@
 <div class="notification text-center">
     @if(Session::has('success'))
 
-    <div id="alert-success" style="border-radius: 0px; border-left-width: 7px; border-left-color: #3CB871 ;" class="alert alert-success alert-dismissible" role="alert">
+    <div id="alert-success" class="alert alert-success alert-dismissible" role="alert">
         <button id="close" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <strong><i class="fa fa-check-circle fa-lg fa-fw"></i></strong> {{ Session::get('success') }}
     </div>
