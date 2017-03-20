@@ -37,8 +37,5 @@ Route::group(['middlewareGroups'], function(){
 
 	// Route::post('registerpost',['uses'=>'MemberController@PostRegisterMember','middleware'=>'auth'])->name('registerpost');
 
-	 	
-
-
 
 });
