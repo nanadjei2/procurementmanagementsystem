@@ -28,18 +28,10 @@ Route::group(['middlewareGroups'], function(){
 	Route::post('post-signup',['uses'=>'UserController@PostSignup'])->name('post-signup');
 
 	Route::get('dashboard', ['uses' => 'UserController@getDashboard','middleware'=>'auth'])->name('dashboard');
-	Route::get('admin-dashboard', ['uses' => 'UserController@getAdminDashboard'])->name('admin-dashboard');
 
-	
+	Route::get('admin-dashboard', ['uses' => 'UserController@getAdminDashboard','middleware'=>'auth'])->name('admin-dashboard');
 
-	// Route::get('userdashboard',['middleware'=>'auth', function(){
-
-	// 	return view('pages.userdashboard');
-
-	// }])->name('userdashboard');
-
-
-	// Route::get('register-new-member',['uses'=>'MemberController@RegisterNewMember','middleware'=>'auth'])->name('register-new-member');
+	Route::get('register-member',['uses'=>'RegisteredMembersController@RegisterNewMember'])->name('register-member');
 
 	// Route::post('registerpost',['uses'=>'MemberController@PostRegisterMember','middleware'=>'auth'])->name('registerpost');
 
