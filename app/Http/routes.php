@@ -30,12 +30,23 @@ Route::group(['middlewareGroups'], function(){
 
 	Route::get('admin-dashboard', ['middleware' => 'admin', 'uses' => 'AdminController@getAdminDashboard'])->name('admin-dashboard');
 
+
+	Route::get('supplier-registration', ['uses' => 'UserController@supplierResgistration'])->name('supplier-registration');
+
+	 Route::get('dashboard', ['uses' => 'UserController@getDashboard','middleware'=>'auth'])->name('dashboard');
+
+	// Route::get('admin-dashboard', ['uses' => 'UserController@getAdminDashboard','middleware'=>'auth'])->name('admin-dashboard');
+
+<<<<<<< HEAD
+=======
 	Route::get('register-member',['uses'=>'RegisteredMembersController@RegisterNewMember'])->name('register-member');
+>>>>>>> 05c5d5130a211a97eff917ac9c7424d89307589c
 
 	Route::get('dashboard', ['uses' => 'UserController@getDashboard','middleware'=>'auth'])->name('dashboard');
 
+<<<<<<< HEAD
+=======
+		
 
-
-
-
+>>>>>>> 05c5d5130a211a97eff917ac9c7424d89307589c
 });

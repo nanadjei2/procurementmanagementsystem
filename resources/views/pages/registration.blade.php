@@ -1,10 +1,11 @@
-@extends("adminmaster")
+@extends("user-dashboard-master")
+
 @section("title")
-PMS |supplier-registration
+PMS | Supplier-Registration
 @endsection
 
 
-@section('registration-content')
+@section('content')
 
 
 <div class="container-fluid">
