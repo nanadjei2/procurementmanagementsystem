@@ -25,6 +25,7 @@
         <strong><i class="fa fa-check-circle fa-lg fa-fw"></i></strong> {{ Session::get('success') }}
     </div>
 
+    
     @elseif(Session::has('error'))
 
     <div id="alert-danger" class="alert alert-danger alert-dismissible" role="alert">
