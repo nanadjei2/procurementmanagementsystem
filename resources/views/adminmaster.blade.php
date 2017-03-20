@@ -267,12 +267,10 @@
         
     </nav>
   
-<<<<<<< HEAD
 @yield('registration-content')
-=======
+
   <h2 class="text-center
   " style="color: #fff;">sdfsdfsd;lfsl;dfk;</h2>
->>>>>>> d40defcb5690e9bf6aab57a4a5e5a7a2a874284e
 
 <!-- Left Nav Begins -->
 @include('partials.side-nav')
