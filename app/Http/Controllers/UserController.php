@@ -38,9 +38,17 @@ class UserController extends Controller
 
 
        if (Auth::attempt($credentials)) {
-         return redirect('dashboard')->with('success', 'You have successfully logged in');
+           if(!Auth::user()->admin == 1) {
+            return redirect('dashboard')
+            ->with('icon-success', 'You have successfully logged in');
+           } else {
+            return redirect('admin-dashboard')
+            ->with('success', 'Hi '. Auth::user()->username .', You are welcome');
+           }
+         
        } else {
-         return 'Sorry looks like something went wrong. Please try again';
+         return redirect()->back()
+         ->with('icon-error', 'Sorry username and password mismatch');
        }
         
     }
