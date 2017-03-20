@@ -31,7 +31,7 @@
                 </a>
             </li>
         </ul>
-        <a class="navbar-brand" href="index-2.html">Proucurement Mangement System</a> 
+        <a class="navbar-brand" href="index-2.html">Procurement Mangement System</a> 
         <ul class="nav navbar-nav pull-left toggle-fullscreen-mode">
             <li class="nav-item">
 
@@ -139,40 +139,9 @@
   
 
 
-
-
-
-
-
-
-
-
-
-
 <!-- Left Nav Begins -->
 @include('partials.side-nav')
 <!-- Left Nav Ends -->
-      
-<div class="right-sidebar-outer">
-    <div class="right-sidebar-inner">
-        <div class="right-sidebar">
-            <div class="bs-nav-tabs nav-tabs-warning justified">
-                <ul class="nav nav-tabs nav-animated-border-from-center">
-                    <li class="nav-item">
-                        <a href="index-2.html#" class="nav-link active" data-toggle="tab" data-target="#rtab-left">Activities</a> 
-                    </li>
-                    <li class="nav-item">
-                        <a href="index-2.html#" class="nav-link" data-toggle="tab" data-target="#rtab-center">Users</a> 
-                    </li>
-                    <li class="nav-item">
-                        <a href="index-2.html#" class="nav-link" data-toggle="tab" data-target="#rtab-right">Stats</a> 
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-                    
 
         
             <div class="footer">
