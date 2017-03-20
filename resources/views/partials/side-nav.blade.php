@@ -48,13 +48,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="sideline">
-                                        <i class="zmdi zmdi-favorite-outline md-icon pull-left"></i> 
-                                        <span class="title">Favorites</span> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="sideline">
+                                    <a href="{{ route('logout') }}" class="sideline">
                                         <i class="zmdi zmdi-sign-in md-icon pull-left"></i> 
                                         <span class="title">Logout</span> 
                                     </a>

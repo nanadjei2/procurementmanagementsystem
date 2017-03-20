@@ -32,9 +32,7 @@ Route::group(['middlewareGroups'], function(){
 	Route::get('admin-dashboard', ['middleware' => 'admin', 'uses' => 'AdminController@getAdminDashboard'])->name('admin-dashboard');
 
 	Route::get('dashboard', ['uses' => 'UserController@getDashboard','middleware'=>'auth'])->name('dashboard');
-	Route::get('admin-dashboard', ['uses' => 'UserController@getAdminDashboard'])->name('admin-dashboard');
-
-
+	
 	
 
 	// Route::get('userdashboard',['middleware'=>'auth', function(){

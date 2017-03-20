@@ -1,14 +1,14 @@
-@extends('master')
-
+@extends("adminmaster")
 @section("title")
     PMS | Admin-Dashboard
 @endsection
 
 @section("content")
-    <section class="admin-dashboard">
+    <section class="login">
         <div class="container">
-            @include('common.notifications')
-            <h2>You are On the Admin Dashboard Page</h2>
-        </div>
+            <div class="text-center">@include('common.notifications')</div>
+
+            <h2>You Are On The Dashboard Page</h2>
+        </div><!--Container-->
     </section>
-@endsection
+@endsection 
