@@ -137,7 +137,7 @@
         
     </nav>
   
-
+@yield('registration-content')
 
 <!-- Left Nav Begins -->
 @include('partials.side-nav')
@@ -153,33 +153,7 @@
             </div>
        
 
-<!-- global scripts -->
-<!-- <script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/tether/dist/js/tether.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="bower_components/PACE/pace.js"></script>
-<script src="../cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.0/lodash.min.js"></script>
-<script src="scripts/components/jquery-fullscreen/jquery.fullscreen-min.js"></script>
-<script src="bower_components/jquery-storage-api/jquery.storageapi.min.js"></script>
-<script src="bower_components/wow/dist/wow.min.js"></script>
-<script src="scripts/functions.js"></script>
-<script src="scripts/colors.js"></script>
-<script src="scripts/left-sidebar.js"></script>
-<script src="scripts/navbar.js"></script>
-<script src="scripts/horizontal-navigation-1.js"></script>
-<script src="scripts/horizontal-navigation-2.js"></script>
-<script src="scripts/horizontal-navigation-3.js"></script>
-<script src="scripts/main.js"></script>
-<script src="bower_components/notifyjs/dist/notify.js"></script>
-<script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-<script src="bower_components/chartist/dist/chartist.min.js"></script>
-<script src="../cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
-<script src="bower_components/d3/d3.js"></script>
-<script src="../cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-<script src="../bower.batchthemes.com/bower_components/datamaps/dist/datamaps.all.js"></script>
-<script src="scripts/dashboards.js"></script>
-<script src="scripts/index.js"></script>
- -->
+
 
 <!-- implementing the JS files using laravel approach -->
 <script type="text/javascript" src="{{ asset('bower_components/jquery/dist/jquery.js') }}"></script>
@@ -218,6 +192,8 @@
 <script type="text/javascript" src="{{ asset('bower.batchthemes.com/bower_components/datamaps/dist/datamaps.all.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/dashboards.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/index.js') }}"></script>
+<script type="text/javascript" src="{{ asset('scripts/forms-basic.js') }}"></script>
+<script type="text/javascript" src="{{ asset('scripts/components/floating-labels.js')}}"></script>
 
 </body>
 

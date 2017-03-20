@@ -1,10 +1,10 @@
-@extends("master")
+@extends("adminmaster")
 @section("title")
 PMS |supplier-registration
 @endsection
 
 
-@section('content')
+@section('registration-content')
 
 
 <div class="container-fluid">
@@ -67,6 +67,10 @@ PMS |supplier-registration
 						<option value="Western">Western</option>
 						<option value="Volta">Volta</option>
 					</select>
+
+
+
+	
 
 				</div>
 		
