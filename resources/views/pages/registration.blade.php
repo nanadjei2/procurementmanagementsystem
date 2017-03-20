@@ -1,10 +1,14 @@
+<<<<<<< HEAD
 @extends("user-dashboard-master")
+=======
+@extends("adminmaster")
+>>>>>>> 92118fb6637f9c8477a1294d7728fba64f486262
 @section("title")
 PMS | Supplier-Registration
 @endsection
 
 
-@section('content')
+@section('registration-content')
 
 
 <div class="container-fluid">
@@ -67,6 +71,10 @@ PMS | Supplier-Registration
 						<option value="Western">Western</option>
 						<option value="Volta">Volta</option>
 					</select>
+
+
+
+	
 
 				</div>
 		

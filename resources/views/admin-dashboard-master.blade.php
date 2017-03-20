@@ -227,7 +227,18 @@
         
         
     </nav>
+<<<<<<< HEAD:resources/views/admin-dashboard-master.blade.php
  
+=======
+  
+<<<<<<< HEAD
+@yield('registration-content')
+=======
+  <h2 class="text-center
+  " style="color: #fff;">sdfsdfsd;lfsl;dfk;</h2>
+>>>>>>> d40defcb5690e9bf6aab57a4a5e5a7a2a874284e
+
+>>>>>>> 92118fb6637f9c8477a1294d7728fba64f486262:resources/views/adminmaster.blade.php
 <!-- Left Nav Begins -->
 @include('partials.side-nav')
 <!-- Left Nav Ends -->
@@ -240,6 +251,13 @@
     </div>
 </div>
 
+<<<<<<< HEAD:resources/views/admin-dashboard-master.blade.php
+=======
+<h2> Just for a test</h2>
+       
+
+
+>>>>>>> 92118fb6637f9c8477a1294d7728fba64f486262:resources/views/adminmaster.blade.php
 
 <!-- implementing the JS files using laravel approach -->
 <script type="text/javascript" src="{{ asset('bower_components/jquery/dist/jquery.js') }}"></script>
@@ -278,6 +296,8 @@
 <script type="text/javascript" src="{{ asset('bower.batchthemes.com/bower_components/datamaps/dist/datamaps.all.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/dashboards.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/index.js') }}"></script>
+<script type="text/javascript" src="{{ asset('scripts/forms-basic.js') }}"></script>
+<script type="text/javascript" src="{{ asset('scripts/components/floating-labels.js')}}"></script>
 
 </body>
 
