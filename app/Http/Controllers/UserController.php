@@ -26,6 +26,10 @@ class UserController extends Controller
         return view('pages.admindashboard');
     }
 
+    public function supplierResgistration() {
+        return view('pages.registration');
+    }
+
     public function postLogin(Request $requset) {
        $rules = User::$rules;
     //    
@@ -123,6 +127,11 @@ class UserController extends Controller
             return redirect('dashboard')->with('error', 'Sorry you have to login first.');
         }
     }
+
+
+
+
+
 
 
 

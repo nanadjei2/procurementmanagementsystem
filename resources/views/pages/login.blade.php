@@ -11,7 +11,7 @@
                  
 
                 <div class="text-center form-heading">
-                    @include('common.notifications')
+                    <div class="text-center">@include('common.notifications')</div>
                     <h3>Please Login</h3></div>
                 <form class="form-horizontal" action="{{ route('post-login') }}" method="POST" role="form">
                     <div class="form-group">

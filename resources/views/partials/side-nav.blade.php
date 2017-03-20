@@ -10,7 +10,7 @@
                             <i class="fa fa-close"></i> 
                         </button>
                         <div class="profile-image">
-                            <img class="img-circle img-fluid" src="assets/faces/m1.png">
+                            <img class="img-circle img-fluid" src="{{ asset('images/avator.png') }}">
                         </div>
                         <div class="social-media">
                             <button type="button" class="btn btn-facebook btn-circle m-r-5">
@@ -23,8 +23,8 @@
                                 <i class="fa fa-google"></i> 
                             </button>
                         </div>
-                        <div class="profile-title">Lucas smith</div>
-                        <div class="profile-subtitle">lucas.smith@gmail.com</div>
+                        <div class="profile-title">{{ Auth::user()->firstname }} {{ Auth::user()->othername }}</div>
+                        <!--<div class="profile-subtitle">lucas.smith@gmail.com</div>-->
                         <div class="profile-toggle">
                             <button data-click="toggle-profile" type="button" class="btn btn-white btn-outline no-border">
                                 <i class="pull-right fa fa-caret-down icon-toggle-profile"></i> 
@@ -62,6 +62,14 @@
                                     <a class="sideline" href="index-2.html">
                                         <i class="zmdi zmdi-view-dashboard md-icon pull-left"></i> 
                                         <span class="title">Dashboard</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="l1 list-unstyled section-content">
+                                <li>
+                                    <a class="sideline" href="index-2.html">
+                                        <i class="fa fa-user-plus md-icon pull-left"></i> 
+                                        <span class="title">Register</span> 
                                     </a>
                                 </li>
                             </ul>

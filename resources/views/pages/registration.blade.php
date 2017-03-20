@@ -1,6 +1,6 @@
-@extends("master")
+@extends("user-dashboard-master")
 @section("title")
-PMS |supplier-registration
+PMS | Supplier-Registration
 @endsection
 
 

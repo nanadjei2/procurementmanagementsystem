@@ -1,4 +1,4 @@
-@extends("master")
+@extends("admin-dashboard-master")
 @section("title")
     PMS | Dashboard
 @endsection

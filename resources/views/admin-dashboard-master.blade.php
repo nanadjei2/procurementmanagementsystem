@@ -31,7 +31,7 @@
                 </a>
             </li>
         </ul>
-        <a class="navbar-brand" href="index-2.html">Procurement Mangement System</a> 
+        <a class="navbar-brand" href="{{ route('dashboard') }}">Procurement Mangement System</a> 
         <ul class="nav navbar-nav pull-left toggle-fullscreen-mode">
             <li class="nav-item">
 
@@ -54,7 +54,7 @@
         </ul>
 
 
-        
+
     <ul class="nav navbar-nav pull-left toggle-search">
         <li class="nav-item">
 
@@ -113,7 +113,7 @@
 
 
 
-    <ul class="nav navbar-nav pull-right hidden-lg-down navbar-notifications">
+    <!--<ul class="nav navbar-nav pull-right hidden-lg-down navbar-notifications">
         <li class="nav-item">
 
             <a class="nav-link" data-click="toggle-right-sidebar">
@@ -121,7 +121,7 @@
                 <span class="label label-rounded label-primary label-xs">3</span> 
             </a>
         </li>
-    </ul>
+    </ul>-->
 
 
     <ul class="nav navbar-nav pull-right hidden-lg-down navbar-profile">
@@ -129,7 +129,7 @@
 
             <a class="nav-link dropdown-toggle no-after" data-toggle="dropdown">
 
-                <img class="img-circle img-fluid profile-image" src="assets/faces/m1.png">
+                <img class="img-circle img-fluid profile-image" src="{{ asset('images/avator.png') }}">
             </a>
             <div class="dropdown-menu dropdown-no-overflow animation-delay">
 
@@ -144,12 +144,9 @@
                     <span class="dropdown-text">Profile</span> 
                 </a>
 
-                <a class="dropdown-item animated fadeIn" href="pages-lock-screen.html">
-                    <i class="zmdi zmdi-alarm"></i> 
-                    <span class="dropdown-text">Lock screen</span> 
-                </a>
+                
 
-                <a class="dropdown-item animated fadeIn" href="pages-login.html">
+                <a class="dropdown-item animated fadeIn" href="{{ route('logout') }}">
                     <i class="zmdi zmdi-power"></i> 
                     <span class="dropdown-text">Logout</span> 
                 </a>
@@ -181,42 +178,6 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!--<ul class="nav navbar-nav pull-right hidden-lg-down navbar-toggle-theme-selector">
-            <li class="nav-item dropdown">
-
-                <a class="nav-link dropdown-toggle no-after" data-toggle="dropdown">
-                    <span class="zmdi zmdi-settings"></span> 
-                </a>
-                <div class="dropdown-menu dropdown-menu-scale from-right dropdown-menu-right">
-                    <a href="{{ route('logout') }}" class="dropdown-item">
-                        <span class="title">
-                            Logout
-                        </span> 
-                    </a>
-
-                </div>
-            </li>
-        </ul>-->
 
 
 
@@ -266,10 +227,7 @@
         
         
     </nav>
-  
-  <h2 class="text-center
-  " style="color: #fff;">sdfsdfsd;lfsl;dfk;</h2>
-
+ 
 <!-- Left Nav Begins -->
 @include('partials.side-nav')
 <!-- Left Nav Ends -->
@@ -282,36 +240,6 @@
     </div>
 </div>
 
-<h2> Just for a test</h2>
-       
-
-<!-- global scripts -->
-<!-- <script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/tether/dist/js/tether.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="bower_components/PACE/pace.js"></script>
-<script src="../cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.0/lodash.min.js"></script>
-<script src="scripts/components/jquery-fullscreen/jquery.fullscreen-min.js"></script>
-<script src="bower_components/jquery-storage-api/jquery.storageapi.min.js"></script>
-<script src="bower_components/wow/dist/wow.min.js"></script>
-<script src="scripts/functions.js"></script>
-<script src="scripts/colors.js"></script>
-<script src="scripts/left-sidebar.js"></script>
-<script src="scripts/navbar.js"></script>
-<script src="scripts/horizontal-navigation-1.js"></script>
-<script src="scripts/horizontal-navigation-2.js"></script>
-<script src="scripts/horizontal-navigation-3.js"></script>
-<script src="scripts/main.js"></script>
-<script src="bower_components/notifyjs/dist/notify.js"></script>
-<script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-<script src="bower_components/chartist/dist/chartist.min.js"></script>
-<script src="../cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
-<script src="bower_components/d3/d3.js"></script>
-<script src="../cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-<script src="../bower.batchthemes.com/bower_components/datamaps/dist/datamaps.all.js"></script>
-<script src="scripts/dashboards.js"></script>
-<script src="scripts/index.js"></script>
- -->
 
 <!-- implementing the JS files using laravel approach -->
 <script type="text/javascript" src="{{ asset('bower_components/jquery/dist/jquery.js') }}"></script>
