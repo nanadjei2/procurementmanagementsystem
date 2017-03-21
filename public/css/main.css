@@ -1,6 +1,10 @@
 .content {
-  margin-top: 2%; 
+  margin-top: 6%; 
   margin-left: 18.5%;
+}
+
+.dashboard-activities {
+  margin-top: 10%;
 }
 
 .notification {
@@ -35,4 +39,6 @@
     padding-bottom: 30px;
 }
 
+.my-profile, .view, .update, .something-else, .logout{
+  margin-top: 10px;
 }
