@@ -16,7 +16,8 @@
 <link href="{{ asset('cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('cdnjs.cloudflare.com/ajax/libs/flag-icon-css/1.0.0/css/flag-icon.min.css') }}" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="{{ asset('styles/main.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('styles/main.css') }}"  />
+<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}"  />
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/chartist/dist/chartist.min.css') }}" />
 
 
@@ -178,57 +179,11 @@
     </div>
 </div>
 
-
-
-
-
-
-
-        <ul class="nav navbar-nav pull-right hidden-lg-down navbar-flags">
-            <li class="nav-item dropdown">
-
-                <a class="nav-link dropdown-toggle no-after" data-toggle="dropdown">
-                    <span class="flag flag-icon flag-icon-gb"></span> 
-                </a>
-                <div class="dropdown-menu dropdown-menu-scale from-right dropdown-menu-right">
-
-                    <a class="dropdown-item">
-                        <span class="flag flag-icon flag-icon-gb"></span> 
-                        <span class="title">English</span> 
-                    </a>
-
-                    <a class="dropdown-item">
-                        <span class="flag flag-icon flag-icon-de"></span> 
-                        <span class="title">German</span> 
-                    </a>
-
-                    <a class="dropdown-item">
-                        <span class="flag flag-icon flag-icon-es"></span> 
-                        <span class="title">Spanish</span> 
-                    </a>
-
-                    <a class="dropdown-item">
-                        <span class="flag flag-icon flag-icon-fr"></span> 
-                        <span class="title">French</span> 
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <ul class="nav navbar-nav pull-right hidden-lg-down navbar-notifications">
-            <li class="nav-item">
-
-                <a class="nav-link" data-click="toggle-right-sidebar">
-                    <i class="zmdi zmdi-notifications-active"></i> 
-                    <span class="label label-rounded label-primary label-xs">3</span> 
-                </a>
-            </li>
-        </ul>
-
         
         
     </nav>
   
-@yield('registration-content')
+@yield('content')
 
   
 
