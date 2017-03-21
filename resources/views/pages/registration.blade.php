@@ -23,7 +23,7 @@ PMS | Supplier-Registration
 		<div class="col-md-4 col-md-offset-2">
 	
 		     
-			<form action="#" method="POST" enctype="multipart/form-data">
+			<form action="{{ route('post-register') }}" method="POST" enctype="multipart/form-data">
 
 				{{csrf_field()}}
 

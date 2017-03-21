@@ -9,7 +9,7 @@ use App\Http\Requests;
 use Validator;
 use App\User;
 use Auth;
-use RegisteredMember;
+use App\RegisteredMember;
 
 class RegisteredMembersController extends Controller
 {
@@ -38,8 +38,9 @@ class RegisteredMembersController extends Controller
     		$RegisteredMember->companywebsite=$request['companymajoractivity'];
     		$RegisteredMember->companywebsite=$request['companyotheractivities'];
 
+    		dd($RegisteredMember);
+    		//$RegisteredMember->save();
 
-    		
 
     }
 
