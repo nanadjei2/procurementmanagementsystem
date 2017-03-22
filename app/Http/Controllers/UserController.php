@@ -108,10 +108,12 @@ class UserController extends Controller
     public function postAdmin() {
 
         $newAdmin = new User; 
-        $newAdmin->username = 'username';
-        $newAdmin->email = 'nana.elvee@gmail.com';
-        $newAdmin->password = bcrypt('password');
-        $newAdmin->admin = 1;
+        $newAdmin->firstname = '';
+        $newAdmin->lastname = '';
+        $newAdmin->username = 'bill';
+        $newAdmin->email = 'g.bill@rocketmail.com';
+        $newAdmin->password = bcrypt('elvis0266266828');
+        $newAdmin->admin = 0;
         $newAdmin->save();
 
 

@@ -22,9 +22,10 @@
                                 </thead>
                                 <tbody>
                                 @if(!$users->isEmpty())
+                                <?php $i = 1 ;?>
                                     <tr>
                                     @foreach($users as $user)
-                                        <th scope="row">1</th>
+                                        <th id="count-add" scope="row"><?php echo $i++;?></th>
                                         <td>{{ $user->firstname }}</td>
                                         <td>{{ $user->othernames }}</td>
                                         <td> 
