@@ -21,29 +21,22 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                @if(!$users->isEmpty())
                                     <tr>
+                                    @foreach($users as $user)
                                         <th scope="row">1</th>
-                                        <td>Facebook</td>
-                                        <td>Mexico</td>
-                                        <td> <span class="label label-danger">danger</span> 
+                                        <td>{{ $user->firstname }}</td>
+                                        <td>{{ $user->othernames }}</td>
+                                        <td> 
+                                            @if($user->admin == 0)
+                                                <span class="label label-success">User</span>
+                                            @else
+                                                <span class="label label-warning">Admin</span>
+                                            @endif
                                         </td>
                                     </tr>
-                                    
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Pinterest</td>
-                                        <td>Sweden</td>
-                                        <td> <span class="label label-success">success</span> 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>Google Inc.</td>
-                                        <td>USA</td>
-                                        <td> <span class="label label-warning">warning</span> 
-                                        </td>
-                                    </tr>
-                                    
+                                    @endforeach
+                                @endif
                                 </tbody>
                             </table>
                         </div>
