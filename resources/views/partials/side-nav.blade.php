@@ -65,17 +65,29 @@
                             <div class="section-title hidden">Navigation</div>
                             <ul class="l1 list-unstyled section-content">
                                 <li>
-                                    <a class="sideline" href="index-2.html">
+                                    <a href="{{ route('dashboard') }}" class="sideline" href="index-2.html">
                                         <i class="zmdi zmdi-view-dashboard md-icon pull-left"></i> 
                                         <span class="title">Dashboard</span> 
                                     </a>
                                 </li>
                             </ul>
+                            @if(Auth::check())
+                                @if(Auth::user()->admin == 1)
+                                    <ul class="l1 list-unstyled section-content">
+                                        <li>
+                                            <a href="{{ route('admin-dashboard') }}" class="sideline" href="index-2.html">
+                                                <i class="zmdi zmdi-view-dashboard md-icon pull-left"></i> 
+                                                <span class="title">Admin Dashboard</span> 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                @endif
+                            @endif
                             <ul class="l1 list-unstyled section-content">
                                 <li>
-                                    <a class="sideline" href="index-2.html">
+                                    <a href="{{ route('register-member') }}" class="sideline" href="index-2.html">
                                         <i class="fa fa-user md-icon pull-left"></i> 
-                                        <span class="title">Register</span> 
+                                        <span class="title">Add More Info</span> 
                                     </a>
                                 </li>
                             </ul>

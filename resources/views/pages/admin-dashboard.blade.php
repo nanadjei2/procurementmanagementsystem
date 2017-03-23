@@ -9,7 +9,7 @@
             <div class="admin-dashboard-table">
                 <div class="row m-b-20">
                     <div class="col-xs-12">
-                        <h3 class="text-center"> <strong>System Users</strong> </h3> 
+                        <h3 class="text-center"> System Users </h3> 
                         <div class="table-responsive">
                             <table class="table table-hover table-striped">
                                 <thead>
@@ -17,6 +17,7 @@
                                         <th>#</th>
                                         <th>Firstname</th>
                                         <th>Othernames</th>
+                                        <th>Email</th>
                                         <th>Status</th>
                                     </tr>
                                 </thead>
@@ -28,6 +29,7 @@
                                         <th id="count-add" scope="row"><?php echo $i++;?></th>
                                         <td>{{ $user->firstname }}</td>
                                         <td>{{ $user->othernames }}</td>
+                                        <td>{{ $user->email }}</td>
                                         <td> 
                                             @if($user->admin == 0)
                                                 <span class="label label-success">User</span>

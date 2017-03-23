@@ -111,7 +111,12 @@ PMS | Supplier-Registration
 				
 				<div class="form-group">
 					<label>Company Major Activity</label>
-					<textarea name="companymajoractivity" class="form-control">{{ old('companymajoractivity')}}</textarea>
+					<!--<textarea name="companymajoractivity" class="form-control">{{ old('companymajoractivity')}}</textarea>-->
+					<!--<span class="options">
+						<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
+						<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+						<label class="radio-inline"><input type="radio" name="optradio">Option 3</label>
+					<span/>-->
 				</div>
 				
 				<div class="form-group">
