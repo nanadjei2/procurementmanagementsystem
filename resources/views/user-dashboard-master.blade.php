@@ -240,7 +240,7 @@
 <script type="text/javascript" src="{{ asset('scripts/dashboards.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/index.js') }}"></script>
 
-
+@yield("company-activites")
 
 </body>
 </html>

@@ -49,3 +49,9 @@
 .my-profile, .view, .update, .something-else, .logout {
   margin-top: 10px;
 }
+
+/*REGISTER MEMBER*/
+
+#major-activity-boxes {
+  margin-left: 60%;
+}

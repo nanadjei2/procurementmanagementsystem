@@ -83,6 +83,9 @@
                                     </ul>
                                 @endif
                             @endif
+
+                            @if(Auth::check())
+                                @if(!Auth::user()->admin == 1)
                             <ul class="l1 list-unstyled section-content">
                                 <li>
                                     <a href="{{ route('register-member') }}" class="sideline" href="index-2.html">
@@ -99,6 +102,8 @@
                                     </a>
                                 </li>
                             </ul>
+                                @endif
+                            @endif
                          </div>
 
                          

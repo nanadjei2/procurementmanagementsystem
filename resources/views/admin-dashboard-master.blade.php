@@ -236,17 +236,13 @@
 <script type="text/javascript" src="{{ asset('bower_components/d3/d3.js') }}"></script>
 <script type="text/javascript" src="{{ asset('cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js') }}"></script>
 
-<script type="text/javascript" src="{{ asset('bower.batchthemes.com/bower_components/datamaps/dist/datamaps.all.js') }}"></script>
+<!-- <script type="text/javascript" src="{{ asset('bower.batchthemes.com/bower_components/datamaps/dist/datamaps.all.js') }}"></script> -->
 <script type="text/javascript" src="{{ asset('scripts/dashboards.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/index.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/forms-basic.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/components/floating-labels.js')}}"></script>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        alert('Hey am working');
-    });
-</script>
+
 
 </body>
     

@@ -77,13 +77,10 @@ PMS | Supplier-Registration
 					<input type="text" name="email" class="form-control" value="{{ old('email') }}">
 				</div>
 
-				<div class="form-group">
-					<label>Company Website</label>
-					<textarea name="companywebsite" class="form-control">{{ old('companywebsite')}}</textarea>
-				</div>
+				
 
 											
-			</div>
+		</div>
 
 			<div class="col-md-4 col-md-offset-1">
 				
@@ -107,33 +104,97 @@ PMS | Supplier-Registration
 					<textarea name="bankdraftnumber" class="form-control">{{ old('bankdraftnumber')}}</textarea>
 				</div>
 
+				<div class="form-group">
+					<label>Company Website</label>
+					<textarea name="companywebsite" class="form-control">{{ old('companywebsite')}}</textarea>
+				</div>
 				
 				
 				<div class="form-group">
 					<label>Company Major Activity</label>
-					<!--<textarea name="companymajoractivity" class="form-control">{{ old('companymajoractivity')}}</textarea>-->
-					<!--<span class="options">
-						<label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-						<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-						<label class="radio-inline"><input type="radio" name="optradio">Option 3</label>
-					<span/>-->
+					<select id="major-activity-select" name="jobtitile" class="form-control">
+						<option value="">Select Major Activity...</option>
+						<option value="goods">Goods</option>
+						<option value="works">Works</option>		
+						<option value="services">Services</option>		
+					</select>
+
 				</div>
-				
-				<div class="form-group">
-					<label>Company Other Activities</label>
-					<textarea name="companyotheractivities" class="form-control">{{ old('companyotheractivities')}}</textarea>
+				<div id="next-step">
+					<div class="form-group">
+						<label>Company Other Activities</label>
+						<textarea name="companyotheractivities" class="form-control">{{ old('companyotheractivities')}}</textarea>
+					</div>
+			
+					<div class="form-group">
+						<button type="submit" name="submit" class="btn btn-primary btn-lg" style="width: 300px;">Register Member</button>
+						<button type="reset" name="reset" class="btn btn-danger btn-lg">Reset</button>
+					</div>
 				</div>
+
+			</form>	
+		</div> <!-- col-md-4 col-md-offset-2 -->
 		
-				<div class="form-group">
-					<button type="submit" name="submit" class="btn btn-primary btn-lg" style="width: 300px;">Register Member</button>
-					<button type="reset" name="reset" class="btn btn-danger btn-lg">Reset</button>
-				</div>
+	</div><!--row-->
 
-			</form>
-
-		</div>
+	<div id="major-goods-boxes" style="margin-left: 225px; margin-top: 40px;">
+    <div class="alert text-center alert-info-outline animated fadeIn" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span>  <span class="sr-only">Close</span> 
+            </button>  Please select your major activity from the checkboxes below !
+     </div>
+	
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<div class="checkbox">
+  						<label><input type="checkbox" value="">Agricultural/Farm Equiptment</label>
+					</div>
+					<div class="checkbox">
+  						<label><input type="checkbox" value="">Agro Chemicals</label>
+					</div>
+					<div class="checkbox">
+  						<label><input type="checkbox" value="">Automobile/Vehicles Parts</label>
+					</div>
+					<div class="checkbox">
+  						<label><input type="checkbox" value="">Building/Construction Materials and Equiptment</label>
+					</div>
+					<div class="checkbox">
+  						<label><input type="checkbox" value="">Clothing/Sewing Equipment</label>
+					</div>
+					<div class="checkbox">
+  						<label><input type="checkbox" value="">Detergents/Disinfectants/Sanitary/Cleaning Materials</label>
+					</div>
+					<div class="checkbox">
+  						<label><input type="checkbox" value="">Drawing Materials</label>
+					</div>
+					<div class="checkbox">
+  						<label><input type="checkbox" value="">Electronical Materials and Fittings</label>
+					</div>
+					<div class="checkbox">
+  						<label><input type="checkbox" value="">Essential Medicines</label>
+					</div>
+					<div class="checkbox">
+  						<label><input type="checkbox" value="">Furniture and Fittings</label>
+					</div>
+					<div class="checkbox">
+  						<label><input type="checkbox" value="">General Office Equipment(Photocopies A.C, Fridges ets)</label>
+					</div>
+				</div><!-- col-md-6 col-xs-12 -->
+			</div>
 	</div>
 
-</div>
+
+	@section("company-activites")
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#major-goods-boxes').hide();
+				$('#major-activity-select').change(function() {
+					if($(this).val() === 'goods') {
+						$('#next-step').hide();
+						$('#major-goods-boxes').show('slow');
+					}
+				});
+			});
+		</script>
+	@endsection
 
 @endsection
