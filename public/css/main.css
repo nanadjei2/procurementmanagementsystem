@@ -18,11 +18,13 @@
   margin-right: auto;
   margin-left: auto;
 }
+
 @media (min-width: 768px) {
   .notification {
     width: 750px;
   }
 }
+
 @media (min-width: 992px) {
   .notification {
     width: 970px;
@@ -44,6 +46,12 @@
     padding-bottom: 30px;
 }
 
-.my-profile, .view, .update, .something-else, .logout{
+.my-profile, .view, .update, .something-else, .logout {
   margin-top: 10px;
+}
+
+/*REGISTER MEMBER*/
+
+#major-activity-boxes {
+  margin-left: 60%;
 }

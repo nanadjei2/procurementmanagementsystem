@@ -201,10 +201,12 @@
 
 
 <!-- implementing the JS files using laravel approach -->
-<script type="text/javascript" src="{{ asset('bower_components/jquery/dist/jquery.js') }}"></script>
+<!-- <script type="text/javascript" src="{{ asset('bower_components/jquery/dist/jquery.js') }}"></script> -->
+<script type="text/javascript" src="{{ asset('bower_components/jquery/dist/jquery-3.2.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('bower_components/tether/dist/js/tether.js') }}"></script>
 
-<script type="text/javascript" src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.js') }}"></script>
+<!-- <script type="text/javascript" src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.js') }}"></script> -->
+<script type="text/javascript" src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('bower_components/PACE/pace.js') }}"></script>
 
 <script type="text/javascript" src="{{ asset('cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.0/lodash.min.js') }}"></script>
@@ -234,13 +236,14 @@
 <script type="text/javascript" src="{{ asset('bower_components/d3/d3.js') }}"></script>
 <script type="text/javascript" src="{{ asset('cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js') }}"></script>
 
-<script type="text/javascript" src="{{ asset('bower.batchthemes.com/bower_components/datamaps/dist/datamaps.all.js') }}"></script>
+<!-- <script type="text/javascript" src="{{ asset('bower.batchthemes.com/bower_components/datamaps/dist/datamaps.all.js') }}"></script> -->
 <script type="text/javascript" src="{{ asset('scripts/dashboards.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/index.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/forms-basic.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/components/floating-labels.js')}}"></script>
 
-</body>
 
-<!-- Mirrored from marino-2.batchthemes.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Apr 2016 18:08:49 GMT -->
+
+</body>
+    
 </html>
