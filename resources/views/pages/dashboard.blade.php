@@ -8,10 +8,13 @@
         
         <div class="container">
             @include('common.sweet-notifications')
+            <h2 style="font-weight: bold;">DASHBOARD</h2>
                 <div class="dashboard-activities">
                         <div class="row m-b-40">
+
                             <a href="#" class="col-xs-12 col-lg-4 m-b-5">
                                 <div class="text-widget-1">
+
                                     <div class="row">
                                         <div class="col-xs-4">
                                             <span class="fa-stack fa-stack-2x pull-left">

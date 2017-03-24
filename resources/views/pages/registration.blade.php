@@ -14,15 +14,16 @@ PMS | Supplier-Registration
 
 
 <div style="margin-top: 100px;margin-bottom: 30px;">
-	<h4 style="text-align: center;">REGISTER NEW MEMBER</h4>
-	<h4 style="margin-left: 130px;color: red"></h4>
+	<h4 style="text-align: center;">SUPPLIER/CONTRACTOR REGISTRATION</h4>
+
 </div>
 
 	<div class="row">
 
 		<div class="col-md-4 col-md-offset-2">
 	
-		     
+		     	<div class="text-center">@include('common.notifications')</div>
+
 			<form action="{{ route('post-register') }}" method="POST" enctype="multipart/form-data">
 
 				{{csrf_field()}}
@@ -120,6 +121,12 @@ PMS | Supplier-Registration
 					</select>
 
 				</div>
+<<<<<<< HEAD
+		
+				<div class="form-group">
+					<button type="submit" name="submit" class="btn btn-primary btn-lg" style="width: 300px;">Register Member</button>
+					<button type="reset" name="reset" class="btn btn-danger btn-lg">Reset form</button>
+=======
 				<div id="next-step">
 					<div class="form-group">
 						<label>Company Other Activities</label>
@@ -130,6 +137,7 @@ PMS | Supplier-Registration
 						<button type="submit" name="submit" class="btn btn-primary btn-lg" style="width: 300px;">Register Member</button>
 						<button type="reset" name="reset" class="btn btn-danger btn-lg">Reset</button>
 					</div>
+>>>>>>> a9208913276b350ca1cf03946342e25698f0d48a
 				</div>
 
 			</form>	
