@@ -138,61 +138,209 @@ PMS | Supplier-Registration
 	</div><!--row-->
 
 	<div id="major-goods-boxes" style="margin-left: 225px; margin-top: 40px;">
-    <div class="alert text-center alert-info-outline animated fadeIn" role="alert">
+    <div class="alert text-center alert-info animated fadeIn" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span>  <span class="sr-only">Close</span> 
-            </button>  Please select your major activity from the checkboxes below !
+            </button>  Please select your <strong>one(1) major</strong> activity from the checkboxes below !
      </div>
 	
 			<div class="row">
 				<div class="col-md-6 col-xs-12">
 					<div class="checkbox">
-  						<label><input type="checkbox" value="">Agricultural/Farm Equiptment</label>
+  						<label><input class="select-1" type="checkbox" value="">Agricultural/Farm Equiptment</label>
 					</div>
 					<div class="checkbox">
-  						<label><input type="checkbox" value="">Agro Chemicals</label>
+  						<label><input class="select-1" type="checkbox" value="">Agro Chemicals</label>
 					</div>
 					<div class="checkbox">
-  						<label><input type="checkbox" value="">Automobile/Vehicles Parts</label>
+  						<label><input class="select-1" type="checkbox" value="">Automobile/Vehicles Parts</label>
 					</div>
 					<div class="checkbox">
-  						<label><input type="checkbox" value="">Building/Construction Materials and Equiptment</label>
+  						  <label><inp class="select-1"ut type="checkbox" value="">Building/Construction Materials and Equiptment</label>
 					</div>
 					<div class="checkbox">
-  						<label><input type="checkbox" value="">Clothing/Sewing Equipment</label>
+  						<label><input class="select-1" type="checkbox" value="">Clothing/Sewing Equipment</label>
 					</div>
 					<div class="checkbox">
-  						<label><input type="checkbox" value="">Detergents/Disinfectants/Sanitary/Cleaning Materials</label>
+  						<label><input class="select-1" type="checkbox" value="">Detergents/Disinfectants/Sanitary/Cleaning Materials</label>
 					</div>
 					<div class="checkbox">
-  						<label><input type="checkbox" value="">Drawing Materials</label>
+  						<label><input class="select-1" type="checkbox" value="">Drawing Materials</label>
 					</div>
 					<div class="checkbox">
-  						<label><input type="checkbox" value="">Electronical Materials and Fittings</label>
+  						<label><input class="select-1" type="checkbox" value="">Electronical Materials & Fittings</label>
 					</div>
 					<div class="checkbox">
-  						<label><input type="checkbox" value="">Essential Medicines</label>
+  						<label><input class="select-1" type="checkbox" value="">Essential Medicines</label>
 					</div>
 					<div class="checkbox">
-  						<label><input type="checkbox" value="">Furniture and Fittings</label>
+  						<label><input class="select-1" type="checkbox" value="">Furniture and Fittings</label>
 					</div>
 					<div class="checkbox">
-  						<label><input type="checkbox" value="">General Office Equipment(Photocopies A.C, Fridges ets)</label>
+  						<label><input class="select-1" type="checkbox" value="">General Office Equipment(Photocopies A.C, Fridges etc)</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Geographical Information System</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Hospital Consumables</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Hospital/Medical Equpment</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Information Communication Technology &</label>
 					</div>
 				</div><!-- col-md-6 col-xs-12 -->
+				<div class="col-md-6 col-xs-12">
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Laboratory Chemicals & Workshop Equipment</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Landry Materials/Equipments</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Machine Parts</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Mattresses and Pillows</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Measuring Instruments</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Office Consumables</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Road and Culvert Materials</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Safety Materials (Fire Extinguishers, Boots, Smoke Detectors etc)</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Security Devices/Detectors</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Sewerage Equipment and Materials</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Stationery</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Storage Equipment</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Tiles and Tiling Materials</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Uniform and Protective Clothing</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Software and Licenses</label>
+					</div>
+					<div class="checkbox">
+  						<label><input class="select-1" type="checkbox" value="">Cleaning and Sanitary Materials</label>
+					</div>
+				</div>
 			</div>
 	</div>
 
+	<div id="major-works-boxes" style="margin-left: 225px; margin-top: 40px;">
+	    <div class="alert text-center alert-info animated fadeIn" role="alert">
+	            <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span>  <span class="sr-only">Close</span> 
+	            </button>  Please select <strong>one(1) major</strong> activity from the checkboxes below !
+	     </div>
+	     <div class="row">
+	     	<div class="col-md-6 col-xs-12">
+	     		<div class="checkbox">
+	  				<label><input class="select-1" type="checkbox" value="">Civil Works</label>
+				</div>
+				<div class="checkbox">
+	  				<label><input class="select-1" type="checkbox" value="">Maintenance of Infrastructural Facilities and Other Price Quotation Contracts</label>
+				</div>
+				<div class="checkbox">
+	  				<label><input class="select-1" type="checkbox" value="">Construction/Maintenance of Roads</label>
+				</div>
+	     	</div>
+	     	<div class="col-md-6 col-xs-12">
+	     		<div class="checkbox">
+	  				<label><input class="select-1" type="checkbox" value="">Construction/Maintenace of Bridges</label>
+				</div>
+				<div class="checkbox">
+	  				<label><input class="select-1" type="checkbox" value="">Horticultural Works and Lawning</label>
+				</div>
+				<div class="checkbox">
+	  				<label><input class="select-1" type="checkbox" value="">Drilling of Boreholes</label>
+				</div>
+				<div class="checkbox">
+	  				<label><input type="checkbox" value="">Pavement of Walkways</label>
+				</div>
+	     	</div>
+	     </div>
+     </div>
+
+	     <div id="major-services-boxes" style="margin-left: 225px; margin-top: 40px;">
+		     <div class="alert text-center alert-info animated fadeIn" role="alert">
+	            <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span>  <span class="sr-only">Close</span> 
+	            </button>  Please select your <strong>one(1) major</strong> activity from the checkboxes below !
+	     	</div>
+	     	<div class="col-md-12">
+		     	<div class="checkbox">
+		  				<label><input class="select-1" type="checkbox" value="">Consultancy Services in ICT Software Development and Training</label>
+				</div>
+				<div class="checkbox">
+		  				<label><input class="select-1" type="checkbox" value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</label>
+				</div>
+				<div class="checkbox">
+		  				<label><input class="select-1" type="checkbox" value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</label>
+				</div>
+				<div class="checkbox">
+		  				<label><input class="select-1" type="checkbox" value="">Hydrological Services</label>
+				</div>
+				<div class="checkbox">
+		  				<label><input class="select-1" type="checkbox" value="">Catering Services</label>
+				</div>
+				<div class="checkbox">
+		  				<label><input class="select-1" type="checkbox" value="">Cleaning Services</label>
+				</div>
+				<div class="checkbox">
+		  				<label><input class="select-1" type="checkbox" value="">Welding and Fabrication</label>
+				</div>
+	     	</div>
+	     </div>
 
 	@section("company-activites")
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#major-goods-boxes').hide();
+				$('#major-works-boxes').hide();
+				$('#major-services-boxes').hide();
 				$('#major-activity-select').change(function() {
 					if($(this).val() === 'goods') {
 						$('#next-step').hide();
 						$('#major-goods-boxes').show('slow');
+						$('#major-works-boxes').hide();
+						$('#major-services-boxes').hide();
+
+					} else if($(this).val() === 'works') {
+						$('#next-step').hide();
+						$('#major-works-boxes').show('slow');
+						$('#major-goods-boxes').hide();
+						$('#major-services-boxes').hide();
+					} else {
+						if ($(this).val() === 'services') {
+							$('#next-step').hide();
+							$('#major-services-boxes').show('slow');
+							$('#major-goods-boxes').hide();
+							$('#major-works-boxes').hide();
+						};
 					}
 				});
+
+
+				$(".select-1").change(function() {
+		          $(".select-1").prop('checked', false);
+		            $(this).prop('checked', true);
+	            });
 			});
 		</script>
 	@endsection
