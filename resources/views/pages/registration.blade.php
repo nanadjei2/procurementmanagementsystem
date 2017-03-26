@@ -13,7 +13,7 @@ PMS | Supplier-Registration
 
 
 
-<div style="margin-top: 100px;margin-bottom: 30px;">
+<div style="margin-top: 100px; margin-bottom: 30px;">
 	<h4 style="text-align: center;">SUPPLIER/CONTRACTOR REGISTRATION</h4>
 
 </div>
@@ -110,246 +110,449 @@ PMS | Supplier-Registration
 					<textarea name="companywebsite" class="form-control">{{ old('companywebsite')}}</textarea>
 				</div>
 				
-				
+				<!-- Radio Major Activites -->
 				<div class="form-group">
-					<label>Company Major Activity</label>
-					<select id="major-activity-select" name="jobtitile" class="form-control">
-						<option value="">Select Major Activity...</option>
-						<option value="goods">Goods</option>
-						<option value="works">Works</option>		
-						<option value="services">Services</option>		
+				<label>Choose Major activity: </label>
+						<label class="radio-inline" for="goods">
+							<input id="goods" type="radio" name="major_activity"> Goods
+						</label>
+						<label class="radio-inline" for="works">
+							<input id="works" type="radio" name="major_activity"> Works
+						</label>
+						<label  class="radio-inline" for="services">
+							<input id="services" type="radio" name="major_activity"> Service
+						</label>
+				</div>
+				<!-- Radio Buttons Ends -->
+				
+				<div id="major-goods-select" class="form-group">
+					<select name="jobtitile" class="form-control">
+						<option title="Please You Can't Select This">Select Goods Activity...</option>
+						<option value="">Agricultural/Farm Equiptment</option>
+						<option value="">Agro Chemicals</option>		
+						<option value="">Automobile/Vehicles Parts</option>
+						<option value="">Building/Construction Materials and Equiptment</option>
+						<option value="">Clothing/Sewing Equipment</option>		
+						<option value="">Detergents/Disinfectants/Sanitary/Cleaning Materials</option>		
+						<option value="">Drawing Materials</option>		
+						<option value="">Electronical Materials & Fittings</option>		
+						<option value="">Essential Medicines</option>		
+						<option value="">Furniture and Fittings</option>		
+						<option value="">General Office Equipment(Photocopies A.C, Fridges etc)</option>		
+						<option value="">Geographical Information System</option>		
+						<option value="">Hospital Consumables</option>		
+						<option value="">Hospital/Medical Equpment</option>		
+						<option value="">Information Communication Technology</option>		
+						<option value="">Laboratory Chemicals & Workshop Equipment</option>		
+						<option value="">Landry Materials/Equipments</option>		
+						<option value="">Machine Parts</option>		
+						<option value="">Mattresses and Pillows</option>		
+						<option value="">Measuring Instruments</option>		
+						<option value="">Office Consumables</option>		
+						<option value="">Road and Culvert Materials</option>
+						<option value="">Safety Materials (Fire Extinguishers, Boots, Smoke Detectors etc)</option>
+						<option value="">Security Devices/Detectors</option>
+						<option value="">Sewerage Equipment and Materials</option>
+						<option value="">Stationery</option>
+						<option value="">Storage Equipment</option>
+						<option value="">Tiles and Tiling Materials</option>
+						<option value="">Uniform and Protective Clothing</option>
+						<option value="">Software and Licenses</option>
+						<option value="">Cleaning and Sanitary Materials</option>
 					</select>
 
-				</div>
-<<<<<<< HEAD
-		
-				<div class="form-group">
-					<button type="submit" name="submit" class="btn btn-primary btn-lg" style="width: 300px;">Register Member</button>
-					<button type="reset" name="reset" class="btn btn-danger btn-lg">Reset form</button>
-=======
-				<div id="next-step">
-					<div class="form-group">
-						<label>Company Other Activities</label>
-						<textarea name="companyotheractivities" class="form-control">{{ old('companyotheractivities')}}</textarea>
-					</div>
-			
-					<div class="form-group">
-						<button type="submit" name="submit" class="btn btn-primary btn-lg" style="width: 300px;">Register Member</button>
-						<button type="reset" name="reset" class="btn btn-danger btn-lg">Reset</button>
-					</div>
->>>>>>> a9208913276b350ca1cf03946342e25698f0d48a
-				</div>
+				</div>	
 
-			</form>	
+
+
+			<div class="text-center" class="form-group">
+					<select id="major-works-select" name="jobtitile" class="form-control">
+						<option title="Please You Can't Select This">Select Work Activity...</option>
+						<option value="">Construction/Maintenace of Bridges</option>
+						<option value="">Construction/Maintenance of Roads</option>		
+						<option value="">Civil Works</option>
+						<option value="">Drilling of Boreholes</option>
+						<option value="">Horticultural Works and Lawning</option>
+						<option value="">Maintenance of Infrastructural Facilities & Other Price Quotation Contracts</option>
+						<option value="">Pavement of Walkways</option>		
+					</select>
+			</div>
+
+			
+
+
+
+			<div class="text-center" class="form-group">
+					<select id="major-service-select" name="jobtitile" class="form-control">
+						<option title="Please You Can't Select This">Select Service Activity...</option>
+						<option value="">Consultancy Services in ICT Software Development and Training</option>
+						<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
+						<option value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</option>	
+						<option value="">Hydrological Services</option>
+						<option value="">Catering Services</option>
+						<option value="">Cleaning Services</option>
+						<option value="">Welding and Fabrication</option>	
+					</select>
+			</div>	
 		</div> <!-- col-md-4 col-md-offset-2 -->
 		
 	</div><!--row-->
 
-	<div id="major-goods-boxes" style="margin-left: 225px; margin-top: 40px;">
-    <div class="alert text-center alert-info animated fadeIn" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span>  <span class="sr-only">Close</span> 
-            </button>  Please select your <strong>one(1) major</strong> activity from the checkboxes below !
-     </div>
-	
-			<div class="row">
-				<div class="col-md-6 col-xs-12">
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Agricultural/Farm Equiptment</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Agro Chemicals</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Automobile/Vehicles Parts</label>
-					</div>
-					<div class="checkbox">
-  						  <label><inp class="select-1"ut type="checkbox" value="">Building/Construction Materials and Equiptment</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Clothing/Sewing Equipment</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Detergents/Disinfectants/Sanitary/Cleaning Materials</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Drawing Materials</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Electronical Materials & Fittings</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Essential Medicines</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Furniture and Fittings</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">General Office Equipment(Photocopies A.C, Fridges etc)</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Geographical Information System</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Hospital Consumables</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Hospital/Medical Equpment</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Information Communication Technology &</label>
-					</div>
-				</div><!-- col-md-6 col-xs-12 -->
-				<div class="col-md-6 col-xs-12">
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Laboratory Chemicals & Workshop Equipment</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Landry Materials/Equipments</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Machine Parts</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Mattresses and Pillows</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Measuring Instruments</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Office Consumables</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Road and Culvert Materials</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Safety Materials (Fire Extinguishers, Boots, Smoke Detectors etc)</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Security Devices/Detectors</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Sewerage Equipment and Materials</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Stationery</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Storage Equipment</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Tiles and Tiling Materials</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Uniform and Protective Clothing</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Software and Licenses</label>
-					</div>
-					<div class="checkbox">
-  						<label><input class="select-1" type="checkbox" value="">Cleaning and Sanitary Materials</label>
-					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MINOR ACTIVITIES BEGINS FROM HERE -->
+
+
+	<section style="margin-top: 100px; margin-bottom: 30px;">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-2">
+				<!-- Radio Major Activites -->
+				<div class="form-group">
+				<label>Choose Minor activity: </label>
+						<label class="radio-inline" for="minor-goods">
+							<input id="minor-goods" type="radio" name="minor_activity"> Goods
+						</label>
+						<label class="radio-inline" for="minor-works">
+							<input id="minor-works" type="radio" name="minor_activity"> Works
+						</label>
+						<label  class="radio-inline" for="minor-services">
+							<input id="minor-services" type="radio" name="minor_activity"> Service
+						</label>
 				</div>
+				<!-- Radio Buttons Ends -->
+				
+				<div id="minor-goods-select" class="form-group">
+					<select name="jobtitile" class="form-control">
+						<option title="Please You Can't Select This">Select Goods Activity...</option>
+						<option value="">Agricultural/Farm Equiptment</option>
+						<option value="">Agro Chemicals</option>		
+						<option value="">Automobile/Vehicles Parts</option>
+						<option value="">Building/Construction Materials and Equiptment</option>
+						<option value="">Clothing/Sewing Equipment</option>		
+						<option value="">Detergents/Disinfectants/Sanitary/Cleaning Materials</option>		
+						<option value="">Drawing Materials</option>		
+						<option value="">Electronical Materials & Fittings</option>		
+						<option value="">Essential Medicines</option>		
+						<option value="">Furniture and Fittings</option>		
+						<option value="">General Office Equipment(Photocopies A.C, Fridges etc)</option>		
+						<option value="">Geographical Information System</option>		
+						<option value="">Hospital Consumables</option>		
+						<option value="">Hospital/Medical Equpment</option>		
+						<option value="">Information Communication Technology</option>		
+						<option value="">Laboratory Chemicals & Workshop Equipment</option>		
+						<option value="">Landry Materials/Equipments</option>		
+						<option value="">Machine Parts</option>		
+						<option value="">Mattresses and Pillows</option>		
+						<option value="">Measuring Instruments</option>		
+						<option value="">Office Consumables</option>		
+						<option value="">Road and Culvert Materials</option>
+						<option value="">Safety Materials (Fire Extinguishers, Boots, Smoke Detectors etc)</option>
+						<option value="">Security Devices/Detectors</option>
+						<option value="">Sewerage Equipment and Materials</option>
+						<option value="">Stationery</option>
+						<option value="">Storage Equipment</option>
+						<option value="">Tiles and Tiling Materials</option>
+						<option value="">Uniform and Protective Clothing</option>
+						<option value="">Software and Licenses</option>
+						<option value="">Cleaning and Sanitary Materials</option>
+					</select>
+
+				</div>	
+
+
+
+			<div id="minor-works-select" class="text-center" class="form-group">
+					<select name="jobtitile" class="form-control">
+						<option title="Please You Can't Select This">Select Work Activity...</option>
+						<option value="">Construction/Maintenace of Bridges</option>
+						<option value="">Construction/Maintenance of Roads</option>		
+						<option value="">Civil Works</option>
+						<option value="">Drilling of Boreholes</option>
+						<option value="">Horticultural Works and Lawning</option>
+						<option value="">Maintenance of Infrastructural Facilities & Other Price Quotation Contracts</option>
+						<option value="">Pavement of Walkways</option>		
+					</select>
 			</div>
+
+			
+
+
+
+				<div class="text-center" class="form-group">
+					<select id="minor-service-select" name="jobtitile" class="form-control">
+						<option title="Please You Can't Select This">Select Service Activity...</option>
+						<option value="">Consultancy Services in ICT Software Development and Training</option>
+						<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
+						<option value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</option>	
+						<option value="">Hydrological Services</option>
+						<option value="">Catering Services</option>
+						<option value="">Cleaning Services</option>
+						<option value="">Welding and Fabrication</option>	
+					</select>
+				</div>	
+			</div><!-- col-md-4 col-md-offset-2 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MINOR ACTIVITIES 2 BEGINS FROM HERE -->
+
+<div class="col-md-4 col-md-offset-1">
+				<!-- Radio Major Activites -->
+				<div class="form-group">
+				<label>Choose Minor activity: </label>
+						<label class="radio-inline" for="minor-goods-2">
+							<input id="minor-goods-2" type="radio" name="minor_activity"> Goods
+						</label>
+						<label class="radio-inline" for="minor-works-2">
+							<input id="minor-works-2" type="radio" name="minor_activity"> Works
+						</label>
+						<label  class="radio-inline" for="minor-services-2">
+							<input id="minor-services-2" type="radio" name="minor_activity"> Service
+						</label>
+				</div>
+				<!-- Radio Buttons Ends -->
+				
+				<div id="minor-goods-select-2" class="form-group">
+					<select name="jobtitile" class="form-control">
+						<option title="Please You Can't Select This">Select Goods Activity...</option>
+						<option value="">Agricultural/Farm Equiptment</option>
+						<option value="">Agro Chemicals</option>		
+						<option value="">Automobile/Vehicles Parts</option>
+						<option value="">Building/Construction Materials and Equiptment</option>
+						<option value="">Clothing/Sewing Equipment</option>		
+						<option value="">Detergents/Disinfectants/Sanitary/Cleaning Materials</option>		
+						<option value="">Drawing Materials</option>		
+						<option value="">Electronical Materials & Fittings</option>		
+						<option value="">Essential Medicines</option>		
+						<option value="">Furniture and Fittings</option>		
+						<option value="">General Office Equipment(Photocopies A.C, Fridges etc)</option>		
+						<option value="">Geographical Information System</option>		
+						<option value="">Hospital Consumables</option>		
+						<option value="">Hospital/Medical Equpment</option>		
+						<option value="">Information Communication Technology</option>		
+						<option value="">Laboratory Chemicals & Workshop Equipment</option>		
+						<option value="">Landry Materials/Equipments</option>		
+						<option value="">Machine Parts</option>		
+						<option value="">Mattresses and Pillows</option>		
+						<option value="">Measuring Instruments</option>		
+						<option value="">Office Consumables</option>		
+						<option value="">Road and Culvert Materials</option>
+						<option value="">Safety Materials (Fire Extinguishers, Boots, Smoke Detectors etc)</option>
+						<option value="">Security Devices/Detectors</option>
+						<option value="">Sewerage Equipment and Materials</option>
+						<option value="">Stationery</option>
+						<option value="">Storage Equipment</option>
+						<option value="">Tiles and Tiling Materials</option>
+						<option value="">Uniform and Protective Clothing</option>
+						<option value="">Software and Licenses</option>
+						<option value="">Cleaning and Sanitary Materials</option>
+					</select>
+
+				</div>	
+
+
+
+			<div id="minor-works-select-2" class="text-center" class="form-group">
+					<select name="jobtitile" class="form-control">
+						<option title="Please You Can't Select This">Select Work Activity...</option>
+						<option value="">Construction/Maintenace of Bridges</option>
+						<option value="">Construction/Maintenance of Roads</option>		
+						<option value="">Civil Works</option>
+						<option value="">Drilling of Boreholes</option>
+						<option value="">Horticultural Works and Lawning</option>
+						<option value="">Maintenance of Infrastructural Facilities & Other Price Quotation Contracts</option>
+						<option value="">Pavement of Walkways</option>		
+					</select>
+			</div>
+
+			
+
+
+
+				<div class="text-center" class="form-group">
+					<select id="minor-service-select-2" name="jobtitile" class="form-control">
+						<option title="Please You Can't Select This">Select Service Activity...</option>
+						<option value="">Consultancy Services in ICT Software Development and Training</option>
+						<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
+						<option value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</option>	
+						<option value="">Hydrological Services</option>
+						<option value="">Catering Services</option>
+						<option value="">Cleaning Services</option>
+						<option value="">Welding and Fabrication</option>	
+					</select>
+				</div>	
+			</div><!-- col-md-4 col-md-offset-2 -->
+
+<!-- >>>>MINOR ACTIVITy 2 ENDS HERE -->
+		</div><!-- row -->
+	</section>
+
+<!-- >>>>MINOR ACTIVITIES ENDS HERE -->
+
+
+
+
+
+	<div class="form-group">
+		<div class="text-center">
+			<button class="btn btn-primary" type="submit"><i class="fa fa-save fa-fw"></i> SAVE AND CONTINUE</button>
+			<button class="btn btn-danger" type="submit"><i class="fa fa-times fa-fw"></i> CANCEL</button>
+		</div>
 	</div>
-
-	<div id="major-works-boxes" style="margin-left: 225px; margin-top: 40px;">
-	    <div class="alert text-center alert-info animated fadeIn" role="alert">
-	            <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span>  <span class="sr-only">Close</span> 
-	            </button>  Please select <strong>one(1) major</strong> activity from the checkboxes below !
-	     </div>
-	     <div class="row">
-	     	<div class="col-md-6 col-xs-12">
-	     		<div class="checkbox">
-	  				<label><input class="select-1" type="checkbox" value="">Civil Works</label>
-				</div>
-				<div class="checkbox">
-	  				<label><input class="select-1" type="checkbox" value="">Maintenance of Infrastructural Facilities and Other Price Quotation Contracts</label>
-				</div>
-				<div class="checkbox">
-	  				<label><input class="select-1" type="checkbox" value="">Construction/Maintenance of Roads</label>
-				</div>
-	     	</div>
-	     	<div class="col-md-6 col-xs-12">
-	     		<div class="checkbox">
-	  				<label><input class="select-1" type="checkbox" value="">Construction/Maintenace of Bridges</label>
-				</div>
-				<div class="checkbox">
-	  				<label><input class="select-1" type="checkbox" value="">Horticultural Works and Lawning</label>
-				</div>
-				<div class="checkbox">
-	  				<label><input class="select-1" type="checkbox" value="">Drilling of Boreholes</label>
-				</div>
-				<div class="checkbox">
-	  				<label><input type="checkbox" value="">Pavement of Walkways</label>
-				</div>
-	     	</div>
-	     </div>
-     </div>
-
-	     <div id="major-services-boxes" style="margin-left: 225px; margin-top: 40px;">
-		     <div class="alert text-center alert-info animated fadeIn" role="alert">
-	            <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span>  <span class="sr-only">Close</span> 
-	            </button>  Please select your <strong>one(1) major</strong> activity from the checkboxes below !
-	     	</div>
-	     	<div class="col-md-12">
-		     	<div class="checkbox">
-		  				<label><input class="select-1" type="checkbox" value="">Consultancy Services in ICT Software Development and Training</label>
-				</div>
-				<div class="checkbox">
-		  				<label><input class="select-1" type="checkbox" value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</label>
-				</div>
-				<div class="checkbox">
-		  				<label><input class="select-1" type="checkbox" value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</label>
-				</div>
-				<div class="checkbox">
-		  				<label><input class="select-1" type="checkbox" value="">Hydrological Services</label>
-				</div>
-				<div class="checkbox">
-		  				<label><input class="select-1" type="checkbox" value="">Catering Services</label>
-				</div>
-				<div class="checkbox">
-		  				<label><input class="select-1" type="checkbox" value="">Cleaning Services</label>
-				</div>
-				<div class="checkbox">
-		  				<label><input class="select-1" type="checkbox" value="">Welding and Fabrication</label>
-				</div>
-	     	</div>
-	     </div>
 
 	@section("company-activites")
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$('#major-goods-boxes').hide();
-				$('#major-works-boxes').hide();
-				$('#major-services-boxes').hide();
-				$('#major-activity-select').change(function() {
-					if($(this).val() === 'goods') {
-						$('#next-step').hide();
-						$('#major-goods-boxes').show('slow');
-						$('#major-works-boxes').hide();
-						$('#major-services-boxes').hide();
+				$('#major-goods-select').hide();
+				$('#major-works-select').hide();
+				$('#major-service-select').hide();
 
-					} else if($(this).val() === 'works') {
-						$('#next-step').hide();
-						$('#major-works-boxes').show('slow');
-						$('#major-goods-boxes').hide();
-						$('#major-services-boxes').hide();
-					} else {
-						if ($(this).val() === 'services') {
-							$('#next-step').hide();
-							$('#major-services-boxes').show('slow');
-							$('#major-goods-boxes').hide();
-							$('#major-works-boxes').hide();
-						};
-					}
+				$('#goods').click(function() {
+					$('#major-goods-select').show('slow');
+					$('#major-works-select').hide();
+					$('#major-service-select').hide();
 				});
+
+				$('#works').click(function() {
+					$('#major-works-select').show('slow');
+					$('#major-goods-select').hide();
+					$('#major-service-select').hide();
+				});
+
+				$('#services').click(function() {
+					$('#major-service-select').show('slow');
+					$('#major-goods-select').hide();
+					$('#major-works-select').hide();
+				});
+
+			});
+
+				// Minor Scripts Begins From Here
+
+				$('#minor-goods-select').hide();
+				$('#minor-works-select').hide();
+				$('#minor-service-select').hide();
+
+				$('#minor-goods').click(function() {
+					$('#minor-goods-select').show('slow');
+					$('#minor-works-select').hide();
+					$('#minor-service-select').hide();
+				});
+
+				$('#minor-works').click(function() {
+					$('#minor-works-select').show('slow');
+					$('#minor-goods-select').hide();
+					$('#minor-service-select').hide();
+				});
+
+				$('#minor-services').click(function() {
+					$('#minor-service-select').show('slow');
+					$('#minor-goods-select').hide();
+					$('#minor-works-select').hide();
+				});
+
+				// Minor Activity 2 script begins from here
+			
+				$('#minor-goods-select-2').hide();
+				$('#minor-works-select-2').hide();
+				$('#minor-service-select-2').hide();
+
+				$('#minor-goods-2').click(function() {
+					$('#minor-goods-select-2').show('slow');
+					$('#minor-works-select-2').hide();
+					$('#minor-service-select-2').hide();
+				});
+
+				$('#minor-works-2').click(function() {
+					$('#minor-works-select-2').show('slow');
+					$('#minor-goods-select-2').hide();
+					$('#minor-service-select-2').hide();
+				});
+
+				$('#minor-services-2').click(function() {
+					$('#minor-service-select-2').show('slow');
+					$('#minor-goods-select-2').hide();
+					$('#minor-works-select-2').hide();
+				});
+
+
+
+
+
+
+
 
 
 				$(".select-1").change(function() {
 		          $(".select-1").prop('checked', false);
 		            $(this).prop('checked', true);
 	            });
-			});
+
+			
+
 		</script>
 	@endsection
 
