@@ -198,8 +198,12 @@ PMS | Supplier-Registration
 		
 	</div><!--row-->
 
-
-
+	<div style="margin: 50px 90px -30px 260px">
+		<div class="alert alert-info alert-dismissable text-center" role="alert">
+			<button class="close" type="button" aria-lable="close" data-dismiss="alert"></button>
+			Please, you can select either one(1) or two(1) minor activities from below. If you do not have any, you can leave it blank
+		</div>
+	</div>
 
 
 
@@ -253,7 +257,7 @@ PMS | Supplier-Registration
 			<div class="col-md-4 col-md-offset-2">
 				<!-- Radio Major Activites -->
 				<div class="form-group">
-				<label>Choose Minor activity: </label>
+				<label>Choose 1st Minor activity: </label>
 						<label class="radio-inline" for="minor-goods">
 							<input id="minor-goods" type="radio" name="minor_activity"> Goods
 						</label>
@@ -339,30 +343,12 @@ PMS | Supplier-Registration
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- MINOR ACTIVITIES 2 BEGINS FROM HERE -->
 
 <div class="col-md-4 col-md-offset-1">
-				<!-- Radio Major Activites -->
+				<!-- Radio minor Activites -->
 				<div class="form-group">
-				<label>Choose Minor activity: </label>
+				<label>Choose 2nd Minor activity: </label>
 						<label class="radio-inline" for="minor-goods-2">
 							<input id="minor-goods-2" type="radio" name="minor_activity"> Goods
 						</label>
@@ -458,7 +444,7 @@ PMS | Supplier-Registration
 
 	<div class="form-group">
 		<div class="text-center">
-			<button class="btn btn-primary" type="submit"><i class="fa fa-save fa-fw"></i> SAVE AND CONTINUE</button>
+			<button class="btn btn-primary" type="submit"><i class="fa fa-save fa-fw"></i> SUBMIT</button>
 			<button class="btn btn-danger" type="submit"><i class="fa fa-times fa-fw"></i> CANCEL</button>
 		</div>
 	</div>
