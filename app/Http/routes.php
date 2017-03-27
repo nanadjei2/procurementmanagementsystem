@@ -35,7 +35,7 @@ Route::group(['middlewareGroups'], function(){
 
 	 Route::get('dashboard', ['uses' => 'UserController@getDashboard','middleware'=>'auth'])->name('dashboard');
 
-	Route::get('register-member',['uses'=>'RegisteredMembersController@RegisterNewMember'])->name('register-member');
+	Route::get('register-member',['uses'=>'RegisteredMembersController@RegisterNewMember', 'middleware' => 'auth'])->name('register-member');
 
 	Route::post('post-register',['uses'=>'RegisteredMembersController@PostRegisterNewMember'])->name('post-register'); 
 
