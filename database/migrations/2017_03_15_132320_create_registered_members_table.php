@@ -29,8 +29,12 @@ class CreateRegisteredMembersTable extends Migration
             $table->string('company_phone_three');
             $table->string('bank_draft_number');
             $table->string('company_website');
+            $table->enum('major_activity_category',['Goods','Services','Works']);
             $table->string('company_major_activity');
-            $table->string('company_other_activity');
+            $table->enum('minor_activity1_category',['Goods','Services','Works']);
+            $table->string('company_minor_activity1');
+            $table->enum('minor_activity2_category',['Goods','Services','Works']);
+            $table->string('company_minor_activity2');
             $table->timestamps();
 
 

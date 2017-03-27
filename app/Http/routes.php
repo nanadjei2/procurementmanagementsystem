@@ -31,7 +31,7 @@ Route::group(['middlewareGroups'], function(){
 	Route::get('admin-dashboard', ['middleware' => 'admin', 'uses' => 'AdminController@getAdminDashboard'])->name('admin-dashboard');
 
 
-	Route::get('supplier-registration', ['uses' => 'UserController@supplierResgistration'])->name('supplier-registration');
+	// Route::get('supplier-registration', ['uses' => 'UserController@supplierResgistration'])->name('supplier-registration');
 
 	 Route::get('dashboard', ['uses' => 'UserController@getDashboard','middleware'=>'auth'])->name('dashboard');
 

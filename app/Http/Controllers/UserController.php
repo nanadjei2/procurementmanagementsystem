@@ -22,16 +22,11 @@ class UserController extends Controller
         return view('pages.dashboard');
     }
 
-    // public function getAdminDashboard(){
-    //     $users = User::all();
-    //     // return view('pages.admindashboard')
-    //     // ->with('users', $users);
-    //     return $users;
-    // }
+   
 
-    public function supplierResgistration() {
-        return view('pages.registration');
-    }
+    // public function supplierResgistration() {
+    //     return view('pages.registration');
+    // }
 
     public function postLogin(Request $requset) {
        $rules = User::$rules;
