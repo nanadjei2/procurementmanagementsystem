@@ -257,7 +257,7 @@ PMS | Supplier-Registration
 			<div class="col-md-4 col-md-offset-2">
 				<!-- Radio Major Activites -->
 				<div class="form-group">
-				<label>Choose 1st Minor activity: </label>
+				<label>1st Minor activity: </label>
 						<label class="radio-inline" for="minor-goods">
 							<input id="minor-goods" type="radio" name="minor_activity"> Goods
 						</label>
@@ -348,7 +348,7 @@ PMS | Supplier-Registration
 <div class="col-md-4 col-md-offset-1">
 				<!-- Radio minor Activites -->
 				<div class="form-group">
-				<label>Choose 2nd Minor activity: </label>
+				<label>2nd Minor activity: </label>
 						<label class="radio-inline" for="minor-goods-2">
 							<input id="minor-goods-2" type="radio" name="minor_activity"> Goods
 						</label>
