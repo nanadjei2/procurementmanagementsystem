@@ -135,9 +135,9 @@ class UserController extends Controller
     }
 
 
-
-
-
+    public function viewAll() {
+        return view('pages.admin-view-all-bidders');
+    }
 
 
 

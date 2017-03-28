@@ -242,7 +242,7 @@
 <script type="text/javascript" src="{{ asset('scripts/forms-basic.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/components/floating-labels.js')}}"></script>
 
-
+@yield('popover')
 
 </body>
     
