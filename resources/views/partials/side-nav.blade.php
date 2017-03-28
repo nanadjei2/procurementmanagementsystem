@@ -88,6 +88,19 @@
                                 @endif
                             @endif
 
+                             @if(Auth::check())
+                                @if(Auth::user()->admin == 1)
+                                    <ul class="l1 list-unstyled section-content">
+                                        <li>
+                                            <a href="{{ route('view-all-bidders') }}" class="sideline" href="index-2.html">
+                                                <i class="zmdi zmdi-view-week md-icon pull-left"></i> 
+                                                <span class="title">View All Bidders</span> 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                @endif
+                            @endif
+
                             @if(Auth::check())
                                 @if(!Auth::user()->admin == 1)
                             <ul class="l1 list-unstyled section-content">

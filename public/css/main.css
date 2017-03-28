@@ -60,5 +60,10 @@
   margin-bottom: 10px;
 }
 
-/*POPUP ADDITIONAL INFO*/
+.bidders td {
+  padding: 18px 30px 2px 20px;
+}
 
+.bidders img {
+  margin-top: 6px;
+}

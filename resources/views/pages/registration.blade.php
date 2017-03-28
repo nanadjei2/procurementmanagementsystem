@@ -182,10 +182,10 @@ PMS | Supplier-Registration
 			
 
 			
-{{--
 
 
-			 <div class="text-center" class="form-group">
+
+			<!--  <div class="text-center" class="form-group">
 					<select id="major-service-select" name="companymajoractivity" class="form-control">
 						<option title="Please You Can't Select This">Select Service Activity...</option>
 						<option value="Consultancy Services in ICT Software Development and Training">Consultancy Services in ICT Software Development and Training</option>
@@ -210,7 +210,7 @@ PMS | Supplier-Registration
 						<option value="">Maintenance of Infrastructural Facilities & Other Price Quotation Contracts</option>
 						<option value="">Pavement of Walkways</option>		
 					</select>
-			</div> --}}
+			</div>  -->
 		</div> <!-- col-md-4 col-md-offset-2 -->
 		
 	</div><!--row-->
@@ -303,9 +303,8 @@ PMS | Supplier-Registration
 
 				</div>	
 
-
-{{-- 
-			<div id="minor-works-select" class="text-center" class="form-group">
+ 
+			<!-- <div id="minor-works-select" class="text-center" class="form-group">
 					<select name="minoractivity1" class="form-control">
 						<option title="Please You Can't Select This">Select Work Activity...</option>
 						<option value="">Construction/Maintenace of Bridges</option>
@@ -333,7 +332,7 @@ PMS | Supplier-Registration
 						<option value="">Cleaning Services</option>
 						<option value="">Welding and Fabrication</option>	
 					</select>
-				</div>	 --}}
+				</div>	 --> 
 			</div><!-- col-md-4 col-md-offset-2 -->
 
 
@@ -410,7 +409,7 @@ PMS | Supplier-Registration
 
 
 
-			{{-- <div id="minor-works-select-2" class="text-center" class="form-group">
+		<!-- <div id="minor-works-select-2" class="text-center" class="form-group">
 					<select name="jobtitile" class="form-control">
 						<option title="Please You Can't Select This">Select Work Activity...</option>
 						<option value="">Construction/Maintenace of Bridges</option>
@@ -438,7 +437,7 @@ PMS | Supplier-Registration
 						<option value="">Cleaning Services</option>
 						<option value="">Welding and Fabrication</option>	
 					</select>
-				</div>	 --}}
+				</div>	  -->
 			</div><!-- col-md-4 col-md-offset-2 -->
 
 <!-- >>>>MINOR ACTIVITy 2 ENDS HERE -->

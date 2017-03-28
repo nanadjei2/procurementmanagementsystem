@@ -44,10 +44,7 @@
             </div>
         </div>
     </div>
-
-    		<!-- SECOND ROW BEGINS -->
-
-    <div class="col-xs-12 col-lg-4">
+    <!-- <div class="col-xs-12 col-lg-4">
         <div class="row">
             <div class="col-xs-7">
                 <div class="f-w-300">Forum members</div>
@@ -58,100 +55,6 @@
             <div class="row">
                 <div class="col-xs-12 bs-media">
                     <div class="media">
-
-				        
-        <!-- <div class="dropdown pull-right"> <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-open from right </a> 
-            <div class="dropdown-menu dropdown-menu-scale from-right"> <a class="dropdown-item">Dropdown menu item 1</a>  <a class="dropdown-item">Dropdown menu item 2</a>  <a class="dropdown-item">Dropdown menu item 3</a>  <a class="dropdown-item">Dropdown menu item 4</a>  <a class="dropdown-item">Dropdown menu item 5</a> 
-                <a class="dropdown-item">Dropdown menu item 6</a>
-            </div>
-        </div> -->
-
-                        <a class="media-left" href="index-2.html#">
-                            <i class="fa fa-circle icon color-success"></i> 
-                            <img class="media-object img-circle h-40 w-40" alt="/assets/faces/m1.png" src="assets/faces/m1.png">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="media-heading"> Name Of Applicant </h5> 
-                            <p>Name of Company</p>
-                        </div>
-                    </div>
-                    <div class="media">
-
-                        <a class="media-left" href="index-2.html#">
-                            <i class="fa fa-circle icon color-info"></i> 
-                            <img class="media-object img-circle h-40 w-40" alt="/assets/faces/w1.png" src="assets/faces/w1.png">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="media-heading"> Janet Abshire </h5> 
-                            <p>Lead Innovation Officer</p>
-                        </div>
-                    </div>
-                    <div class="media">
-
-                        <a class="media-left" href="index-2.html#">
-                            <i class="fa fa-circle icon color-success"></i> 
-                            <img class="media-object img-circle h-40 w-40" alt="/assets/faces/m2.png" src="assets/faces/m2.png">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="media-heading"> Lucas Koch </h5> 
-                            <p>Incomparable UX Editor</p>
-                        </div>
-                    </div>
-                    <div class="media">
-
-                        <a class="media-left" href="index-2.html#">
-                            <i class="fa fa-circle icon color-warning"></i> 
-                            <img class="media-object img-circle h-40 w-40" alt="/assets/faces/w2.png" src="assets/faces/w2.png">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="media-heading"> Gladys Schuster </h5> 
-                            <p>Primary Product Pioneer</p>
-                        </div>
-                    </div>
-                    <div class="media">
-
-                        <a class="media-left" href="index-2.html#">
-                            <i class="fa fa-circle icon color-success"></i> 
-                            <img class="media-object img-circle h-40 w-40" alt="/assets/faces/m3.png" src="assets/faces/m3.png">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="media-heading"> George Clinton </h5> 
-                            <p>World Class API Genius</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    	<!-- SECOND ROW ENDS -->
-    	<!-- THIRD ROW BEGINS -->
-
-    <div class="col-xs-12 col-lg-4">
-        <div class="row">
-            <div class="col-xs-7">
-                <div class="f-w-300">Forum members</div>
-                <p>Online status</p>
-            </div>
-        </div>
-        <div class="user-widget-8">
-            <div class="row">
-                <div class="col-xs-12 bs-media">
-                    <div class="media">
-
-				        <div class="popup-content">
-							<div class="admin-panel pull-right">
-								<b class="admin-text"><span class="fa fa-cog"></span></b>
-							</div>
-	
-						<div class="menu">
-							<!-- <div class="arrow"></div> -->
-								<a href="#">Edit Users <span class="icon octicon octicon-person"></span></a>
-								<a href="#">Web Statistics <span class="icon octicon octicon-graph"></span></a>
-								
-							</div>
-						</div>
 
                         <a class="media-left" href="index-2.html#">
                             <i class="fa fa-circle icon color-success"></i> 
@@ -209,8 +112,96 @@ open from right </a>
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="col-xs-12 col-lg-8">
+        <div class="row">
+            <div class="col-xs-7">
+                <div class="f-w-300">Browser stats</div>
+                <p>This week</p>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover table-striped">
+                <thead class="hidden">
+                    <tr>
+                        <th></th>
+                        <th>Browser</th>
+                        <th>Visits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bidders">
+                        <td>
+                        	<div>
+		                        <a class="media-left" href="index-2.html#">
+		                            <img class="media-object img-circle h-40 w-40" alt="/assets/faces/m3.png" src="assets/faces/m3.png">
+		                        </a>
+                    		</div>
+                        </td>
+                        <td>
+                        	<div class="row">
+                        		<div class="col-md-6">
+                        			<div class="media-body">
+			                            <h5 class="media-heading"> Name of Applicant </h5> 
+			                            <p>Company Name</p>
+                       				</div>
+                        		</div>
+                        		<div class="col-md-6">
+                        			<div class="media-body">
+			                            <h5 class="major-activity"> George Clinton </h5> 
+			                            <p>Major Activity Name</p>
+                       				</div>
+                        		</div>
+                        	</div>
+                       	</td>
+                        <td>223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-firefox"></i> 
+                        </td>
+                        <td>Firefox</td>
+                        <td>223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-internet-explorer"></i> 
+                        </td>
+                        <td>Internet Explorer 11</td>
+                        <td>235</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-safari"></i> 
+                        </td>
+                        <td>Safari</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-internet-explorer"></i> 
+                        </td>
+                        <td>Internet Explorer 10</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-internet-explorer"></i> 
+                        </td>
+                        <td>Internet Explorer 9</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-opera"></i> 
+                        </td>
+                        <td>Opera</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <!-- THIRD ROW ENDS -->
 </div>
 
 	@section('popover')
