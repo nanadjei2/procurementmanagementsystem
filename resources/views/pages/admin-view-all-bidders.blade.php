@@ -148,7 +148,7 @@
                         		</div>
                         		<div class="col-md-6">
                         			<div class="media-body">
-			                            <h5 class="major-activity"> George Clinton </h5> 
+			                            <h5 class="major-activity"> Company Major Activity </h5> 
 			                            <p>Major Activity Name</p>
                        				</div>
                         		</div>
@@ -156,7 +156,7 @@
                        	</td>
                         <td>223</td>
                     </tr>
-                    <tr>
+                   <!--  <tr>
                         <td>
                             <i class="fa fa-firefox"></i> 
                         </td>
@@ -197,7 +197,7 @@
                         </td>
                         <td>Opera</td>
                         <td>20</td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
