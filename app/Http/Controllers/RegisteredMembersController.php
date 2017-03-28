@@ -51,13 +51,19 @@ class RegisteredMembersController extends Controller
             $RegisteredMember->company_phone_three=$request['phonenumbertwo'];
     		$RegisteredMember->bank_draft_number=$request['bankdraftnumber'];
     		$RegisteredMember->major_activity_category=$request['majoractivitycategory'];
-    		$RegisteredMember->company_major_activity=$request['companymajoractivity'];
+    		$RegisteredMember->company_major_activitygoods=$request['companymajoractivitygoods'];
+            $RegisteredMember->company_major_activityservices=$request['companymajoractivityworks'];
+            $RegisteredMember->company_major_activityworks=$request['companymajoractivityservices'];
 
             $RegisteredMember->minor_activity1_category=$request['minoractivity1category'];
-            $RegisteredMember->company_minor_activity1=$request['minoractivity1'];
+            $RegisteredMember->company_minor_activity1goods=$request['companyminoractivity1goods'];
+            $RegisteredMember->company_minor_activity1services=$request['companyminoractivity1works'];
+            $RegisteredMember->company_minor_activity1works=$request['companyminoractivity1services'];
 
             $RegisteredMember->minor_activity2_category=$request['minoractivity2category'];
-            $RegisteredMember->company_minor_activity2=$request['minoractivity2'];
+            $RegisteredMember->company_minor_activity2goods=$request['companyminoractivity2goods'];
+            $RegisteredMember->company_minor_activity2services=$request['companyminoractivity2works'];
+            $RegisteredMember->company_minor_activity2works=$request['companyminoractivity2services'];
 
     		dd($RegisteredMember);
     		//$RegisteredMember->save();

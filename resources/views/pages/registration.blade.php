@@ -126,7 +126,7 @@ PMS | Supplier-Registration
 				<!-- Radio Buttons Ends -->
 				
 				<div id="major-goods-select" class="form-group">
-					<select name="companymajoractivity" class="form-control">
+					<select name="companymajoractivitygoods" class="form-control">
 						<option title="Please You Can't Select This">Select A Major Compamy Activity...</option>
 						<option value="Agricultural/Farm Equiptment">Agricultural/Farm Equiptment</option>
 						<option value="">Agro Chemicals</option>		
@@ -182,11 +182,19 @@ PMS | Supplier-Registration
 			
 
 			
+<<<<<<< HEAD
 
 
 
 			<!--  <div class="text-center" class="form-group">
 					<select id="major-service-select" name="companymajoractivity" class="form-control">
+=======
+
+
+
+			 <div class="text-center" class="form-group">
+					<select id="major-service-select" name="companymajoractivityservices" class="form-control">
+>>>>>>> 218958956794b2743df6da415c9e494a112f1a80
 						<option title="Please You Can't Select This">Select Service Activity...</option>
 						<option value="Consultancy Services in ICT Software Development and Training">Consultancy Services in ICT Software Development and Training</option>
 					<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
@@ -200,7 +208,7 @@ PMS | Supplier-Registration
 
 
 			<div class="text-center" class="form-group">
-					<select id="major-works-select" name="companymajoractivity" class="form-control">
+					<select id="major-works-select" name="companymajoractivityworks" class="form-control">
 						<option title="Please You Can't Select This">Select Work Activity...</option>
 						<option value="Construction/Maintenace of Bridges">Construction/Maintenace of Bridges</option>
 						<option value="">Construction/Maintenance of Roads</option>		
@@ -210,7 +218,11 @@ PMS | Supplier-Registration
 						<option value="">Maintenance of Infrastructural Facilities & Other Price Quotation Contracts</option>
 						<option value="">Pavement of Walkways</option>		
 					</select>
+<<<<<<< HEAD
 			</div>  -->
+=======
+			</div> 
+>>>>>>> 218958956794b2743df6da415c9e494a112f1a80
 		</div> <!-- col-md-4 col-md-offset-2 -->
 		
 	</div><!--row-->
@@ -252,7 +264,7 @@ PMS | Supplier-Registration
 				<!-- Radio Buttons Ends -->
 				
 				<div id="minor-goods-select" class="form-group">
-					<select name="minoractivity1" class="form-control">
+					<select name="companyminoractivity1goods" class="form-control">
 						<option title="Please You Can't Select This">Select A Minor Activity...</option>
 						<option value="Agricultural/Farm Equiptment">Agricultural/Farm Equiptment</option>
 						<option value="">Agro Chemicals</option>		
@@ -303,9 +315,16 @@ PMS | Supplier-Registration
 
 				</div>	
 
+<<<<<<< HEAD
  
 			<!-- <div id="minor-works-select" class="text-center" class="form-group">
 					<select name="minoractivity1" class="form-control">
+=======
+
+
+			<div id="minor-works-select" class="text-center" class="form-group">
+					<select name="companyminoractivity1works" class="form-control">
+>>>>>>> 218958956794b2743df6da415c9e494a112f1a80
 						<option title="Please You Can't Select This">Select Work Activity...</option>
 						<option value="">Construction/Maintenace of Bridges</option>
 						<option value="">Construction/Maintenance of Roads</option>		
@@ -322,7 +341,7 @@ PMS | Supplier-Registration
 
 
 				<div class="text-center" class="form-group">
-					<select id="minor-service-select" name="minoractivity1" class="form-control">
+					<select id="minor-service-select" name="companyminoractivity1services" class="form-control">
 						<option title="Please You Can't Select This">Select Service Activity...</option>
 						<option value="">Consultancy Services in ICT Software Development and Training</option>
 						<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
@@ -332,7 +351,11 @@ PMS | Supplier-Registration
 						<option value="">Cleaning Services</option>
 						<option value="">Welding and Fabrication</option>	
 					</select>
+<<<<<<< HEAD
 				</div>	 --> 
+=======
+				</div>	
+>>>>>>> 218958956794b2743df6da415c9e494a112f1a80
 			</div><!-- col-md-4 col-md-offset-2 -->
 
 
@@ -356,7 +379,7 @@ PMS | Supplier-Registration
 				<!-- Radio Buttons Ends -->
 				
 				<div id="minor-goods-select-2" class="form-group">
-					<select name="minoractivity2" class="form-control">
+					<select name="companyminoractivity2goods" class="form-control">
 						<option title="Please You Can't Select This">Select Goods Activity...</option>
 						<option value="Agricultural/Farm Equiptment">Agricultural/Farm Equiptment</option>
 						<option value="">Agro Chemicals</option>		
@@ -409,8 +432,13 @@ PMS | Supplier-Registration
 
 
 
+<<<<<<< HEAD
 		<!-- <div id="minor-works-select-2" class="text-center" class="form-group">
 					<select name="jobtitile" class="form-control">
+=======
+			<div id="minor-works-select-2" class="text-center" class="form-group">
+					<select name="companyminoractivity2works" class="form-control">
+>>>>>>> 218958956794b2743df6da415c9e494a112f1a80
 						<option title="Please You Can't Select This">Select Work Activity...</option>
 						<option value="">Construction/Maintenace of Bridges</option>
 						<option value="">Construction/Maintenance of Roads</option>		
@@ -427,7 +455,7 @@ PMS | Supplier-Registration
 
 
 				<div class="text-center" class="form-group">
-					<select id="minor-service-select-2" name="jobtitile" class="form-control">
+					<select id="minor-service-select-2" name="companyminoractivity2services" class="form-control">
 						<option title="Please You Can't Select This">Select Service Activity...</option>
 						<option value="">Consultancy Services in ICT Software Development and Training</option>
 						<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
@@ -437,14 +465,18 @@ PMS | Supplier-Registration
 						<option value="">Cleaning Services</option>
 						<option value="">Welding and Fabrication</option>	
 					</select>
+<<<<<<< HEAD
 				</div>	  -->
+=======
+				</div>	
+>>>>>>> 218958956794b2743df6da415c9e494a112f1a80
 			</div><!-- col-md-4 col-md-offset-2 -->
 
-<!-- >>>>MINOR ACTIVITy 2 ENDS HERE -->
+<!-- MINOR ACTIVITy 2 ENDS HERE -->
 		</div><!-- row -->
 	</section>
 
-<!-- >>>>MINOR ACTIVITIES ENDS HERE -->
+<!-- MINOR ACTIVITIES ENDS HERE -->
 
 
 
@@ -471,14 +503,14 @@ PMS | Supplier-Registration
 				});
 
 				$('#works').click(function() {
-					$('#major-works-select').hide();
-					$('#major-goods-select').show('slow');
+					$('#major-works-select').show('slow');
+					$('#major-goods-select').hide();
 					$('#major-service-select').hide();
 				});
 
 				$('#services').click(function() {
-					$('#major-service-select').hide();
-					$('#major-goods-select').show('slow');
+					$('#major-service-select').show('slow');
+					$('#major-goods-select').hide();
 					$('#major-works-select').hide();
 				});
 
@@ -497,14 +529,14 @@ PMS | Supplier-Registration
 				});
 
 				$('#minor-works').click(function() {
-					$('#minor-works-select').hide();
-					$('#minor-goods-select').show('slow');
+					$('#minor-works-select').show('slow');
+					$('#minor-goods-select').hide();
 					$('#minor-service-select').hide();
 				});
 
 				$('#minor-services').click(function() {
-					$('#minor-service-select').hide();
-					$('#minor-goods-select').show('slow');
+					$('#minor-service-select').show('slow');
+					$('#minor-goods-select').hide();
 					$('#minor-works-select').hide();
 				});
 
@@ -521,14 +553,14 @@ PMS | Supplier-Registration
 				});
 
 				$('#minor-works-2').click(function() {
-					$('#minor-works-select-2').hide();
-					$('#minor-goods-select-2').show('slow');
+					$('#minor-works-select-2').show('slow');
+					$('#minor-goods-select-2').hide();
 					$('#minor-service-select-2').hide();
 				});
 
 				$('#minor-services-2').click(function() {
-					$('#minor-service-select-2').hide();
-					$('#minor-goods-select-2').show('slow');
+					$('#minor-service-select-2').show('slow');
+					$('#minor-goods-select-2').hide();
 					$('#minor-works-select-2').hide();
 				});
 
