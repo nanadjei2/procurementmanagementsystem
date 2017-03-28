@@ -21,37 +21,43 @@ class RegisteredMembersController extends Controller
 
     public function PostRegisterNewMember(Request $request){
 
-            $this->validate($request,[
+            // $this->validate($request,[
 
-                'jobtitile'=>'required',
-                'directorname'=>'required',
-                'postaladdress'=>'required',
-                'businessaddress'=>'required',
-                'region'=>'required',
-                'email'=>'email|required',
-                'companywebsite'=>'required',
-                'activephone'=>'required',
-                'bankdraftnumber'=>'required',
-                'companymajoractivity'=>'required'
+            //     'jobtitile'=>'required',
+            //     'directorname'=>'required',
+            //     'postaladdress'=>'required',
+            //     'businessaddress'=>'required',
+            //     'region'=>'required',
+            //     'email'=>'email|required',
+            //     'companywebsite'=>'required',
+            //     'activephone'=>'required',
+            //     'bankdraftnumber'=>'required',
+            //     'companymajoractivity'=>'required'
 
 
-                ]);
+            //     ]);
 
     		$RegisteredMember= new RegisteredMember;
     		$RegisteredMember->user_id=Auth::user()->id;
     		$RegisteredMember->job_title=$request['jobtitile'];
-    		$RegisteredMember->directorname=$request['directorname'];
-    		$RegisteredMember->postaladdress=$request['postaladdress'];
-    		$RegisteredMember->businessaddress=$request['businessaddress'];
+    		$RegisteredMember->name_of_director=$request['directorname'];
+    		$RegisteredMember->postal_address=$request['postaladdress'];
+    		$RegisteredMember->business_address_or_location=$request['businessaddress'];
     		$RegisteredMember->region=$request['region'];
-    		$RegisteredMember->email=$request['email'];
-    		$RegisteredMember->companywebsite=$request['companywebsite'];
-    		$RegisteredMember->activephone=$request['activephone'];
-    		$RegisteredMember->phonenumberone=$request['phonenumberone'];
-    		$RegisteredMember->phonenumbertwo=$request['phonenumbertwo'];
-    		$RegisteredMember->bankdraftnumber=$request['bankdraftnumber'];
-    		$RegisteredMember->companywebsite=$request['companymajoractivity'];
-    		$RegisteredMember->companywebsite=$request['companyotheractivities'];
+    		$RegisteredMember->company_email=$request['email'];
+    		$RegisteredMember->company_website=$request['companywebsite'];
+    		$RegisteredMember->company_active_phone=$request['activephone'];
+    		$RegisteredMember->company_phone_two=$request['phonenumberone'];
+            $RegisteredMember->company_phone_three=$request['phonenumbertwo'];
+    		$RegisteredMember->bank_draft_number=$request['bankdraftnumber'];
+    		$RegisteredMember->major_activity_category=$request['majoractivitycategory'];
+    		$RegisteredMember->company_major_activity=$request['companymajoractivity'];
+
+            $RegisteredMember->minor_activity1_category=$request['minoractivity1category'];
+            $RegisteredMember->company_minor_activity1=$request['minoractivity1'];
+
+            $RegisteredMember->minor_activity2_category=$request['minoractivity2category'];
+            $RegisteredMember->company_minor_activity2=$request['minoractivity2'];
 
     		dd($RegisteredMember);
     		//$RegisteredMember->save();
