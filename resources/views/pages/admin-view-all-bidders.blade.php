@@ -154,7 +154,21 @@
                         		</div>
                         	</div>
                        	</td>
-                        <td>223</td>
+                        <td>
+                        <div class="dropdown pull-right"> 
+        					<a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" role="dropdown" aria-haspopup="true" aria-expanded="false">
+									open from right </a> 
+                        	<ul class="dropdown-menu from-right"> 
+	                        	<li><a class="dropdown-item">Dropdown menu item 1</a></li>  
+	                        	<li><a class="dropdown-item">Dropdown menu item 2</a></li> 
+	                        	<li><a class="dropdown-item">Dropdown menu item 3</a></li>  
+	                        	<li><a class="dropdown-item">Dropdown menu item 4</a></li> 
+	                        	<li><a class="dropdown-item">Dropdown menu item 5</a></li>  
+	                        	<li><a class="dropdown-item">Dropdown menu item 6</a></li> 
+            				</ul>
+            			</div>
+            				
+                        </td>
                     </tr>
                    <!--  <tr>
                         <td>

@@ -181,20 +181,15 @@ PMS | Supplier-Registration
 
 			
 
-			
-<<<<<<< HEAD
-
-
-
 			<!--  <div class="text-center" class="form-group">
 					<select id="major-service-select" name="companymajoractivity" class="form-control">
-=======
+
 
 
 
 			 <div class="text-center" class="form-group">
 					<select id="major-service-select" name="companymajoractivityservices" class="form-control">
->>>>>>> 218958956794b2743df6da415c9e494a112f1a80
+
 						<option title="Please You Can't Select This">Select Service Activity...</option>
 						<option value="Consultancy Services in ICT Software Development and Training">Consultancy Services in ICT Software Development and Training</option>
 					<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
@@ -218,11 +213,10 @@ PMS | Supplier-Registration
 						<option value="">Maintenance of Infrastructural Facilities & Other Price Quotation Contracts</option>
 						<option value="">Pavement of Walkways</option>		
 					</select>
-<<<<<<< HEAD
+
 			</div>  -->
-=======
+
 			</div> 
->>>>>>> 218958956794b2743df6da415c9e494a112f1a80
 		</div> <!-- col-md-4 col-md-offset-2 -->
 		
 	</div><!--row-->
@@ -315,16 +309,16 @@ PMS | Supplier-Registration
 
 				</div>	
 
-<<<<<<< HEAD
+
  
 			<!-- <div id="minor-works-select" class="text-center" class="form-group">
 					<select name="minoractivity1" class="form-control">
-=======
+
 
 
 			<div id="minor-works-select" class="text-center" class="form-group">
 					<select name="companyminoractivity1works" class="form-control">
->>>>>>> 218958956794b2743df6da415c9e494a112f1a80
+
 						<option title="Please You Can't Select This">Select Work Activity...</option>
 						<option value="">Construction/Maintenace of Bridges</option>
 						<option value="">Construction/Maintenance of Roads</option>		
@@ -351,11 +345,9 @@ PMS | Supplier-Registration
 						<option value="">Cleaning Services</option>
 						<option value="">Welding and Fabrication</option>	
 					</select>
-<<<<<<< HEAD
 				</div>	 --> 
-=======
+
 				</div>	
->>>>>>> 218958956794b2743df6da415c9e494a112f1a80
 			</div><!-- col-md-4 col-md-offset-2 -->
 
 
@@ -432,13 +424,11 @@ PMS | Supplier-Registration
 
 
 
-<<<<<<< HEAD
 		<!-- <div id="minor-works-select-2" class="text-center" class="form-group">
 					<select name="jobtitile" class="form-control">
-=======
+
 			<div id="minor-works-select-2" class="text-center" class="form-group">
 					<select name="companyminoractivity2works" class="form-control">
->>>>>>> 218958956794b2743df6da415c9e494a112f1a80
 						<option title="Please You Can't Select This">Select Work Activity...</option>
 						<option value="">Construction/Maintenace of Bridges</option>
 						<option value="">Construction/Maintenance of Roads</option>		
@@ -465,11 +455,8 @@ PMS | Supplier-Registration
 						<option value="">Cleaning Services</option>
 						<option value="">Welding and Fabrication</option>	
 					</select>
-<<<<<<< HEAD
 				</div>	  -->
-=======
 				</div>	
->>>>>>> 218958956794b2743df6da415c9e494a112f1a80
 			</div><!-- col-md-4 col-md-offset-2 -->
 
 <!-- MINOR ACTIVITy 2 ENDS HERE -->
