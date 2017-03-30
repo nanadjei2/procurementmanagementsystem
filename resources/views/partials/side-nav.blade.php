@@ -12,7 +12,7 @@
                         <div class="profile-image">
                             <img class="img-circle img-fluid" src="{{ asset('images/avator.png') }}">
                         </div>
-                        <div class="social-media">
+                        {{-- <div class="social-media">
                             <button type="button" class="btn btn-facebook btn-circle m-r-5">
                                 <i class="fa fa-facebook"></i> 
                             </button>
@@ -22,7 +22,7 @@
                             <button type="button" class="btn btn-google btn-circle m-r-5">
                                 <i class="fa fa-google"></i> 
                             </button>
-                        </div>
+                        </div> --}}
                         <div class="profile-title">
                         @if(Auth::check())
                             {{ Auth::user()->firstname }} {{ Auth::user()->othernames }}
@@ -45,12 +45,7 @@
                                         <span class="title">Profile</span> 
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="sideline">
-                                        <i class="zmdi zmdi-settings md-icon pull-left"></i> 
-                                        <span class="title">Settings</span> 
-                                    </a>
-                                </li>
+                                
                                 <li>
                                     <a class="sideline">
                                         <i class="zmdi zmdi-edit md-icon pull-left"></i> 
@@ -67,6 +62,7 @@
                         </div>
                         <div class="sidebar-section">
                             <div class="section-title hidden">Navigation</div>
+
                             <ul class="l1 list-unstyled section-content">
                                 <li>
                                     <a href="{{ route('dashboard') }}" class="sideline" href="index-2.html">
@@ -75,6 +71,7 @@
                                     </a>
                                 </li>
                             </ul>
+                            
                             @if(Auth::check())
                                 @if(Auth::user()->admin == 1)
                                     <ul class="l1 list-unstyled section-content">
@@ -107,7 +104,7 @@
                                 <li>
                                     <a href="{{ route('register-member') }}" class="sideline" href="index-2.html">
                                         <i class="fa fa-user md-icon pull-left"></i> 
-                                        <span class="title">Add More Info</span> 
+                                        <span class="title">Add Supplier</span> 
                                     </a>
                                 </li>
                             </ul>
@@ -115,7 +112,16 @@
                                 <li>
                                     <a class="sideline" href="index-2.html">
                                         <i class="fa fa-user-plus md-icon pull-left"></i> 
-                                        <span class="title">Add Supplier</span> 
+                                        <span class="title">View Supplier Info</span> 
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="l1 list-unstyled section-content">
+                                <li>
+                                    <a class="sideline" href="index-2.html">
+                                        <i class="fa fa-user-plus md-icon pull-left"></i> 
+                                        <span class="title">Update Supplier  Info</span> 
                                     </a>
                                 </li>
                             </ul>
@@ -129,7 +135,7 @@
 
 
 
-            <div class="sidebar-labels m-t-20">
+            {{-- <div class="sidebar-labels m-t-20">
                 <h5>Tags</h5> 
                 <ul class="list-unstyled">
                     <li>
@@ -158,5 +164,5 @@
                         <span class="number">50%</span> 
                     </div>
                 </div>
-            </div>
+            </div> --}}
 

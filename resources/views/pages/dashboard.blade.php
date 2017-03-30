@@ -44,7 +44,7 @@
                                         <div class="col-xs-8 text-left">
                                             <div class="row">
                                                 <div href="#" class="col-xs-12">
-                                                    <div class="amount">ADD SUPPLIER OR CONTRACTOR INFORMATION</div>
+                                                    <div class="amount">ADD SUPPLIER INFORMATION</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -63,7 +63,7 @@
                                         <div class="col-xs-8 text-left">
                                             <div class="row">
                                                 <div class="col-xs-12 vie">
-                                                    <div class="amount view">VIEW</div>
+                                                    <div class="amount view">VIEW INFO</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -87,7 +87,7 @@
                                         <div class="col-xs-8 text-left">
                                             <div class="row">
                                                 <div class="col-xs-12">
-                                                    <div class="amount update">UPDATE</div>
+                                                    <div class="amount update">UPDATE INFO</div>
                                                 </div>
                                             </div>
                                         </div>

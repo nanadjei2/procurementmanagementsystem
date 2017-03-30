@@ -195,7 +195,7 @@
  <div class="footer">
     <div class="row">
         <div class="col-xs-12">
-            <a href="http://www.batchthemes.com/" target="_blank">© 2016. Batch Themes Ltd. </a><a href="http://www.themeforest.com/" target="_blank">Buy Marino</a>
+            <p href="#" style="float: left;margin-left: -10px;">Procurement Management System</p>
         </div>
     </div>
 </div>
