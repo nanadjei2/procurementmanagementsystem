@@ -22,6 +22,10 @@ class UserController extends Controller
         return view('pages.dashboard');
     }
 
+    public function viewProfileInfo() {
+        return view('pages.view-profile-info');
+    }
+
    
 
     // public function supplierResgistration() {

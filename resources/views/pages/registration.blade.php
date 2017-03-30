@@ -84,7 +84,7 @@ PMS | Supplier-Registration
 
 											
 		</div>
-
+		<div>
 			<div class="col-md-4 col-md-offset-1">
 
 			   <div class="form-group">
@@ -170,12 +170,12 @@ PMS | Supplier-Registration
 
 				</div>	
 
-<<<<<<< HEAD
+
 
 
 			
 
-			<!--  <div class="text-center" class="form-group">
+			 <div class="text-center" class="form-group">
 					<select id="major-service-select" name="companymajoractivity" class="form-control">
 
 
@@ -185,13 +185,12 @@ PMS | Supplier-Registration
 					<select id="major-service-select" name="companymajoractivityservices" class="form-control">
 
 						<option title="Please You Can't Select This">Select Service Activity...</option>
-=======
+
 			 
 
 			 <div class="text-center" class="form-group">
 					<select id="major-service-select" name="companymajoractivityservices" class="form-control">
-						<option value="None">---Select Service Activity---</option>
->>>>>>> 10957a38ae32dd2789b7e421ff76ef9524cc2df8
+						<option value="None">-Select Service Activity-</option>
 						<option value="Consultancy Services in ICT Software Development and Training">Consultancy Services in ICT Software Development and Training</option>
 					<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
 						<option value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</option>	
@@ -205,7 +204,7 @@ PMS | Supplier-Registration
 
 			<div class="text-center" class="form-group">
 					<select id="major-works-select" name="companymajoractivityworks" class="form-control">
-						<option value="None">---Select Work Activity---</option>
+						<option value="None">-Select Work Activity-</option>
 						<option value="Construction/Maintenace of Bridges">Construction/Maintenace of Bridges</option>
 						<option value="">Construction/Maintenance of Roads</option>		
 						<option value="">Civil Works</option>
@@ -214,15 +213,12 @@ PMS | Supplier-Registration
 						<option value="">Maintenance of Infrastructural Facilities & Other Price Quotation Contracts</option>
 						<option value="">Pavement of Walkways</option>		
 					</select>
-<<<<<<< HEAD
-
-			</div>  -->
 
 			</div> 
-=======
+
 			</div> 
 			</div> 
->>>>>>> 10957a38ae32dd2789b7e421ff76ef9524cc2df8
+			</div> 
 		</div> <!-- col-md-4 col-md-offset-2 -->
 		
 	</div><!--row-->
@@ -301,26 +297,13 @@ PMS | Supplier-Registration
 
 				</div>	
 
-<<<<<<< HEAD
 
- 
-			<!-- <div id="minor-works-select" class="text-center" class="form-group">
-					<select name="minoractivity1" class="form-control">
 
 
 
 			<div id="minor-works-select" class="text-center" class="form-group">
 					<select name="companyminoractivity1works" class="form-control">
-
-						<option title="Please You Can't Select This">Select Work Activity...</option>
-=======
- 
-			
-
-			<div id="minor-works-select" class="text-center" class="form-group">
-					<select name="companyminoractivity1works" class="form-control">
-						<option value="None">---Select Work Activity---</option>
->>>>>>> 10957a38ae32dd2789b7e421ff76ef9524cc2df8
+						<option value="None">-Select Work Activity-</option>
 						<option value="">Construction/Maintenace of Bridges</option>
 						<option value="">Construction/Maintenance of Roads</option>		
 						<option value="">Civil Works</option>
@@ -337,7 +320,7 @@ PMS | Supplier-Registration
 
 				<div class="text-center" class="form-group">
 					<select id="minor-service-select" name="companyminoractivity1services" class="form-control">
-						<option value="None">---Select Service Activity---</option>
+						<option value="None">-Select Service Activity-</option>
 						<option value="">Consultancy Services in ICT Software Development and Training</option>
 						<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>	
 						<option value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</option>	
@@ -346,21 +329,18 @@ PMS | Supplier-Registration
 						<option value="">Cleaning Services</option>
 						<option value="">Welding and Fabrication</option>	
 					</select>
-<<<<<<< HEAD
-				</div>	 --> 
-
-=======
 				</div>	 
->>>>>>> 10957a38ae32dd2789b7e421ff76ef9524cc2df8
-				</div>	
-			</div><!-- col-md-4 col-md-offset-2 -->
+	 
+		</div><!-- col-md-4 col-md-offset-2 -->
 
 
 
 <!-- MINOR ACTIVITIES 2 BEGINS FROM HERE -->
 
-<div class="col-md-4 col-md-offset-2">
-				<!-- Radio minor Activites -->
+
+
+ <div class="col-md-4">
+
 				<div class="form-group">
 				<label>2nd Minor activity: </label>
 				<label class="radio-inline" for="none-cate-2">
@@ -376,7 +356,7 @@ PMS | Supplier-Registration
 							<input id="minor-services-2" value="Services" type="radio" name="minoractivity2category"> Services
 						</label>
 				</div>
-				<!-- Radio Buttons Ends -->
+	
 				
 				<div id="minor-goods-select-2" class="form-group">
 					<select name="companyminoractivity2goods" class="form-control">
@@ -418,18 +398,10 @@ PMS | Supplier-Registration
 
 	
 
-<<<<<<< HEAD
-		<!-- <div id="minor-works-select-2" class="text-center" class="form-group">
-					<select name="jobtitile" class="form-control">
 
-			<div id="minor-works-select-2" class="text-center" class="form-group">
-					<select name="companyminoractivity2works" class="form-control">
-						<option title="Please You Can't Select This">Select Work Activity...</option>
-=======
               <div class="text-center" class="form-group">
 					<select id="minor-works-select-2" name="companyminoractivity2works" class="form-control">
-						<option value="None">---Select Work Activity---</option>
->>>>>>> 10957a38ae32dd2789b7e421ff76ef9524cc2df8
+						<option value="None">-Select Work Activity-</option>
 						<option value="">Construction/Maintenace of Bridges</option>
 						<option value="">Construction/Maintenance of Roads</option>		
 						<option value="">Civil Works</option>
@@ -443,7 +415,7 @@ PMS | Supplier-Registration
 
 				<div class="text-center" class="form-group">
 					<select id="minor-service-select-2" name="companyminoractivity2services" class="form-control">
-						<option value="None">---Select Service Activity---</option>
+						<option value="None">-Select Service Activity-</option>
 						<option value="">Consultancy Services in ICT Software Development and Training</option>
 						<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>	
 						<option value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</option>	
@@ -452,13 +424,11 @@ PMS | Supplier-Registration
 						<option value="">Cleaning Services</option>
 						<option value="">Welding and Fabrication</option>	
 					</select>
-<<<<<<< HEAD
-				</div>	  -->
-=======
+
 				</div>	 
->>>>>>> 10957a38ae32dd2789b7e421ff76ef9524cc2df8
-				</div>	
-			</div><!-- col-md-4 col-md-offset-2 -->
+
+			
+			</div><!--col-md-4 col-md-offset-2 -->
 
 		</div><!-- row -->
 	</section>
