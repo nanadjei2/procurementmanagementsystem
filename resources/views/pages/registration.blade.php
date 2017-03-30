@@ -19,10 +19,10 @@ PMS | Supplier-Registration
 </div>
 
 	<div class="row">
+		     	<div class="text-center">@include('common.notifications')</div>
 
 		<div class="col-md-4 col-md-offset-2">
 	
-		     	<div class="text-center">@include('common.notifications')</div>
 
 			<form action="{{ route('post-register') }}" method="POST" enctype="multipart/form-data">
 
@@ -43,6 +43,11 @@ PMS | Supplier-Registration
 				<div class="form-group">
 					<label>Name of Director</label>
 					<input type="text" name="directorname" class="form-control" value="{{ old('directorname') }}">
+				</div>
+
+				<div class="form-group">
+					<label>Name of Company</label>
+					<textarea name="companyname" class="form-control" rows="">{{ old('companyname') }}</textarea>
 				</div>
 
 				<div class="form-group">
@@ -73,10 +78,7 @@ PMS | Supplier-Registration
 				</div>
 		
 									
-				<div class="form-group">
-					<label>Company Email</label>
-					<input type="text" name="email" class="form-control" value="{{ old('email') }}">
-				</div>
+				
 
 				
 
@@ -84,6 +86,11 @@ PMS | Supplier-Registration
 		</div>
 
 			<div class="col-md-4 col-md-offset-1">
+
+			   <div class="form-group">
+					<label>Company Email</label>
+					<input type="text" name="email" class="form-control" value="{{ old('email') }}">
+				</div>
 				
 				<div class="form-group">
 					<label>company Active Phone</label>
@@ -127,7 +134,7 @@ PMS | Supplier-Registration
 				
 				<div id="major-goods-select" class="form-group">
 					<select name="companymajoractivitygoods" class="form-control">
-						<option title="Please You Can't Select This">Select A Major Compamy Activity...</option>
+						<option value="None">---Select A Major Company Activity---</option>
 						<option value="Agricultural/Farm Equiptment">Agricultural/Farm Equiptment</option>
 						<option value="">Agro Chemicals</option>		
 						<option value="">Automobile/Vehicles Parts</option>
@@ -159,24 +166,11 @@ PMS | Supplier-Registration
 						<option value="">Uniform and Protective Clothing</option>
 						<option value="">Software and Licenses</option>
 						<option value="">Cleaning and Sanitary Materials</option>
-						<option value="Consultancy Services in ICT Software Development and Training">Consultancy Services in ICT Software Development and Training</option>
-					<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
-						<option value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</option>	
-						<option value="">Hydrological Services</option>
-						<option value="">Catering Services</option>
-						<option value="">Cleaning Services</option>
-						<option value="">Welding and Fabrication</option>
-						<option value="Construction/Maintenace of Bridges">Construction/Maintenace of Bridges</option>
-						<option value="">Construction/Maintenance of Roads</option>		
-						<option value="">Civil Works</option>
-						<option value="">Drilling of Boreholes</option>
-						<option value="">Horticultural Works and Lawning</option>
-						<option value="">Maintenance of Infrastructural Facilities & Other Price Quotation Contracts</option>
-						<option value="">Pavement of Walkways</option>	
 					</select>
 
 				</div>	
 
+<<<<<<< HEAD
 
 
 			
@@ -191,6 +185,13 @@ PMS | Supplier-Registration
 					<select id="major-service-select" name="companymajoractivityservices" class="form-control">
 
 						<option title="Please You Can't Select This">Select Service Activity...</option>
+=======
+			 
+
+			 <div class="text-center" class="form-group">
+					<select id="major-service-select" name="companymajoractivityservices" class="form-control">
+						<option value="None">---Select Service Activity---</option>
+>>>>>>> 10957a38ae32dd2789b7e421ff76ef9524cc2df8
 						<option value="Consultancy Services in ICT Software Development and Training">Consultancy Services in ICT Software Development and Training</option>
 					<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
 						<option value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</option>	
@@ -204,7 +205,7 @@ PMS | Supplier-Registration
 
 			<div class="text-center" class="form-group">
 					<select id="major-works-select" name="companymajoractivityworks" class="form-control">
-						<option title="Please You Can't Select This">Select Work Activity...</option>
+						<option value="None">---Select Work Activity---</option>
 						<option value="Construction/Maintenace of Bridges">Construction/Maintenace of Bridges</option>
 						<option value="">Construction/Maintenance of Roads</option>		
 						<option value="">Civil Works</option>
@@ -213,10 +214,15 @@ PMS | Supplier-Registration
 						<option value="">Maintenance of Infrastructural Facilities & Other Price Quotation Contracts</option>
 						<option value="">Pavement of Walkways</option>		
 					</select>
+<<<<<<< HEAD
 
 			</div>  -->
 
 			</div> 
+=======
+			</div> 
+			</div> 
+>>>>>>> 10957a38ae32dd2789b7e421ff76ef9524cc2df8
 		</div> <!-- col-md-4 col-md-offset-2 -->
 		
 	</div><!--row-->
@@ -232,10 +238,6 @@ PMS | Supplier-Registration
 
 
 
-
-
-
-
 <!-- MINOR ACTIVITIES BEGINS FROM HERE -->
 
 
@@ -245,6 +247,9 @@ PMS | Supplier-Registration
 				<!-- Radio Major Activites -->
 				<div class="form-group">
 				<label>1st Minor activity: </label>
+				  <label class="radio-inline" for="none-category">
+					<input id="none-category" value="None" type="radio" checked="checked" name="minoractivity1category"> None
+						</label>
 						<label class="radio-inline" for="minor-goods">
 							<input id="minor-goods" value="Goods" type="radio" name="minoractivity1category"> Goods
 						</label>
@@ -259,7 +264,7 @@ PMS | Supplier-Registration
 				
 				<div id="minor-goods-select" class="form-group">
 					<select name="companyminoractivity1goods" class="form-control">
-						<option title="Please You Can't Select This">Select A Minor Activity...</option>
+						<option value="None">---Select A Minor Activity---</option>
 						<option value="Agricultural/Farm Equiptment">Agricultural/Farm Equiptment</option>
 						<option value="">Agro Chemicals</option>		
 						<option value="">Automobile/Vehicles Parts</option>
@@ -291,24 +296,12 @@ PMS | Supplier-Registration
 						<option value="">Uniform and Protective Clothing</option>
 						<option value="">Software and Licenses</option>
 						<option value="">Cleaning and Sanitary Materials</option>
-						<option value="Consultancy Services in ICT Software Development and Training">Consultancy Services in ICT Software Development and Training</option>
-					<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
-						<option value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</option>	
-						<option value="">Hydrological Services</option>
-						<option value="">Catering Services</option>
-						<option value="">Cleaning Services</option>
-						<option value="">Welding and Fabrication</option>
-						<option value="Construction/Maintenace of Bridges">Construction/Maintenace of Bridges</option>
-						<option value="">Construction/Maintenance of Roads</option>		
-						<option value="">Civil Works</option>
-						<option value="">Drilling of Boreholes</option>
-						<option value="">Horticultural Works and Lawning</option>
-						<option value="">Maintenance of Infrastructural Facilities & Other Price Quotation Contracts</option>
-						<option value="">Pavement of Walkways</option>	
+						
 					</select>
 
 				</div>	
 
+<<<<<<< HEAD
 
  
 			<!-- <div id="minor-works-select" class="text-center" class="form-group">
@@ -320,6 +313,14 @@ PMS | Supplier-Registration
 					<select name="companyminoractivity1works" class="form-control">
 
 						<option title="Please You Can't Select This">Select Work Activity...</option>
+=======
+ 
+			
+
+			<div id="minor-works-select" class="text-center" class="form-group">
+					<select name="companyminoractivity1works" class="form-control">
+						<option value="None">---Select Work Activity---</option>
+>>>>>>> 10957a38ae32dd2789b7e421ff76ef9524cc2df8
 						<option value="">Construction/Maintenace of Bridges</option>
 						<option value="">Construction/Maintenance of Roads</option>		
 						<option value="">Civil Works</option>
@@ -336,17 +337,21 @@ PMS | Supplier-Registration
 
 				<div class="text-center" class="form-group">
 					<select id="minor-service-select" name="companyminoractivity1services" class="form-control">
-						<option title="Please You Can't Select This">Select Service Activity...</option>
+						<option value="None">---Select Service Activity---</option>
 						<option value="">Consultancy Services in ICT Software Development and Training</option>
-						<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
+						<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>	
 						<option value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</option>	
 						<option value="">Hydrological Services</option>
 						<option value="">Catering Services</option>
 						<option value="">Cleaning Services</option>
 						<option value="">Welding and Fabrication</option>	
 					</select>
+<<<<<<< HEAD
 				</div>	 --> 
 
+=======
+				</div>	 
+>>>>>>> 10957a38ae32dd2789b7e421ff76ef9524cc2df8
 				</div>	
 			</div><!-- col-md-4 col-md-offset-2 -->
 
@@ -354,10 +359,13 @@ PMS | Supplier-Registration
 
 <!-- MINOR ACTIVITIES 2 BEGINS FROM HERE -->
 
-<div class="col-md-4 col-md-offset-1">
+<div class="col-md-4 col-md-offset-2">
 				<!-- Radio minor Activites -->
 				<div class="form-group">
 				<label>2nd Minor activity: </label>
+				<label class="radio-inline" for="none-cate-2">
+							<input id="none-cate-2" value="None" type="radio" checked="checked" name="minoractivity2category"> None
+						</label>
 						<label class="radio-inline" for="minor-goods-2">
 							<input id="minor-goods-2" type="radio" value="Goods" name="minoractivity2category"> Goods
 						</label>
@@ -372,7 +380,7 @@ PMS | Supplier-Registration
 				
 				<div id="minor-goods-select-2" class="form-group">
 					<select name="companyminoractivity2goods" class="form-control">
-						<option title="Please You Can't Select This">Select Goods Activity...</option>
+						<option value="None">---Select Goods Activity---</option>
 						<option value="Agricultural/Farm Equiptment">Agricultural/Farm Equiptment</option>
 						<option value="">Agro Chemicals</option>		
 						<option value="">Automobile/Vehicles Parts</option>
@@ -404,32 +412,24 @@ PMS | Supplier-Registration
 						<option value="">Uniform and Protective Clothing</option>
 						<option value="">Software and Licenses</option>
 						<option value="">Cleaning and Sanitary Materials</option>
-						<option value="Consultancy Services in ICT Software Development and Training">Consultancy Services in ICT Software Development and Training</option>
-					<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
-						<option value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</option>	
-						<option value="">Hydrological Services</option>
-						<option value="">Catering Services</option>
-						<option value="">Cleaning Services</option>
-						<option value="">Welding and Fabrication</option>
-						<option value="Construction/Maintenace of Bridges">Construction/Maintenace of Bridges</option>
-						<option value="">Construction/Maintenance of Roads</option>		
-						<option value="">Civil Works</option>
-						<option value="">Drilling of Boreholes</option>
-						<option value="">Horticultural Works and Lawning</option>
-						<option value="">Maintenance of Infrastructural Facilities & Other Price Quotation Contracts</option>
-						<option value="">Pavement of Walkways</option>	
-					</select>
-
-				</div>	
+						</select>
+					</div>	
 
 
+	
 
+<<<<<<< HEAD
 		<!-- <div id="minor-works-select-2" class="text-center" class="form-group">
 					<select name="jobtitile" class="form-control">
 
 			<div id="minor-works-select-2" class="text-center" class="form-group">
 					<select name="companyminoractivity2works" class="form-control">
 						<option title="Please You Can't Select This">Select Work Activity...</option>
+=======
+              <div class="text-center" class="form-group">
+					<select id="minor-works-select-2" name="companyminoractivity2works" class="form-control">
+						<option value="None">---Select Work Activity---</option>
+>>>>>>> 10957a38ae32dd2789b7e421ff76ef9524cc2df8
 						<option value="">Construction/Maintenace of Bridges</option>
 						<option value="">Construction/Maintenance of Roads</option>		
 						<option value="">Civil Works</option>
@@ -438,33 +438,30 @@ PMS | Supplier-Registration
 						<option value="">Maintenance of Infrastructural Facilities & Other Price Quotation Contracts</option>
 						<option value="">Pavement of Walkways</option>		
 					</select>
-			</div>
-
+				</div>	
 			
-
-
 
 				<div class="text-center" class="form-group">
 					<select id="minor-service-select-2" name="companyminoractivity2services" class="form-control">
-						<option title="Please You Can't Select This">Select Service Activity...</option>
+						<option value="None">---Select Service Activity---</option>
 						<option value="">Consultancy Services in ICT Software Development and Training</option>
-						<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>		
+						<option value="">Consultancy Services in Civil, Structural, Mechanical and Electrical Engineering</option>	
 						<option value="">Maintenace of Vehicles, Workshops, Air Conditioners, Photocopies Intercom</option>	
 						<option value="">Hydrological Services</option>
 						<option value="">Catering Services</option>
 						<option value="">Cleaning Services</option>
 						<option value="">Welding and Fabrication</option>	
 					</select>
+<<<<<<< HEAD
 				</div>	  -->
+=======
+				</div>	 
+>>>>>>> 10957a38ae32dd2789b7e421ff76ef9524cc2df8
 				</div>	
 			</div><!-- col-md-4 col-md-offset-2 -->
 
-<!-- MINOR ACTIVITy 2 ENDS HERE -->
 		</div><!-- row -->
 	</section>
-
-<!-- MINOR ACTIVITIES ENDS HERE -->
-
 
 
 

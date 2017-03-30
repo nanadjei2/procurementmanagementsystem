@@ -41,6 +41,7 @@ class RegisteredMembersController extends Controller
     		$RegisteredMember->user_id=Auth::user()->id;
     		$RegisteredMember->job_title=$request['jobtitile'];
     		$RegisteredMember->name_of_director=$request['directorname'];
+            $RegisteredMember->company_name=$request['companyname'];
     		$RegisteredMember->postal_address=$request['postaladdress'];
     		$RegisteredMember->business_address_or_location=$request['businessaddress'];
     		$RegisteredMember->region=$request['region'];
@@ -62,11 +63,13 @@ class RegisteredMembersController extends Controller
 
             $RegisteredMember->minor_activity2_category=$request['minoractivity2category'];
             $RegisteredMember->company_minor_activity2goods=$request['companyminoractivity2goods'];
-            $RegisteredMember->company_minor_activity2services=$request['companyminoractivity2works'];
-            $RegisteredMember->company_minor_activity2works=$request['companyminoractivity2services'];
+            $RegisteredMember->company_minor_activity2services=$request['companyminoractivity2services'];
+            $RegisteredMember->company_minor_activity2works=$request['companyminoractivity2works'];
 
-    		dd($RegisteredMember);
-    		//$RegisteredMember->save();
+    		//dd($RegisteredMember);
+    		$RegisteredMember->save();
+
+            return redirect('register-member')->with('success','Bidder Information Added Successfully to database!');
 
 
     }
