@@ -39,5 +39,7 @@ Route::group(['middlewareGroups'], function(){
 
 	Route::post('post-register',['uses'=>'RegisteredMembersController@PostRegisterNewMember'])->name('post-register'); 
 
-	Route::get('view-all-bidders', ['uses' => 'UserController@viewAll', 'middleware' => 'auth'])->name('view-all-bidders');
+	Route::get('view-all-bidders', ['uses' => 'UserController@viewAll', 'middleware' => 'admin'])->name('view-all-bidders');
+
+	Route::get('view-profile-info', ['uses' => 'UserController@viewProfileInfo'])->name('view-profile-info');
 });

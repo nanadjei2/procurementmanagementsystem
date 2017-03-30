@@ -110,7 +110,7 @@
                             </ul>
                             <ul class="l1 list-unstyled section-content">
                                 <li>
-                                    <a class="sideline" href="index-2.html">
+                                    <a class="sideline" href="{{ route('view-profile-info') }}">
                                         <i class="fa fa-user-plus md-icon pull-left"></i> 
                                         <span class="title">View Supplier Info</span> 
                                     </a>
@@ -135,7 +135,7 @@
 
 
 
-            {{-- <div class="sidebar-labels m-t-20">
+             <div class="sidebar-labels m-t-20">
                 <h5>Tags</h5> 
                 <ul class="list-unstyled">
                     <li>
