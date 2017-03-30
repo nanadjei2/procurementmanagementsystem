@@ -189,7 +189,7 @@
     @yield('content')
  
 <!-- Left Nav Begins -->
-@include('partials.side-nav')
+    @include('partials.side-nav')
 <!-- Left Nav Ends -->
 
  <div class="footer">

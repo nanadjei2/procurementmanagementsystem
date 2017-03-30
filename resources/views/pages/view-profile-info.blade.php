@@ -11,8 +11,8 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="invoice-title p-20">
-                    <h3 class="pull-left">Invoice</h3>
-                    <h3 class="pull-right">Order #38512719</h3>
+                    <h3 class="pull-left">Profile Info</h3>
+                    <h3 class="pull-right">User Id #{{ $user->id }}</h3>
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -21,50 +21,50 @@
         <div class="row">
             <div class="col-xs-12 col-xl-6">
                 <address class="p-20">
-            <h4>Billed To:</h4>
-            <br>
-            <br>
-			<strong>Lucas Smith</strong>
-            <br>
-            1 Infinite Loop
-            <br>
-            Cupertino, CA 95014
-        </address>
+		            <h4>Basic Info:</h4>
+		            <br>
+		            <br>
+					<strong>{{ $user->firstname }} {{ $user->othernames }}</strong>
+		            <br>
+		            1 Infinite Loop
+		            <br>
+		            Cupertino, CA 95014
+       			 </address>
             </div>
             <div class="col-xs-12 col-xl-6 text-right">
                 <address class="p-20">
-            <h4 class="text-bold">Shipped To:</h4>
-            <br>
-            <br>
-			<strong>Lucas Koch</strong>
-            <br>
-			1600 Amphitheatre Parkway
-            <br>
-			Mountain View, CA 94043
-        </address>
+		            <h4 class="text-bold">Shipped To:</h4>
+		            <br>
+		            <br>
+					<strong>Lucas Koch</strong>
+		            <br>
+					1600 Amphitheatre Parkway
+		            <br>
+					Mountain View, CA 94043
+        		</address>
             </div>
         </div>
 
         <div class="row">
             <div class="col-xs-12 col-xl-6">
                 <address class="p-20">
-            <h4>Payment Method:</h4>
-            <br>
-            <br>
-            Visa ending **** 2439 
-            <br>
-            lucas.smith@gmail.com
-        </address>
+		            <h4>Payment Method:</h4>
+		            <br>
+		            <br>
+		            Visa ending **** 2439 
+		            <br>
+		            lucas.smith@gmail.com
+        	</address>
             </div>
             <div class="col-xs-12 col-xl-6 text-right">
                 <address class="p-20">
-            <h4 class="text-bold">Order Date:</h4>
-            <br>
-            <br>
-            06/08/2015 
-            <br>
-            <br>
-        </address>
+		            <h4 class="text-bold">Order Date:</h4>
+		            <br>
+		            <br>
+		            06/08/2015 
+		            <br>
+		            <br>
+        		</address>
             </div>
         </div>
 
