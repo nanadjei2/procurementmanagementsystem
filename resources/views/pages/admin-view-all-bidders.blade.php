@@ -156,15 +156,11 @@
                        	</td>
                         <td>
                         <div class="dropdown pull-right"> 
-        					<a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" role="dropdown" aria-haspopup="true" aria-expanded="false">
-									open from right </a> 
+        					<a class="btn btn-danger" data-toggle="dropdown" role="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-bars"></i> </a> 
                         	<ul class="dropdown-menu from-right"> 
-	                        	<li><a class="dropdown-item">Dropdown menu item 1</a></li>  
-	                        	<li><a class="dropdown-item">Dropdown menu item 2</a></li> 
-	                        	<li><a class="dropdown-item">Dropdown menu item 3</a></li>  
-	                        	<li><a class="dropdown-item">Dropdown menu item 4</a></li> 
-	                        	<li><a class="dropdown-item">Dropdown menu item 5</a></li>  
-	                        	<li><a class="dropdown-item">Dropdown menu item 6</a></li> 
+	                        	<li><a class="dropdown-item"><i class="fa fa-envelope-o fa-fw"></i> Send Mail</a></li>  
+	                        	<li><a class="dropdown-item">Dropdown menu item 2</a></li>
             				</ul>
             			</div>
             				
