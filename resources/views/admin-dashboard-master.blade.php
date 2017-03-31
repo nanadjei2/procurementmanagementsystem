@@ -10,6 +10,7 @@
    
 <!-- implementing using laravel approach -->
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
 
 <link rel="stylesheet" type="text/css" href="{{ asset('styles/bootstrap.css') }}" />
 <link href="{{ asset('cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
@@ -242,7 +243,7 @@
 <script type="text/javascript" src="{{ asset('scripts/forms-basic.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/components/floating-labels.js')}}"></script>
 
-@yield('popover')
+@yield('major-goods-display')
 
 </body>
     
