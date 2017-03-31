@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\RegisteredMember;
 use App\Http\Requests;
 use Validator;
 use App\User;
@@ -19,7 +20,7 @@ class UserController extends Controller
     }
 
     public function getDashboard() {
-        
+
         return view('pages.dashboard');
     }
 

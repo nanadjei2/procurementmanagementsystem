@@ -10,34 +10,31 @@
 </div>
 
 <div class="row m-b-40">
-    <div class="col-xs-12 col-lg-4">
-        <div class="row">
-            <div class="col-xs-7">
-                <div class="f-w-300">Timeline</div>
-                <p>Last hour</p>
-            </div>
-        </div>
+    <div id="major-activity-table" class="col-xs-12 col-md-offset-3 col-md-4">
         <div class="timeline-widget-10">
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="p-10 p-l-40 timeline timeline-info">
-                        <div class="text">PRODUCTS AND GOODS</div>
+                	<div class="heading">
+                		<div style="font-family: 'Roboto Slab', serif; margin-bottom: 20px;" class="f-w-300">Major Activites of Companies</div>
+            		</div>
+                    <div class="p-10 p-l-40 timeline timeline-info major-activities-display">
+                        <a class="text">PRODUCTS AND GOODS</a>
                         <!-- div class="text-muted text-sm">10 minutes ago</div> -->
                     </div>
-                    <div class="p-10 p-l-40 timeline timeline-success">
-                        <div class="text">SERVICE PROVIDERS</div>
+                    <div class="p-10 p-l-40 timeline timeline-success major-activities-display">
+                        <a class="text">SERVICE PROVIDERS</a>
                         <!-- <div class="text-muted text-sm">15 minutes ago</div> -->
                     </div>
-                    <div class="p-10 p-l-40 timeline timeline-info">
-                        <div class="text">WORKS CONTRACTORS</div>
+                    <div class="p-10 p-l-40 timeline timeline-info major-activities-display">
+                        <a class="text">WORKS CONTRACTORS</a>
                         <!-- <div class="text-muted text-sm">18 minutes ago</div> -->
                     </div>
-                    <div class="p-10 p-l-40 timeline timeline-danger">
-                        <div class="text">ENQUARIES</div>
+                    <div class="p-10 p-l-40 timeline timeline-danger major-activities-display">
+                        <a class="text">ENQUARIES</a>
                         <!-- <div class="text-muted text-sm">22 minutes ago</div> -->
                     </div>
-                    <div class="p-10 p-l-40 timeline timeline-success">
-                        <div class="text">CONTACT US</div>
+                    <div class="p-10 p-l-40 timeline timeline-success major-activities-display">
+                        <a class="text">CONTACT US</a>
                         <!-- <div class="text-muted text-sm">30 minutes ago</div> -->
                     </div>
                 </div>
@@ -113,22 +110,15 @@
             </div>
         </div>
     </div> -->
-    <div class="col-xs-12 col-lg-8">
+    <div id="goods-table-display" class="col-xs-12 col-md-8">
         <div class="row">
-            <div class="col-xs-7">
-                <div class="f-w-300">Browser stats</div>
-                <p>This week</p>
-            </div>
+            <div class="heading">
+                		<div style="font-family: 'Roboto Slab', serif; margin-bottom: 20px; margin-left: 2%;" class="f-w-300">Applicants For The Respective Activities</div>
+            		</div>
         </div>
         <div class="table-responsive">
             <table class="table table-hover table-striped">
-                <thead class="hidden">
-                    <tr>
-                        <th></th>
-                        <th>Browser</th>
-                        <th>Visits</th>
-                    </tr>
-                </thead>
+                
                 <tbody>
                     <tr class="bidders">
                         <td>
@@ -156,15 +146,11 @@
                        	</td>
                         <td>
                         <div class="dropdown pull-right"> 
-        					<a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" role="dropdown" aria-haspopup="true" aria-expanded="false">
-									open from right </a> 
+        					<a class="btn btn-danger" data-toggle="dropdown" role="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-bars"></i> </a> 
                         	<ul class="dropdown-menu from-right"> 
-	                        	<li><a class="dropdown-item">Dropdown menu item 1</a></li>  
-	                        	<li><a class="dropdown-item">Dropdown menu item 2</a></li> 
-	                        	<li><a class="dropdown-item">Dropdown menu item 3</a></li>  
-	                        	<li><a class="dropdown-item">Dropdown menu item 4</a></li> 
-	                        	<li><a class="dropdown-item">Dropdown menu item 5</a></li>  
-	                        	<li><a class="dropdown-item">Dropdown menu item 6</a></li> 
+	                        	<li><a class="dropdown-item"><i class="fa fa-envelope-o fa-fw"></i> Send Mail</a></li>  
+	                        	<li><a class="dropdown-item">Dropdown menu item 2</a></li>
             				</ul>
             			</div>
             				
@@ -214,19 +200,24 @@
                     </tr> -->
                 </tbody>
             </table>
-        </div>
+        </div> <!-- Table responsive -->
     </div>
 </div>
 
 
-	@section('popover')
-		 <script>
-		 $(".menu").hide();
-		$( ".cog, .admin-text" ).on( "click", function()
-{
-		$( ".menu" ).stop().fadeToggle( "fast" );
-});
-		 </script>
-	@endsection
+@section('major-goods-display')
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#goods-table-display').hide();
+			$('#major-activity-table').addClass('col-md-offset-3');
+
+			$('.major-activities-display').click(function() {
+				$('#major-activity-table').removeClass('col-md-offset-3');
+				$('#goods-table-display').show('10000');
+			});
+		});
+	</script>
+@endsection
+
 
 @endsection

@@ -110,7 +110,7 @@
                             </ul>
                             <ul class="l1 list-unstyled section-content">
                                 <li>
-                                    <a class="sideline" href="{{ url('view-profile-info', $user) }}">
+                                    <a class="sideline" href="{{ route('view-profile-info', $user) }}">
                                         <i class="fa fa-user-plus md-icon pull-left"></i> 
                                         <span class="title">View Supplier Info</span> 
                                     </a>

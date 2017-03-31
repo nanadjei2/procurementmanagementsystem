@@ -1532,7 +1532,8 @@ pre {
   display: block;
   width: 100%;
   min-height: 0.01%;
-  overflow-x: auto; }
+  /*overflow-x: auto; */
+}
 
 .thead-inverse th {
   color: #fff;

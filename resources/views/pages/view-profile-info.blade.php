@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-
+@if(Auth::check())
         <div class="row">
             <div class="col-xs-12 col-xl-6">
                 <address class="p-20">
@@ -26,9 +26,7 @@
 		            <br>
 					<strong>{{ $user->firstname }} {{ $user->othernames }}</strong>
 		            <br>
-		            1 Infinite Loop
-		            <br>
-		            Cupertino, CA 95014
+		           	 <!-- $user->Address -->
        			 </address>
             </div>
             <div class="col-xs-12 col-xl-6 text-right">
@@ -136,6 +134,7 @@
         </div>
     </div>
 </div>
+@endif
 				<div class="footer">
     <div class="row">
         <div class="col-xs-12">

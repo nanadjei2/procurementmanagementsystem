@@ -16,7 +16,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         view()->composer('partials.side-nav', function ($view) {
-            $user = array_merge(['user' => Auth::User()->id], $view->getData());
+            $user = array_merge(['user' => Auth::User()->id]); // You can append *,$view->getData()* after *Auth::User()->id*
             $view->with($user);
         });
     }
