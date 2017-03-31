@@ -135,7 +135,7 @@
 
 
 
-             <div class="sidebar-labels m-t-20">
+           {{--   <div class="sidebar-labels m-t-20">
                 <h5>Tags</h5> 
                 <ul class="list-unstyled">
                     <li>
@@ -164,5 +164,5 @@
                         <span class="number">50%</span> 
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
