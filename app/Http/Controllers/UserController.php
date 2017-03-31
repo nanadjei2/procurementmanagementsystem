@@ -19,11 +19,13 @@ class UserController extends Controller
     }
 
     public function getDashboard() {
+        
         return view('pages.dashboard');
     }
 
-    public function viewProfileInfo() {
-        return view('pages.view-profile-info');
+    public function viewProfileInfo($id) {
+        $user = User::findOrFail($id);
+        return view('pages.view-profile-info')->with('user', $user);
     }
 
    

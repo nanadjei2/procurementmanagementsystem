@@ -382,7 +382,7 @@ PMS | Supplier-Registration
 
 
 
- <div class="col-md-4">
+ <div class="col-md-4 col-md-offset-1">
 
 				<div class="form-group">
 				<label>2nd Minor activity: </label>

@@ -1,5 +1,7 @@
 <?php
 
+use App\User as User;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -41,5 +43,5 @@ Route::group(['middlewareGroups'], function(){
 
 	Route::get('view-all-bidders', ['uses' => 'UserController@viewAll', 'middleware' => 'admin'])->name('view-all-bidders');
 
-	Route::get('view-profile-info', ['uses' => 'UserController@viewProfileInfo'])->name('view-profile-info');
+Route::get('view-profile-info/{id}', ['uses' => 'UserController@viewProfileInfo']);
 });

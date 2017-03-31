@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\User as User;
+use Auth;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->composer('partials.side-nav', function ($view) {
+            $user = array_merge(['user' => Auth::User()->id], $view->getData());
+            $view->with($user);
+        });
     }
 
     /**
