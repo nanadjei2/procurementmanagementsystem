@@ -9,6 +9,7 @@ use App\Http\Requests;
 use Validator;
 use App\User;
 use Auth;
+use DB;
 
 class UserController extends Controller
 {
@@ -29,57 +30,57 @@ class UserController extends Controller
         return view('pages.view-profile-info')->with('user', $user);
     }
 
-   
+
 
     // public function supplierResgistration() {
     //     return view('pages.registration');
     // }
 
     public function postLogin(Request $requset) {
-       $rules = User::$rules;
+     $rules = User::$rules;
     //    
-        $credentials = [
-         'username'    => $requset->input('username'),
-         'password' => $requset->input('password')
-        ];
+     $credentials = [
+     'username'    => $requset->input('username'),
+     'password' => $requset->input('password')
+     ];
 
-       $validator = Validator::make($credentials, $rules);
+     $validator = Validator::make($credentials, $rules);
 
 
-       if (Auth::attempt($credentials)) {
-           if(!Auth::user()->admin == 1) {
+     if (Auth::attempt($credentials)) {
+         if(!Auth::user()->admin == 1) {
             return redirect('dashboard')
             ->with('notify-success', 'You have successfully logged in');
-           } else {
+        } else {
             return redirect('admin-dashboard')
             ->with('notify-success', 'Hi '. Auth::user()->username .', You are welcome');
-           }
-         
-       } else {
-         return redirect()->back()
-         ->with('icon-error', 'Sorry username and password mismatch');
-       }
-        
-    }
+        }
 
-    public function Signup(){
+    } else {
+       return redirect()->back()
+       ->with('icon-error', 'Sorry username and password mismatch');
+   }
 
-    	return view('pages.signup');
-    }
+}
 
+public function Signup(){
 
-    public function PostSignup(Request $request){
-
-    	  $this->validate($request, [
-                'firstname'=>'required',
-                'othernames'=>'required',
-    	  		'username'=>'required',
-    	  		'email'=>'email',
-    	  		'password'=>'required|min:8',
-    	  		'confirmpassword'=>'required|min:8'
+   return view('pages.signup');
+}
 
 
-    	  	]);
+public function PostSignup(Request $request){
+
+ $this->validate($request, [
+    'firstname'=>'required',
+    'othernames'=>'required',
+    'username'=>'required',
+    'email'=>'email',
+    'password'=>'required|min:8',
+    'confirmpassword'=>'required|min:8'
+
+
+    ]);
 
     	$newSignup= new User;  // creates a new user object
         $newSignup->firstname=$request['firstname'];
@@ -102,7 +103,7 @@ class UserController extends Controller
     		return redirect()->back()->with('error','password mismatch found!');
     	}
 
-    		
+
     }
 
 
@@ -137,10 +138,57 @@ class UserController extends Controller
     }
 
 
+/// view all for GOODS CATEGORY
     public function viewAll() {
-        return view('pages.admin-view-all-bidders');
-    }
 
+
+       $allmembers=DB::table("registered_members")
+        ->where("registered_members.major_activity_category","Goods")
+        ->select("registered_members.*")
+        ->get();
+
+       return view('pages.admin-view-all-bidders',compact("allmembers"));
+   }
+
+
+
+// view all for services category
+   public function viewAllServices() {
+
+
+       $allservices=DB::table("registered_members")
+        ->where("registered_members.major_activity_category","Services")
+        ->select("registered_members.*")
+        ->get();
+
+       return view('pages.admin-view-all-bidders',compact("allservices"));
+   }
+
+
+
+// view all for works category
+   public function viewAllWorks() {
+
+
+       $allworks=DB::table("registered_members")
+        ->where("registered_members.major_activity_category","Works")
+        ->select("registered_members.*")
+        ->get();
+
+       return view('pages.admin-view-all-bidders',compact("allworks"));
+   }
+
+
+//    public function GetAllmembers(){
+
+//     $allmembers=DB::table("registered_members")
+//     ->leftjoin("users","users.id","=","registered_members.user_id")
+//     ->select("registered_members.*","users.")
+//     ->get();
+
+//     return view("pages.admin-view-all-bidders", compact("allmembers"));
+
+// }
 
 
 }

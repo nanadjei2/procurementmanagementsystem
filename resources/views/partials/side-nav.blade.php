@@ -24,16 +24,16 @@
                             </button>
                         </div> --}}
                         <div class="profile-title">
-                        @if(Auth::check())
+                            @if(Auth::check())
                             {{ Auth::user()->firstname }} {{ Auth::user()->othernames }}
-                        @endif
+                            @endif
                         </div>
                         <!--<div class="profile-subtitle">lucas.smith@gmail.com</div>-->
-                        <div class="profile-toggle">
+                        {{-- <div class="profile-toggle">
                             <button data-click="toggle-profile" type="button" class="btn btn-white btn-outline no-border">
                                 <i class="pull-right fa fa-caret-down icon-toggle-profile"></i> 
                             </button>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="sidebar-nav">
                         <div class="sidebar-section account-links">
@@ -46,12 +46,12 @@
                                     </a>
                                 </li>
                                 
-                                <li>
+                                {{-- <li>
                                     <a class="sideline">
                                         <i class="zmdi zmdi-edit md-icon pull-left"></i> 
                                         <span class="title">Update</span> 
                                     </a>
-                                </li>
+                                </li> --}}
                                 <li>
                                     <a href="{{ route('logout') }}" class="sideline">
                                         <i class="zmdi zmdi-sign-in md-icon pull-left"></i> 
@@ -62,7 +62,15 @@
                         </div>
                         <div class="sidebar-section">
                             <div class="section-title hidden">Navigation</div>
-
+                            <ul class="l1 list-unstyled section-content">
+                                <li>
+                                    <a class="sideline" href="{{ route('view-profile-info', $user) }}">
+                                        <i class="zmdi zmdi-account-circle md-icon pull-left"></i> 
+                                        <span class="title">Profile</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                           
                             <ul class="l1 list-unstyled section-content">
                                 <li>
                                     <a href="{{ route('dashboard') }}" class="sideline" href="index-2.html">
@@ -73,33 +81,33 @@
                             </ul>
                             
                             @if(Auth::check())
-                                @if(Auth::user()->admin == 1)
-                                    <ul class="l1 list-unstyled section-content">
-                                        <li>
-                                            <a href="{{ route('admin-dashboard') }}" class="sideline" href="index-2.html">
-                                                <i class="zmdi zmdi-view-dashboard md-icon pull-left"></i> 
-                                                <span class="title">Admin Dashboard</span> 
-                                            </a>
-                                        </li>
-                                    </ul>
-                                @endif
+                            @if(Auth::user()->admin == 1)
+                            <ul class="l1 list-unstyled section-content">
+                                <li>
+                                    <a href="{{ route('admin-dashboard') }}" class="sideline" href="index-2.html">
+                                        <i class="zmdi zmdi-view-dashboard md-icon pull-left"></i> 
+                                        <span class="title">Admin Dashboard</span> 
+                                    </a>
+                                </li>
+                            </ul>
                             @endif
-
-                             @if(Auth::check())
-                                @if(Auth::user()->admin == 1)
-                                    <ul class="l1 list-unstyled section-content">
-                                        <li>
-                                            <a href="{{ route('view-all-bidders') }}" class="sideline" href="index-2.html">
-                                                <i class="zmdi zmdi-view-week md-icon pull-left"></i> 
-                                                <span class="title">View All Bidders</span> 
-                                            </a>
-                                        </li>
-                                    </ul>
-                                @endif
                             @endif
 
                             @if(Auth::check())
-                                @if(!Auth::user()->admin == 1)
+                            @if(Auth::user()->admin == 1)
+                            <ul class="l1 list-unstyled section-content">
+                                <li>
+                                    <a href="{{ route('view-all-bidders') }}" class="sideline" href="index-2.html">
+                                        <i class="zmdi zmdi-view-week md-icon pull-left"></i> 
+                                        <span class="title">View All Bidders</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            @endif
+                            @endif
+
+                            @if(Auth::check())
+                            @if(!Auth::user()->admin == 1)
                             <ul class="l1 list-unstyled section-content">
                                 <li>
                                     <a href="{{ route('register-member') }}" class="sideline" href="index-2.html">
@@ -125,11 +133,19 @@
                                     </a>
                                 </li>
                             </ul>
-                                @endif
+                             <ul class="l1 list-unstyled section-content">
+                                <li>
+                                    <a class="sideline" href="{{ route('logout') }}">
+                                        <i class="zmdi zmdi-sign-in md-icon pull-left"></i> 
+                                        <span class="title">Logout</span> 
+                                    </a>
+                                </li>
+                            </ul>
                             @endif
-                         </div>
+                            @endif
+                        </div>
 
-                         
+
 
 
 

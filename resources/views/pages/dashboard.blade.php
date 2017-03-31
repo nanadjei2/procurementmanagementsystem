@@ -106,7 +106,7 @@
                                         <div class="col-xs-8 text-left">
                                             <div class="row">
                                                 <div class="col-xs-12">
-                                                    <div class="amount something-else">SOMETHING ELSE</div>
+                                                    <div class="amount something-else">MAKE ENQUIRY</div>
                                                 </div>
                                             </div>
                                         </div>

@@ -1,22 +1,22 @@
 @extends('admin-dashboard-master')
-	@section('title')
-		PMS | All Registered Users
-	@endsection
+@section('title')
+PMS | All Registered Users
+@endsection
 @section('content')        
 
 <div class="col-xs-12 main" id="main">
-				<div class="row m-b-40">
-   
-</div>
+    <div class="row m-b-40">
 
-<div class="row m-b-40">
-    <div id="major-activity-table" class="col-xs-12 col-md-offset-3 col-md-4">
-        <div class="timeline-widget-10">
-            <div class="row">
-                <div class="col-xs-12">
-                	<div class="heading">
-                		<div style="font-family: 'Roboto Slab', serif; margin-bottom: 20px;" class="f-w-300">Major Activites of Companies</div>
-            		</div>
+    </div>
+
+    <div class="row m-b-40">
+        <div id="major-activity-table" class="col-xs-12 col-md-offset-3 col-md-4">
+            <div class="timeline-widget-10">
+                <div class="row">
+                    <div class="col-xs-12">
+                       <div class="heading">
+                        <div style="font-family: 'Roboto Slab', serif; margin-bottom: 20px;" class="f-w-300">Major Activites of Companies</div>
+                    </div>
                     <div class="p-10 p-l-40 timeline timeline-info major-activities-display">
                         <a class="text">PRODUCTS AND GOODS</a>
                         <!-- div class="text-muted text-sm">10 minutes ago</div> -->
@@ -113,49 +113,53 @@
     <div id="goods-table-display" class="col-xs-12 col-md-8">
         <div class="row">
             <div class="heading">
-                		<div style="font-family: 'Roboto Slab', serif; margin-bottom: 20px; margin-left: 2%;" class="f-w-300">Applicants For The Respective Activities</div>
-            		</div>
-        </div>
-        <div class="table-responsive">
-            <table class="table table-hover table-striped">
+              <div style="font-family: 'Roboto Slab', serif; margin-bottom: 20px; margin-left: 2%;" class="f-w-300">Applicants For The Respective Activities</div>
+          </div>
+      </div>
+
+
+    @foreach($allmembers as $member)
+      <div class="table-responsive">
+        <table class="table table-hover table-striped">
+
+            <tbody>
+                <tr class="bidders">
+                    <td>
+                       <div>
+                          <a class="media-left" href="index-2.html#">
+                              <img class="media-object img-circle h-40 w-40" alt="/assets/faces/m3.png" src="assets/faces/m3.png">
+                          </a>
+                      </div>
+                  </td>
+                  <td>
+                   <div class="row">
+                    <div class="col-md-6">
+                        <div class="media-body">
+                        <h5 class="media-heading"> {{ $member->job_title}} {{ $member->name_of_director }} </h5> 
+                            <p>{{$member->company_name}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="media-body">
+                            <h5 class="major-activity"> {{$member->major_activity_category}}</h5> 
+                            <p>{{$member->company_major_activitygoods}}</p>
+                        </div>
+                    </div>
+                </div>
                 
-                <tbody>
-                    <tr class="bidders">
-                        <td>
-                        	<div>
-		                        <a class="media-left" href="index-2.html#">
-		                            <img class="media-object img-circle h-40 w-40" alt="/assets/faces/m3.png" src="assets/faces/m3.png">
-		                        </a>
-                    		</div>
-                        </td>
-                        <td>
-                        	<div class="row">
-                        		<div class="col-md-6">
-                        			<div class="media-body">
-			                            <h5 class="media-heading"> Name of Applicant </h5> 
-			                            <p>Company Name</p>
-                       				</div>
-                        		</div>
-                        		<div class="col-md-6">
-                        			<div class="media-body">
-			                            <h5 class="major-activity"> Company Major Activity </h5> 
-			                            <p>Major Activity Name</p>
-                       				</div>
-                        		</div>
-                        	</div>
-                       	</td>
-                        <td>
-                        <div class="dropdown pull-right"> 
-        					<a class="btn btn-danger" data-toggle="dropdown" role="dropdown" aria-haspopup="true" aria-expanded="false">
-									<i class="fa fa-bars"></i> </a> 
-                        	<ul class="dropdown-menu from-right"> 
-	                        	<li><a class="dropdown-item"><i class="fa fa-envelope-o fa-fw"></i> Send Mail</a></li>  
-	                        	<li><a class="dropdown-item">Dropdown menu item 2</a></li>
-            				</ul>
-            			</div>
-            				
-                        </td>
-                    </tr>
+            </td>
+            <td>
+                <div class="dropdown pull-right"> 
+                   <a class="btn btn-danger" data-toggle="dropdown" role="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <i class="fa fa-bars"></i> </a> 
+                       <ul class="dropdown-menu from-right"> 
+                          <li><a class="dropdown-item"><i class="fa fa-envelope-o fa-fw"></i> Send Mail</a></li>  
+{{--                           <li><a class="dropdown-item">Dropdown menu item 2</a></li>
+ --}}                      </ul>
+                  </div>
+
+              </td>
+          </tr>
                    <!--  <tr>
                         <td>
                             <i class="fa fa-firefox"></i> 
@@ -200,23 +204,25 @@
                     </tr> -->
                 </tbody>
             </table>
+
         </div> <!-- Table responsive -->
+        @endforeach
     </div>
 </div>
 
 
 @section('major-goods-display')
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#goods-table-display').hide();
-			$('#major-activity-table').addClass('col-md-offset-3');
+<script type="text/javascript">
+  $(document).ready(function() {
+     $('#goods-table-display').hide();
+     $('#major-activity-table').addClass('col-md-offset-3');
 
-			$('.major-activities-display').click(function() {
-				$('#major-activity-table').removeClass('col-md-offset-3');
-				$('#goods-table-display').show('10000');
-			});
-		});
-	</script>
+     $('.major-activities-display').click(function() {
+        $('#major-activity-table').removeClass('col-md-offset-3');
+        $('#goods-table-display').show('10000');
+    });
+ });
+</script>
 @endsection
 
 
