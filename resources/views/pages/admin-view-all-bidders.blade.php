@@ -110,7 +110,7 @@
             </div>
         </div>
     </div> -->
-    <div id="goods-table-display" class="col-xs-12 col-md-8">
+    <div id="goods-table-data" class="col-xs-12 col-md-8">
         <div class="row">
             <div class="heading">
                 		<div style="font-family: 'Roboto Slab', serif; margin-bottom: 20px; margin-left: 2%;" class="f-w-300">Applicants For The Respective Activities</div>
@@ -208,12 +208,12 @@
 @section('major-goods-display')
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#goods-table-display').hide();
+			$('#goods-table-data').hide();
 			$('#major-activity-table').addClass('col-md-offset-3');
 
 			$('.major-activities-display').click(function() {
 				$('#major-activity-table').removeClass('col-md-offset-3');
-				$('#goods-table-display').show('10000');
+				$('#goods-table-data').show('10000');
 			});
 		});
 	</script>
