@@ -97,7 +97,7 @@ PMS | All Registered Users
                    <a class="btn btn-danger" data-toggle="dropdown" role="dropdown" aria-haspopup="true" aria-expanded="false">
                        <i class="fa fa-bars"></i> </a> 
                        <ul class="dropdown-menu from-right">  -->
-                          <li class="list-unstyled"><a href="{{ route('send-email', $member->id) }}" class="dropdown-item"><i class="fa fa-envelope-o fa-fw"></i> Send Mail</a></li> 
+                          <li class="list-unstyled"><a href="{{ url('send-email', $member->id) }}" class="dropdown-item"><i class="fa fa-envelope-o fa-fw"></i> Send Mail</a></li> 
                         <!-- </ul>
                   </div> -->
 
@@ -163,7 +163,7 @@ PMS | All Registered Users
                    <a class="btn btn-danger" data-toggle="dropdown" role="dropdown" aria-haspopup="true" aria-expanded="false">
                        <i class="fa fa-bars"></i> </a> 
                        <ul class="dropdown-menu from-right">  -->
-                          <li class="list-unstyled"><a href="{{ route('send-email', $service->id) }}" class="dropdown-item"><i class="fa fa-envelope-o fa-fw"></i> Send Mail</a></li>  
+                          <li class="list-unstyled"><a href="{{ url('send-email', $service->id) }}" class="dropdown-item"><i class="fa fa-envelope-o fa-fw"></i> Send Mail</a></li>  
                         <!-- </ul>
                   </div> -->
 
@@ -232,7 +232,7 @@ PMS | All Registered Users
                    <a class="btn btn-danger" data-toggle="dropdown" role="dropdown" aria-haspopup="true" aria-expanded="false">
                        <i class="fa fa-bars"></i> </a> 
                        <ul class="dropdown-menu from-right">  -->
-                          <li class="list-unstyled"><a href="{{ route('send-email', $work->id) }}" class="dropdown-item"><i class="fa fa-envelope-o fa-fw"></i> Send Mail</a></li>  
+                          <li class="list-unstyled"><a href="{{ url('send-email', $work->id) }}" class="dropdown-item"><i class="fa fa-envelope-o fa-fw"></i> Send Mail</a></li>  
                         <!-- </ul> 
                   </div>-->
 

@@ -36,93 +36,9 @@ PMS | View-User-Info
 
         <div class="row">
             <div class="col-xs-12 col-xl-6">
-                {{-- <address class="p-20">
-                  <h4>Payment Method:</h4>
-                  <br>
-                  <br>
-                  Visa ending **** 2439 
-                  <br>
-                  lucas.smith@gmail.com
-              </address> --}}
+               
           </div>
-           {{--  <div class="col-xs-12 col-xl-6 text-right">
-                <address class="p-20">
-		            <h4 class="text-bold">Order Date:</h4>
-		            <br>
-		            <br>
-		            06/08/2015 
-		            <br>
-		            <br>
-        		</address>
-            </div> --}}
         </div>
-
-        {{-- <div class="row">
-            <div class="col-xs-12">
-                <h4 class="m-20">Order summary</h4>
-                <div class="table-responsive p-20">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <td><strong>Item</strong> 
-                                </td>
-                                <td class="text-center"><strong>Price</strong> 
-                                </td>
-                                <td class="text-center"><strong>Quantity</strong> 
-                                </td>
-                                <td class="text-right"><strong>Totals</strong> 
-                                </td>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                            <tr>
-                                <td>11-inch MacBook Air</td>
-                                <td class="text-center">$899</td>
-                                <td class="text-center">1</td>
-                                <td class="text-right">$899</td>
-                            </tr>
-
-                            <tr>
-                                <td>Apple Watch 38mm Silver Aluminum Case with White Sport Band</td>
-                                <td class="text-center">$349</td>
-                                <td class="text-center">1</td>
-                                <td class="text-right">$349</td>
-                            </tr>
-
-                            <tr>
-                                <td>27-inch iMac with Retina 5K display</td>
-                                <td class="text-center">$2,299</td>
-                                <td class="text-center">1</td>
-                                <td class="text-right">$2,299</td>
-                            </tr>
-
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td class="text-center"><strong>Subtotal</strong> 
-                                </td>
-                                <td class="text-right">$3,547</td>
-                            </tr>
-                            <tr>
-                                <td class="no-border-top"></td>
-                                <td class="no-border-top"></td>
-                                <td class="no-border-top text-center"><strong>Shipping</strong> 
-                                </td>
-                                <td class="no-border-top text-right">$15</td>
-                            </tr>
-                            <tr>
-                                <td class="no-border-top"></td>
-                                <td class="no-border-top"></td>
-                                <td class="no-border-top text-center"><strong>Total</strong> 
-                                </td>
-                                <td class="no-border-top text-right">$3,562</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div> --}}
     </div>
 </div>
 @endif
