@@ -51,7 +51,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="{{route('admin-dashboard')}}" class="col-xs-12 col-lg-4 m-b-5">
+                            <a href="{{route('dashboard-admin')}}" class="col-xs-12 col-lg-4 m-b-5">
                                 <div class="text-widget-1">
                                     <div class="row">
                                         <div class="col-xs-4">
