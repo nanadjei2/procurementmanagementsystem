@@ -10,7 +10,7 @@
                             <i class="fa fa-close"></i> 
                         </button>
                         <div class="profile-image">
-                            <img class="img-circle img-fluid" src="{{ asset('images/avator.png') }}">
+                            <img class="img-circle img-fluid" src="{{ asset('images/user_avatar.png') }}">
                         </div>
                         {{-- <div class="social-media">
                             <button type="button" class="btn btn-facebook btn-circle m-r-5">
