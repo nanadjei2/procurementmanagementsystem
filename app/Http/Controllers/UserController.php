@@ -58,7 +58,11 @@ class UserController extends Controller
             return redirect('dashboard')
             ->with('notify-success', 'You have successfully logged in');
         } else {
+<<<<<<< HEAD
             return redirect('dashboard')
+=======
+            return redirect('dashboard-admin')
+>>>>>>> 6f1f6faa55e39cdf334a6950278c19e74755cf0a
             ->with('notify-success', 'Hi '. Auth::user()->username .', You are welcome');
         }
 
