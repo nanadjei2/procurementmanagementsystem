@@ -147,27 +147,10 @@ public function PostSignup(Request $request){
         ->select("registered_members.*")
         ->get();
 
-       return view('pages.admin-view-all-bidders',compact("allmembers"));
-   }
-
-
-
-// view all for services category
-   public function viewAllServices() {
-
-
-       $allservices=DB::table("registered_members")
+        $allservices=DB::table("registered_members")
         ->where("registered_members.major_activity_category","Services")
         ->select("registered_members.*")
         ->get();
-
-       return view('pages.admin-view-all-bidders',compact("allservices"));
-   }
-
-
-
-// view all for works category
-   public function viewAllWorks() {
 
 
        $allworks=DB::table("registered_members")
@@ -175,20 +158,9 @@ public function PostSignup(Request $request){
         ->select("registered_members.*")
         ->get();
 
-       return view('pages.admin-view-all-bidders',compact("allworks"));
+       return view('pages.admin-view-all-bidders',compact("allmembers", "allservices", "allworks"));
    }
 
-
-//    public function GetAllmembers(){
-
-//     $allmembers=DB::table("registered_members")
-//     ->leftjoin("users","users.id","=","registered_members.user_id")
-//     ->select("registered_members.*","users.")
-//     ->get();
-
-//     return view("pages.admin-view-all-bidders", compact("allmembers"));
-
-// }
 
 
 }

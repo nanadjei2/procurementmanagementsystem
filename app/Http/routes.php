@@ -43,5 +43,7 @@ Route::group(['middlewareGroups'], function(){
 
 	Route::get('view-all-bidders', ['uses' => 'UserController@viewAll', 'middleware' => 'admin'])->name('view-all-bidders');
 
-Route::get('view-profile-info/{id}', ['uses' => 'UserController@viewProfileInfo', 'middleware' => 'auth'])->name('view-profile-info');
+	Route::get('view-profile-info/{id}', ['uses' => 'UserController@viewProfileInfo', 'middleware' => 'auth'])->name('view-profile-info');
+
+	Route::get('send-email/{id}', ['user' => 'RegistedMenmberController@sendMail', 'middleware' => 'admin'])->name('send-email');
 });
