@@ -70,21 +70,39 @@
                                     </a>
                                 </li>
                             </ul>
-                           
+
+                            @if(Auth::check())
+                            @if(Auth::user()->admin == 0)
                             <ul class="l1 list-unstyled section-content">
                                 <li>
-                                    <a href="{{ route('dashboard-admin') }}" class="sideline" href="index-2.html">
+                                    <a href="{{ route('dashboard') }}" class="sideline" href="index-2.html">
                                         <i class="zmdi zmdi-view-dashboard md-icon pull-left"></i> 
                                         <span class="title">Dashboard</span> 
                                     </a>
                                 </li>
                             </ul>
+                             @endif
+                            @endif
+
+
+                            @if(Auth::check())
+                            @if(Auth::user()->admin == 1)
+                            <ul class="l1 list-unstyled section-content">
+                                <li>
+                                    <a href="{{ route('dashboard-admin') }}" class="sideline" href="index-2.html">
+                                        <i class="zmdi zmdi-view-dashboard md-icon pull-left"></i> 
+                                        <span class="title">Admin DashBoard</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            @endif
+                            @endif
                             
                             @if(Auth::check())
                             @if(Auth::user()->admin == 1)
                             <ul class="l1 list-unstyled section-content">
                                 <li>
-                                    <a href="{{ route('admin-dashboard') }}" class="sideline" href="index-2.html">
+                                    <a href="{{ route('all-system-users') }}" class="sideline" href="index-2.html">
                                         <i class="zmdi zmdi-view-dashboard md-icon pull-left"></i> 
                                         <span class="title">All System Users</span> 
                                     </a>
@@ -92,6 +110,9 @@
                             </ul>
                             @endif
                             @endif
+
+
+                            
 
                             @if(Auth::check())
                             @if(Auth::user()->admin == 1)
@@ -136,6 +157,20 @@
                              <ul class="l1 list-unstyled section-content">
                                 <li>
                                     <a class="sideline" href="{{ route('logout') }}">
+                                        <i class="zmdi zmdi-sign-in md-icon pull-left"></i> 
+                                        <span class="title">Logout</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                            @endif
+                            @endif
+
+
+                            @if(Auth::check())
+                            @if(Auth::user()->admin == 1)
+                            <ul class="l1 list-unstyled section-content">
+                                <li>
+                                    <a href="{{ route('logout') }}" class="sideline" href="index-2.html">
                                         <i class="zmdi zmdi-sign-in md-icon pull-left"></i> 
                                         <span class="title">Logout</span> 
                                     </a>

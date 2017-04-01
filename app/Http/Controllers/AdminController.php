@@ -8,9 +8,9 @@ use App\Http\Requests;
 
 class AdminController extends Controller
 {
-    public function getAdminDashboard() {
+    public function getAllSystemUsers() {
         $users = User::all();
-        return view('pages.admin-dashboard')
+        return view('pages.all-system-users')
         ->with('users', $users);
     }
 
