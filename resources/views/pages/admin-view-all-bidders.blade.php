@@ -77,13 +77,13 @@ PMS | All Registered Users
                   </td>
                   <td>
                    <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <div class="media-body">
                         <h5 class="media-heading"> {{ $member->job_title}} {{ $member->name_of_director }} </h5> 
                             <p>{{$member->company_name}}</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="media-body">
                             <h5 class="major-activity"> {{$member->major_activity_category}}</h5> 
                             <p>{{$member->company_major_activitygoods}}</p>
@@ -143,13 +143,13 @@ PMS | All Registered Users
                   </td>
                   <td>
                    <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <div class="media-body">
                         <h5 class="media-heading"> {{ $service->job_title}} {{ $service->name_of_director }} </h5> 
                             <p>{{$service->company_name}}</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="media-body">
                             <h5 class="major-activity"> {{$service->major_activity_category}}</h5> 
                             <p>{{$service->company_major_activitygoods}}</p>
@@ -212,13 +212,13 @@ PMS | All Registered Users
                   </td>
                   <td>
                    <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <div class="media-body">
                         <h5 class="media-heading"> {{ $work->job_title}} {{ $work->name_of_director }} </h5> 
                             <p>{{ $work->company_name }}</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="media-body">
                             <h5 class="major-activity"> {{ $work->major_activity_category }}</h5> 
                             <p>{{ $work->company_major_activitygoods }}</p>
@@ -290,10 +290,6 @@ PMS | All Registered Users
     });
 
       
-      // $(document).ready(function() {
-        
-      //  
-      // });
 
 	</script>
 @endsection
