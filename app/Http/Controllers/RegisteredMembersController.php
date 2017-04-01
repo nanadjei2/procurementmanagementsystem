@@ -74,9 +74,8 @@ class RegisteredMembersController extends Controller
 
     }
 
-    public function sendMail($id) {
-        $user = User::findOrFail($id);
-        return view('pages.send-mail');
+    public function sendMail() {
+        return view('pages.send-email');
     }
 
 
