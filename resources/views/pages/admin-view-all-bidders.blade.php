@@ -10,7 +10,7 @@ PMS | All Registered Users
     </div>
 
     <div class="row m-b-40">
-        <div id="major-activity-nav" class="col-xs-12 col-md-offset-3 col-md-4">
+        <div id="major-activity-nav" class="col-xs-12 col-md-offset-3 col-md-3">
             <div class="timeline-widget-10">
                 <div class="row">
                     <div class="col-xs-12">
@@ -54,7 +54,7 @@ PMS | All Registered Users
 
 
 
-    <div id="goods-table-data" class="col-xs-12 col-md-8">
+    <div id="goods-table-data" class="col-xs-12 col-md-9">
         <div class="row">
             <div class="heading">
               <div style="font-family: 'Roboto Slab', serif; margin-bottom: 20px; margin-left: 2%;" class="f-w-300">Applicants For The Respective Activities</div>
@@ -77,13 +77,13 @@ PMS | All Registered Users
                   </td>
                   <td>
                    <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <div class="media-body">
                         <h5 class="media-heading"> {{ $member->job_title}} {{ $member->name_of_director }} </h5> 
                             <p>{{$member->company_name}}</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="media-body">
                             <h5 class="major-activity"> {{$member->major_activity_category}}</h5> 
                             <p>{{$member->company_major_activitygoods}}</p>
@@ -122,7 +122,7 @@ PMS | All Registered Users
 
 
 
-    <div id="services-table-data" class="col-xs-12 col-md-8">
+    <div id="services-table-data" class="col-xs-12 col-md-9">
         <div class="row">
             <div class="heading">
               <div style="font-family: 'Roboto Slab', serif; margin-bottom: 20px; margin-left: 2%;" class="f-w-300">Applicants For The Respective Activities</div>
@@ -143,13 +143,13 @@ PMS | All Registered Users
                   </td>
                   <td>
                    <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <div class="media-body">
                         <h5 class="media-heading"> {{ $service->job_title}} {{ $service->name_of_director }} </h5> 
                             <p>{{$service->company_name}}</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="media-body">
                             <h5 class="major-activity"> {{$service->major_activity_category}}</h5> 
                             <p>{{$service->company_major_activityservices}}</p>
@@ -191,7 +191,7 @@ PMS | All Registered Users
 
 
 
-         <div id="works-table-data" class="col-xs-12 col-md-8">
+         <div id="works-table-data" class="col-xs-12 col-md-9">
         <div class="row">
             <div class="heading">
               <div style="font-family: 'Roboto Slab', serif; margin-bottom: 20px; margin-left: 2%;" class="f-w-300">Applicants For The Respective Activities</div>
@@ -212,13 +212,13 @@ PMS | All Registered Users
                   </td>
                   <td>
                    <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <div class="media-body">
                         <h5 class="media-heading"> {{ $work->job_title}} {{ $work->name_of_director }} </h5> 
                             <p>{{ $work->company_name }}</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="media-body">
                             <h5 class="major-activity"> {{ $work->major_activity_category }}</h5> 
                             <p>{{ $work->company_major_activityworks }}</p>
