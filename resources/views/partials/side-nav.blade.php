@@ -73,7 +73,7 @@
                            
                             <ul class="l1 list-unstyled section-content">
                                 <li>
-                                    <a href="{{ route('dashboard') }}" class="sideline" href="index-2.html">
+                                    <a href="{{ route('dashboard-admin') }}" class="sideline" href="index-2.html">
                                         <i class="zmdi zmdi-view-dashboard md-icon pull-left"></i> 
                                         <span class="title">Dashboard</span> 
                                     </a>
@@ -86,7 +86,7 @@
                                 <li>
                                     <a href="{{ route('admin-dashboard') }}" class="sideline" href="index-2.html">
                                         <i class="zmdi zmdi-view-dashboard md-icon pull-left"></i> 
-                                        <span class="title">Admin Dashboard</span> 
+                                        <span class="title">All System Users</span> 
                                     </a>
                                 </li>
                             </ul>

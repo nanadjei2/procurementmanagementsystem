@@ -34,12 +34,12 @@ class CreateRegisteredMembersTable extends Migration
             $table->string('company_major_activityservices');
             $table->string('company_major_activityworks');
 
-            $table->enum('minor_activity1_category',['None','Goods','Services','Works']);
+            $table->enum('minor_activity1_category',['','Goods','Services','Works']);
             $table->string('company_minor_activity1goods')->nullable();
             $table->string('company_minor_activity1services')->nullable();
             $table->string('company_minor_activity1works')->nullable();
 
-            $table->enum('minor_activity2_category',['None','Goods','Services','Works']);
+            $table->enum('minor_activity2_category',['','Goods','Services','Works']);
             $table->string('company_minor_activity2goods')->nullable();
             $table->string('company_minor_activity2services')->nullable();
             $table->string('company_minor_activity2works')->nullable();

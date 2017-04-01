@@ -152,7 +152,7 @@ PMS | All Registered Users
                     <div class="col-md-4">
                         <div class="media-body">
                             <h5 class="major-activity"> {{$service->major_activity_category}}</h5> 
-                            <p>{{$service->company_major_activitygoods}}</p>
+                            <p>{{$service->company_major_activityservices}}</p>
                         </div>
                     </div>
                 </div>
@@ -221,7 +221,7 @@ PMS | All Registered Users
                     <div class="col-md-4">
                         <div class="media-body">
                             <h5 class="major-activity"> {{ $work->major_activity_category }}</h5> 
-                            <p>{{ $work->company_major_activitygoods }}</p>
+                            <p>{{ $work->company_major_activityworks }}</p>
                         </div>
                     </div>
                 </div>
