@@ -53,13 +53,13 @@ class RegisteredMembersController extends Controller
     		$RegisteredMember->bank_draft_number=$request['bankdraftnumber'];
     		$RegisteredMember->major_activity_category=$request['majoractivitycategory'];
     		$RegisteredMember->company_major_activitygoods=$request['companymajoractivitygoods'];
-            $RegisteredMember->company_major_activityservices=$request['companymajoractivityworks'];
-            $RegisteredMember->company_major_activityworks=$request['companymajoractivityservices'];
+            $RegisteredMember->company_major_activityworks=$request['companymajoractivityworks'];
+            $RegisteredMember->company_major_activityservices=$request['companymajoractivityservices'];
 
             $RegisteredMember->minor_activity1_category=$request['minoractivity1category'];
             $RegisteredMember->company_minor_activity1goods=$request['companyminoractivity1goods'];
-            $RegisteredMember->company_minor_activity1services=$request['companyminoractivity1works'];
-            $RegisteredMember->company_minor_activity1works=$request['companyminoractivity1services'];
+            $RegisteredMember->company_minor_activity1services=$request['companyminoractivity1services'];
+            $RegisteredMember->company_minor_activity1works=$request['companyminoractivity1works'];
 
             $RegisteredMember->minor_activity2_category=$request['minoractivity2category'];
             $RegisteredMember->company_minor_activity2goods=$request['companyminoractivity2goods'];
