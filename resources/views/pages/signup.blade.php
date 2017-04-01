@@ -8,8 +8,10 @@ PMS | signup
     <div class="container">
         <div class="col-md-5 col-md-offset-3 col-xs-12">
             
-
-            <div class="login-form">
+           <div id="projecticon" style="margin-left: 100px;">
+                <img src="{{ asset('images/eprocurement.jpg')}}" alt="" style="width: 200px;height: 200px;">
+            </div>
+            <div class="login-form" style="padding-bottom: -200px;">
             {{-- error display --}}
 
             <div class="errors">
@@ -29,12 +31,13 @@ PMS | signup
                 @endif
 
             </div>
+            
                 <div class="text-center">@include('common.notifications')</div>
                 <div class="text-center form-heading"><h3>Please Sign-Up</h3></div>
                 <form action="{{ route('post-signup')}}" method="POST">
 
                   {{csrf_field()}}
-                    <div class="form-group">
+                    <div class="form-group" style="padding-top: -30px;">
                     <label for="firstname"> Firstname</label>
                     <input id="firstname" name="firstname" class="form-control" type="text" placeholder="Enter firstname" required="required" value="{{old('firstname')}}" />
                 </div>
