@@ -101,7 +101,7 @@ public function PostSignup(Request $request){
     	if($confirmpassword==$password){  // do comparision if two password matches
 
     		$newSignup->save();// creates a new user entry
-    		return redirect('admin-dashboard')->with('success', 'You have successfully signed up');//message after signup
+    		return redirect('/')->with('success', 'You have successfully signed up');//message after signup
     	}
 
     	else{
