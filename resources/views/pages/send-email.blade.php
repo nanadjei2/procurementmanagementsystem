@@ -1,10 +1,9 @@
 @extends('admin-dashboard-master')
 @section('title')
-PMS | All Registered Users
+PMS | Compose Email
 @endsection
 @section('content')        
 
-<div class="col-xs-12 main" id="main">
     <div class="row m-b-40">
         <div class="col-xs-12 main" id="main">
         <div class="row email-inbox">
@@ -110,14 +109,15 @@ PMS | All Registered Users
                         <input type="text" class="form-control" value="">
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label class="col-sm-2 form-control-label">Content:</label>
-                    <div class="col-sm-10">
-                        <div id="email-compose-editor"></div>
+                    <div class="form-group row">
+                      <label class="col-sm-2 form-control-label">Content:</label>
+                      <div class="col-sm-10">
+                          <!-- <div id="email-compose-editor"></div> -->
+                          <textarea class="form-control" rows="8" cols="8"></textarea>
+                      </div>
                     </div>
-                </div>
+            </div>
             </form>
-        </div>
         <div class="text-right">
             <a href="email-inbox.html" class="btn btn-warning" title="Send"><i class="fa fa-reply"></i> Send</a>
             <a href="email-inbox.html" class="btn btn-warning" title="Discard"><i class="fa fa-times"></i> Discard</a>
@@ -136,4 +136,18 @@ PMS | All Registered Users
             </div>
     </div>  
 </div>
+@endsection
+
+@section('summernote')
+  <script type="text/javascript">
+   $(document).ready(function() {
+        $('#email-compose-editor').summernote({
+            height: 300,                 // set editor height
+            minHeight: null,             // set minimum height of editor
+            maxHeight: null,             // set maximum height of editor
+            focus: true                  // set focus to editable area after initializing summernote
+        });
+    });
+  </script>
+
 @endsection

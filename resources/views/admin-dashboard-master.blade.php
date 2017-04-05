@@ -20,6 +20,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('styles/main.css') }}"  />
 <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}"  />
 <link rel="stylesheet" type="text/css" href="{{ asset('bower_components/chartist/dist/chartist.min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('summernote/dist/summernote.css') }}" />
 
 
 </head>
@@ -113,17 +114,6 @@
         </li>
     </ul>
 
-
-
-    <!--<ul class="nav navbar-nav pull-right hidden-lg-down navbar-notifications">
-        <li class="nav-item">
-
-            <a class="nav-link" data-click="toggle-right-sidebar">
-                <i class="zmdi zmdi-notifications-active"></i> 
-                <span class="label label-rounded label-primary label-xs">3</span> 
-            </a>
-        </li>
-    </ul>-->
 
 
     <ul class="nav navbar-nav pull-right hidden-lg-down navbar-profile">
@@ -242,8 +232,11 @@
 <script type="text/javascript" src="{{ asset('scripts/index.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/forms-basic.js') }}"></script>
 <script type="text/javascript" src="{{ asset('scripts/components/floating-labels.js')}}"></script>
+<script type="text/javascript" src="{{ asset('bower_components/summernote/dist/summernote.js') }}"></script>
 
-@yield('major-goods-display')
+
+    @yield('major-goods-display')
+    @yield('summernote')
 
 </body>
     
