@@ -56,33 +56,6 @@ PMS | Compose Email
                     <a href="email-inbox.html"> <i class="sidebar-icon fa fa-circle primary"></i>Clients</a>
                 </li>
             </ul>
-            <h4>Labels</h4> 
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <a href="email-inbox.html"> <i class="sidebar-icon fa fa-tag warning"></i> Family</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="email-inbox.html"> <i class="sidebar-icon fa fa-tag info"></i> Work</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="email-inbox.html"> <i class="sidebar-icon fa fa-tag primary"></i> Home</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="email-inbox.html"> <i class="sidebar-icon fa fa-tag success"></i> Children</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="email-inbox.html"> <i class="sidebar-icon fa fa-tag danger"></i> Holidays</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="email-inbox.html"> <i class="sidebar-icon fa fa-tag warning"></i> Music</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="email-inbox.html"> <i class="sidebar-icon fa fa-tag info"></i> Photography</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="email-inbox.html"> <i class="sidebar-icon fa fa-tag primary"></i> Film</a>
-                </li>
-            </ul>
         </div>
     </div>
     <div class="col-xs-12 col-lg-9">
@@ -96,32 +69,35 @@ PMS | Compose Email
             </h3>
         </div>
         <div class="email-compose">
-            <form class="form-horizontal" novalidate>
+            <form action="{{ route('send-email') }}" method="POST" class="form-horizontal" novalidate>
+                {{ csrf_field() }}
                 <div class="form-group row">
                     <label class="col-sm-2 form-control-label">To:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" value="">
+                        <input type="text" class="form-control" value="{{ $user->email }}" name="email">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 form-control-label">Subject:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" value="">
+                        <input type="text" class="form-control" value="" name="subject">
                     </div>
                 </div>
                     <div class="form-group row">
                       <label class="col-sm-2 form-control-label">Content:</label>
                       <div class="col-sm-10">
                           <!-- <div id="email-compose-editor"></div> -->
-                          <textarea class="form-control" rows="8" cols="8"></textarea>
+                          <textarea class="form-control" rows="8" cols="8" name="message" placeholder="Write something..."></textarea>
                       </div>
                     </div>
             </div>
-            </form>
-        <div class="text-right">
-            <a href="email-inbox.html" class="btn btn-warning" title="Send"><i class="fa fa-reply"></i> Send</a>
+        <div class="text-right form-group">
+            <!--<a href="" class="btn btn-warning" title="Send"><i class="fa fa-reply"></i> Send</a>-->
+            <button class="btn btn-warning" title="Send" type="submit"><i class="fa fa-reply"></i> Send</button>
             <a href="email-inbox.html" class="btn btn-warning" title="Discard"><i class="fa fa-times"></i> Discard</a>
             <a href="email-inbox.html" class="btn btn-warning" title="Draft"><i class="fa fa-pencil"></i> Draft</a>
+            
+            </form>
         </div>
     </div>
 </div>

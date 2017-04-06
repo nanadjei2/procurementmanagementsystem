@@ -28,4 +28,10 @@ class User extends Authenticatable
         'email' => 'required|email',
         'password' => 'required|min:3'
     ];
+
+    public static $mailRules = [
+        'email' => 'required',
+        'subject' => 'required',
+        'message' => 'required'
+    ];
 }

@@ -36,6 +36,7 @@ Route::group(['middlewareGroups'], function(){
 	// Route::get('supplier-registration', ['uses' => 'UserController@supplierResgistration'])->name('supplier-registration');
 
 	 Route::get('dashboard', ['uses' => 'UserController@getDashboard','middleware'=>'auth'])->name('dashboard');
+
 	 Route::get('dashboard-admin', ['uses' => 'UserController@getDashboardAdmin','middleware'=>'auth'])->name('dashboard-admin');
 
 	Route::get('register-member',['uses'=>'RegisteredMembersController@RegisterNewMember', 'middleware' => 'auth'])->name('register-member');
@@ -47,4 +48,7 @@ Route::group(['middlewareGroups'], function(){
 	Route::get('view-profile-info/{id}', ['uses' => 'UserController@viewProfileInfo', 'middleware' => 'auth'])->name('view-profile-info');
 
 	Route::get('send-email/{id}', ['uses' => 'RegisteredMembersController@sendMail', 'middleware' => 'admin']);
+
+	Route::post('post-mail', ['uses' => 'MailController@sendMail', 'Middleware' => 'admin'])->name('send-email');
+
 });

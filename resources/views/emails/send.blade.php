@@ -6,15 +6,12 @@
   <body>
     <p class="lead">Please sir you have a feedback from Japed</p>
     <div class="mail">
-        <p>{{ Input::get('subject') }}</p>
+        <p>{{ Request::input('subject') }}</p>
         <p>
-        <div class="lead">Subject: {{ Input::get('email') }}</div>
+        <div class="lead">Subject: {{ Request::input('email') }}</div>
         </p>
         <p>
-        <div class="lead">Name: {{ Input::get('name') }}</div>
-        </p>
-        <p>
-          {{ Input::get('message') }}
+          {{ Request::input('$message') }}
         </p>
     </div>
   </body>
