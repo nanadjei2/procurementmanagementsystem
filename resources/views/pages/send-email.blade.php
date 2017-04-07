@@ -61,8 +61,8 @@ PMS | Compose Email
     <div class="col-xs-12 col-lg-9">
         <div class="inbox-header">
             <div class="pull-right">
-                <a ng-href="/email/inbox" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i> Draft</a>
-                <a ng-href="/email/inbox" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Discard</a>
+                <a href="{{ route('view-all-bidders') }}" class="btn btn-warning btn-sm"></i> Go Back</a>
+                <a class="btn btn-warning btn-sm discard"><i class="fa fa-times"></i> Discard</a>
             </div>
             <h3>
                 Compose email 
@@ -80,22 +80,22 @@ PMS | Compose Email
                 <div class="form-group row">
                     <label class="col-sm-2 form-control-label">Subject:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" value="" name="subject">
+                        <input type="text" class="form-control email-forms" value="" name="subject">
                     </div>
                 </div>
                     <div class="form-group row">
                       <label class="col-sm-2 form-control-label">Content:</label>
                       <div class="col-sm-10">
                           <!-- <div id="email-compose-editor"></div> -->
-                          <textarea class="form-control" rows="8" cols="8" name="message" placeholder="Write something..."></textarea>
+                          <textarea class="form-control email-forms" rows="8" cols="8" name="message" placeholder="Write something..."></textarea>
                       </div>
                     </div>
             </div>
         <div class="text-right form-group">
             <!--<a href="" class="btn btn-warning" title="Send"><i class="fa fa-reply"></i> Send</a>-->
             <button class="btn btn-warning" title="Send" type="submit"><i class="fa fa-reply"></i> Send</button>
-            <a href="email-inbox.html" class="btn btn-warning" title="Discard"><i class="fa fa-times"></i> Discard</a>
-            <a href="email-inbox.html" class="btn btn-warning" title="Draft"><i class="fa fa-pencil"></i> Draft</a>
+            <a class="btn btn-warning discard" title="Discard"><i class="fa fa-times"></i> Discard</a>
+            <a href="{{ route('view-all-bidders') }}" class="btn btn-warning" title="Draft"> Go Back</a>
             
             </form>
         </div>
@@ -117,11 +117,14 @@ PMS | Compose Email
 @section('summernote')
   <script type="text/javascript">
    $(document).ready(function() {
-        $('#email-compose-editor').summernote({
-            height: 300,                 // set editor height
-            minHeight: null,             // set minimum height of editor
-            maxHeight: null,             // set maximum height of editor
-            focus: true                  // set focus to editable area after initializing summernote
+        // $('#email-compose-editor').summernote({
+        //     height: 300,                 // set editor height
+        //     minHeight: null,             // set minimum height of editor
+        //     maxHeight: null,             // set maximum height of editor
+        //     focus: true                  // set focus to editable area after initializing summernote
+        // });
+        $('.discard').click(function() {
+             $('.email-forms').val("");
         });
     });
   </script>
