@@ -8,9 +8,10 @@ PMS | Compose Email
         <div class="col-xs-12 main" id="main">
         <div class="row email-inbox">
 
+      <div class="text-center">@include('common.notifications')</div>
+ {{--
     <div class="col-xs-12 col-lg-3">
 
-        <div class="text-center">@include('common.notifications')</div>
         <div class="email-sidebar">
             <form>
                 <div class="input-group">
@@ -58,9 +59,9 @@ PMS | Compose Email
                     <a href="email-inbox.html"> <i class="sidebar-icon fa fa-circle primary"></i>Clients</a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <div class="col-xs-12 col-lg-9">
+        </div> 
+    </div>--}}
+    <div class="col-xs-12 col-lg-11">
         <div class="inbox-header">
             <div class="pull-right">
                 <a href="{{ route('view-all-bidders') }}" class="btn btn-warning btn-sm"></i> Go Back</a>

@@ -14,11 +14,30 @@ PMS | Supplier-Registration
 
 
 	<div style="margin-top: 100px; margin-bottom: 30px;">
+	  <div class="errors" class="col-md-5 col-md-offset-3" style="margin-left: 200px;">
+
+                @if(count($errors)>0)
+                <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+
+                    <ul>
+                        @foreach($errors->all() as $error)
+                        <li>{{$error}}</li>
+                        @endforeach
+                    </ul>
+                </div>
+
+
+                @endif
+
+            </div>
 		<h4 style="text-align: center;">SUPPLIER/CONTRACTOR REGISTRATION</h4>
 
 	</div>
 
 	<div class="row">
+
+
 		<div class="text-center">@include('common.notifications')</div>
 
 		<div class="col-md-4 col-md-offset-2">
@@ -33,31 +52,33 @@ PMS | Supplier-Registration
 					<select name="jobtitile" class="form-control">
 
 						<option value="Mr">Mr</option>
-						<option value="Dr">Dr</option>		
-						<option value="Professor">Professor</option>		
-
+						<option value="Mrs">Mrs</option>		
+						<option value="Dr">Dr</option>
+						<option value="Professor">Professor</option>
+						<option value="Ing">Ing</option>
+						
 					</select>
 
 				</div>	
 
 				<div class="form-group">
 					<label>Name of Director</label>
-					<input type="text" name="directorname" class="form-control" value="{{ old('directorname') }}">
+					<input type="text" name="directorname" required="required" class="form-control" value="{{ old('directorname') }}">
 				</div>
 
 				<div class="form-group">
 					<label>Name of Company</label>
-					<textarea name="companyname" class="form-control" rows="">{{ old('companyname') }}</textarea>
+					<textarea name="companyname" required="required" class="form-control" rows="">{{ old('companyname') }}</textarea>
 				</div>
 
 				<div class="form-group">
 					<label>Postal Address</label>
-					<textarea name="postaladdress" class="form-control" rows="">{{ old('postaladdress') }}</textarea>
+					<textarea name="postaladdress" required="required" class="form-control" rows="">{{ old('postaladdress') }}</textarea>
 				</div>
 
 				<div class="form-group">
 					<label>Business Address /  Location</label>
-					<textarea name="businessaddress" class="form-control" rows="">{{ old('businessaddress')}}</textarea>
+					<textarea name="businessaddress" required="required" class="form-control" rows="">{{ old('businessaddress')}}</textarea>
 				</div>
 
 				<div class="form-group">
@@ -89,12 +110,12 @@ PMS | Supplier-Registration
 
 					<div class="form-group">
 						<label>Company Email</label>
-						<input type="text" name="email" class="form-control" value="{{ old('email') }}">
+						<input type="text" name="email" required="required" class="form-control" value="{{ old('email') }}">
 					</div>
 
 					<div class="form-group">
 						<label>company Active Phone</label>
-						<input type="text" name="activephone" class="form-control" value="{{ old('activephone') }}">
+						<input type="text" name="activephone" required="required" class="form-control" value="{{ old('activephone') }}">
 					</div>
 
 					<div class="form-group">
@@ -109,12 +130,12 @@ PMS | Supplier-Registration
 
 					<div class="form-group">
 						<label>Bank Draft Number</label>
-						<textarea name="bankdraftnumber" class="form-control">{{ old('bankdraftnumber')}}</textarea>
+						<textarea name="bankdraftnumber" required="required" class="form-control">{{ old('bankdraftnumber')}}</textarea>
 					</div>
 
 					<div class="form-group">
 						<label>Company Website</label>
-						<textarea name="companywebsite" class="form-control">{{ old('companywebsite')}}</textarea>
+						<textarea name="companywebsite" required="required" class="form-control">{{ old('companywebsite')}}</textarea>
 					</div>
 
 					<!-- Radio Major Activites -->
@@ -427,7 +448,7 @@ PMS | Supplier-Registration
 <div class="form-group">
 	<div class="text-center">
 		<button class="btn btn-primary" type="submit"><i class="fa fa-save fa-fw"></i> SUBMIT</button>
-		<button class="btn btn-danger" type="submit"><i class="fa fa-times fa-fw"></i> CANCEL</button>
+		<button class="btn btn-danger" type="reset"><i class="fa fa-times fa-fw"></i> RESET</button>
 	</div>
 </div>
 
