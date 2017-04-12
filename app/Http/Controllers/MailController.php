@@ -39,7 +39,7 @@ class MailController extends Controller
 						->subject($data["message"]);
 			});
 
-			return "Email successfully sent"; 
+			return redirect()->back()->with('success','Email Successfully Sent!');
 		}
     }
 }

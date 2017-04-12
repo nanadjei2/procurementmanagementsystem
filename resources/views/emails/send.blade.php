@@ -4,7 +4,7 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <p class="lead">Please sir you have a feedback from Procurement Management System (PMS)</p>
+    <p class="lead"></p>
     <div class="mail">
         <p>{{ Request::input('subject') }}</p>
         
