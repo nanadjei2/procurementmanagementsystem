@@ -34,4 +34,8 @@ class User extends Authenticatable
         'subject' => 'required',
         'message' => 'required'
     ];
+
+    public static $passwordResetMailRules = [
+         'email' => 'required'
+    ];
 }

@@ -12,28 +12,17 @@
                         <div class="profile-image">
                             <img class="img-circle img-fluid" src="{{ asset('images/user_avatar.png') }}">
                         </div>
-                        {{-- <div class="social-media">
-                            <button type="button" class="btn btn-facebook btn-circle m-r-5">
-                                <i class="fa fa-facebook"></i> 
-                            </button>
-                            <button type="button" class="btn btn-twitter btn-circle m-r-5">
-                                <i class="fa fa-twitter"></i> 
-                            </button>
-                            <button type="button" class="btn btn-google btn-circle m-r-5">
-                                <i class="fa fa-google"></i> 
-                            </button>
-                        </div> --}}
                         <div class="profile-title">
                             @if(Auth::check())
                             {{ Auth::user()->firstname }} {{ Auth::user()->othernames }}
                             @endif
                         </div>
                         <!--<div class="profile-subtitle">lucas.smith@gmail.com</div>-->
-                        {{-- <div class="profile-toggle">
+                        <!--<div class="profile-toggle">
                             <button data-click="toggle-profile" type="button" class="btn btn-white btn-outline no-border">
                                 <i class="pull-right fa fa-caret-down icon-toggle-profile"></i> 
                             </button>
-                        </div> --}}
+                        </div>-->
                     </div>
                     <div class="sidebar-nav">
                         <div class="sidebar-section account-links">
@@ -46,12 +35,12 @@
                                     </a>
                                 </li>
                                 
-                                {{-- <li>
+                                <!--<li>
                                     <a class="sideline">
                                         <i class="zmdi zmdi-edit md-icon pull-left"></i> 
                                         <span class="title">Update</span> 
                                     </a>
-                                </li> --}}
+                                </li>-->
                                 <li>
                                     <a href="{{ route('logout') }}" class="sideline">
                                         <i class="zmdi zmdi-sign-in md-icon pull-left"></i> 
@@ -181,39 +170,4 @@
                         </div>
 
 
-
-
-
-
-
-           {{--   <div class="sidebar-labels m-t-20">
-                <h5>Tags</h5> 
-                <ul class="list-unstyled">
-                    <li>
-                        <i class="fa fa-dot-circle-o color-warning"></i> 
-                        <span class="m-l-10">Family</span> 
-                    </li>
-                    <li>
-                        <i class="fa fa-dot-circle-o color-success"></i> 
-                        <span class="m-l-10">Work</span> 
-                    </li>
-                    <li>
-                        <i class="fa fa-dot-circle-o color-danger"></i> 
-                        <span class="m-l-10">Home</span> 
-                    </li>
-                </ul>
-            </div>
-            <div class="sidebar-progress">
-                <h5>Project status</h5> 
-                <div class="row">
-                    <div class="col-xs-8">
-                        <div class="p-t-10 p-l-10">
-                            <progress class="progress-sm progress progress-warning" value="50" max="100">50%</progress>
-                        </div>
-                    </div>
-                    <div class="col-xs-4">
-                        <span class="number">50%</span> 
-                    </div>
-                </div>
-            </div> --}}
 

@@ -51,4 +51,8 @@ Route::group(['middlewareGroups'], function(){
 
 	Route::post('post-mail', ['uses' => 'MailController@sendMail', 'Middleware' => 'admin'])->name('send-email');
 
+// Password Reset Routes...
+	Route::get('password-reset/{token?}', ['uses' => 'Auth\PasswordController@getPasswordReset'])->name('password-reset');
+
+	Route::post('password-to-email', ['uses' => 'Auth\PasswordController@postPasswordResetLink'])->name('password-to-email');
 });
