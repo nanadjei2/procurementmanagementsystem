@@ -8,7 +8,10 @@ PMS | Compose Email
         <div class="col-xs-12 main" id="main">
         <div class="row email-inbox">
 
+      <div class="text-center">@include('common.notifications')</div>
+ {{--
     <div class="col-xs-12 col-lg-3">
+
         <div class="email-sidebar">
             <form>
                 <div class="input-group">
@@ -56,9 +59,9 @@ PMS | Compose Email
                     <a href="email-inbox.html"> <i class="sidebar-icon fa fa-circle primary"></i>Clients</a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <div class="col-xs-12 col-lg-9">
+        </div> 
+    </div>--}}
+    <div class="col-xs-12 col-lg-11">
         <div class="inbox-header">
             <div class="pull-right">
                 <a href="{{ route('view-all-bidders') }}" class="btn btn-warning btn-sm"></i> Go Back</a>
@@ -74,7 +77,7 @@ PMS | Compose Email
                 <div class="form-group row">
                     <label class="col-sm-2 form-control-label">To:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" value="{{ $user->email }}" name="email">
+                        <input type="text" class="form-control" value="{{ $RegisterMember->email }}" name="email">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -105,7 +108,7 @@ PMS | Compose Email
         <div class="footer">
     <div class="row">
         <div class="col-xs-12">
-            <a href="http://www.batchthemes.com/" target="_blank">© 2016. Batch Themes Ltd. </a><a href="http://www.themeforest.com/" target="_blank">Buy Marino</a>
+            <a href="http://www.batchthemes.com/" target="_blank"></a><a href="http://www.themeforest.com/" target="_blank"></a>
         </div>
     </div>
 </div>

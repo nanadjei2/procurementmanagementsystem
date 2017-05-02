@@ -21,21 +21,21 @@ class RegisteredMembersController extends Controller
 
     public function PostRegisterNewMember(Request $request){
 
-            // $this->validate($request,[
+            $this->validate($request,[
 
-            //     'jobtitile'=>'required',
-            //     'directorname'=>'required',
-            //     'postaladdress'=>'required',
-            //     'businessaddress'=>'required',
-            //     'region'=>'required',
-            //     'email'=>'email|required',
-            //     'companywebsite'=>'required',
-            //     'activephone'=>'required',
-            //     'bankdraftnumber'=>'required',
-            //     'companymajoractivity'=>'required'
+                'jobtitile'=>'required',
+                'directorname'=>'required',
+                'postaladdress'=>'required',
+                'businessaddress'=>'required',
+                'region'=>'required',
+                'email'=>'email|required',
+                'companywebsite'=>'required',
+                'activephone'=>'required',
+                'bankdraftnumber'=>'required',
+                'companymajoractivity'=>'required'
 
 
-            //     ]);
+                ]);
 
     		$RegisteredMember= new RegisteredMember;
     		$RegisteredMember->user_id=Auth::user()->id;
@@ -75,8 +75,8 @@ class RegisteredMembersController extends Controller
     }
 
     public function sendMail($id) {
-         $user = User::findOrFail($id);
-        return view('pages.send-email')->with("user", $user);
+         $RegisterMember = RegisteredMember::findOrFail($id);
+        return view('pages.send-email')->with("RegisterMember", $RegisterMember);
     }
 
 
